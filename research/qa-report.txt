@@ -1,9 +1,14 @@
-pages: 31
+pages: 36
 FAIL: 0
-WARN: 4
+WARN: 9
 
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 2 < 3: /blog/
+WARN  inlinks 2 < 3: /faq/cost/
+WARN  inlinks 2 < 3: /faq/hoa-permits/
+WARN  inlinks 2 < 3: /faq/maintenance/
+WARN  inlinks 1 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
+WARN  sentence on 2 pages: "are there rebates for replacing grass with turf in osceola county" e.g. ['/artificial-turf-cost/', '/faq/cost/']

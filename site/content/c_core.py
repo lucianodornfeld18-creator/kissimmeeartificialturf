@@ -47,7 +47,7 @@ def get_pages():
     P.append(page("/blog/", "index", "Artificial Turf Blog | Straight Answers for Florida Yards",
                   "Plain answers about artificial grass in Central Florida: cost, heat, dogs, drainage, HOA rules, the 2026 state turf standard, product choices and care.",
                   "Artificial turf articles for Florida homeowners", capsule("Every article here answers one question people ask before buying artificial grass in Central Florida, with numbers, dates and sources: what it costs, how hot it gets, how it drains, what the HOA and the state allow, which product fits, and how to look after it."),
-                  sec("All articles", "<!--AUTO:blog-index-->") + sec("Looking for a quick answer?", f"<p>The {a('/faq/', 'FAQ')} has short versions of most of these, the {a('/compare/', 'comparisons')} put options side by side, and the {a('/artificial-turf-cost/', 'cost guide')} has the price tables.</p>"),
+                  '<section class="auto"><h2>All articles</h2><!--AUTO:blog-index--></section>' + sec("Looking for a quick answer?", f"<p>The {a('/faq/', 'FAQ')} has short versions of most of these, the {a('/compare/', 'comparisons')} put options side by side, and the {a('/artificial-turf-cost/', 'cost guide')} has the price tables.</p>"),
                   crumb="Blog", wide=True))
 
     # ---------------------------------------------------------------- /tools/

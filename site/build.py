@@ -26,7 +26,9 @@ SECTIONS = ["core", "services", "areas", "city-services", "blog", "faq"]
 
 def load_pages():
     pages, seen = [], {}
-    mods = sorted(f.stem for f in (ROOT / "content").glob("c_*.py"))
+    import os
+    skip = {x.strip() for x in os.environ.get("SKIP", "").split(",") if x.strip()}   # SKIP=c_posts_a,c_posts_b leaves unfinished modules out of a deploy
+    mods = sorted(f.stem for f in (ROOT / "content").glob("c_*.py") if f.stem not in skip)
     for name in mods:
         mod = importlib.import_module(name)
         got = mod.get_pages()
