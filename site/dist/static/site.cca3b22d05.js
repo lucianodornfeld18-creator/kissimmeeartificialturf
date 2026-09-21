@@ -21,7 +21,7 @@
     var pu = f.querySelector('[name="page_url"]'); if (pu) pu.value = location.href.split("#")[0].slice(0, 300);
     f.addEventListener("focusin", function () { if (!started) { started = true; track("form_start", { page: location.pathname }); } });
     f.addEventListener("invalid", function () { track("form_error", { page: location.pathname }); }, true);
-    f.addEventListener("submit", function () {
+    f.addEventListener("submit", function (ev) {
       try {
         var v = function (k) { var e = f.querySelector('[name="' + k + '"]'); return (e && e.value) || ""; };
         var s = f.querySelector('[name="subject"]');
@@ -29,6 +29,21 @@
       } catch (e) {}
       track("form_submit", { page: location.pathname });
       var btn = f.querySelector('button[type="submit"]'); if (btn) { btn.disabled = true; btn.textContent = "Sending…"; }
+      /* Send in the background so the visitor lands on our own thank-you page. Without fetch, the normal POST still works. */
+      if (!window.fetch || !window.FormData) return;
+      ev.preventDefault();
+      var data = {}; new FormData(f).forEach(function (val, key) { if (typeof val === "string") data[key] = val; });
+      delete data.redirect;
+      var fail = function () {
+        track("form_error", { page: location.pathname, reason: "delivery" });
+        if (btn) { btn.disabled = false; btn.textContent = "Request my quote"; }
+        var m = f.querySelector(".ferr"); if (!m) { m = d.createElement("p"); m.className = "ferr full"; m.setAttribute("role", "alert"); f.appendChild(m); }
+        m.textContent = "That didn't go through. Please call or text (689) 202-3710 and we'll take it from there.";
+      };
+      fetch(f.action, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" }, body: JSON.stringify(data) })
+        .then(function (r) { return r.json().catch(function () { return { success: r.ok }; }); })
+        .then(function (j) { if (j && j.success) { location.href = "/thank-you/"; } else { fail(); } })
+        .catch(fail);
     });
   });
 

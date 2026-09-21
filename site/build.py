@@ -198,7 +198,7 @@ def inline_script_hashes():
 def write_headers():
     csp = "; ".join([
         "default-src 'self'", "script-src 'self' " + " ".join(inline_script_hashes() + ["https://static.cloudflareinsights.com"]), "style-src 'self' 'unsafe-inline'",
-        "img-src 'self' data:", "font-src 'self'", "connect-src 'self' https://cloudflareinsights.com https://opera-portal.lucianodornfeld18.workers.dev",
+        "img-src 'self' data:", "font-src 'self'", "connect-src 'self' https://cloudflareinsights.com https://opera-portal.lucianodornfeld18.workers.dev https://api.web3forms.com",
         "form-action 'self' https://api.web3forms.com", "base-uri 'self'", "object-src 'none'", "frame-ancestors 'self'", "upgrade-insecure-requests"])
     (DIST / "_headers").write_text(f"""/*
   X-Content-Type-Options: nosniff

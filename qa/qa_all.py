@@ -33,7 +33,7 @@ except FileNotFoundError:
 def main_text(h):
     m = re.search(r"<main.*?</main>", h, flags=re.S)
     t = m.group(0) if m else h
-    t = re.sub(r"<script.*?</script>|<style.*?</style>|<form.*?</form>|<nav.*?</nav>|<div class=\"src\">.*?</div>|<aside class=\"rel\">.*?</aside>|<section class=\"auto\".*?</section>", " ", t, flags=re.S)
+    t = re.sub(r"<script.*?</script>|<style.*?</style>|<form.*?</form>|<nav.*?</nav>|<div class=\"src\">.*?</div>|<aside class=\"rel\">.*?</aside>|<section[^>]*class=\"auto\".*?</section>", " ", t, flags=re.S)
     t = re.sub(r"<[^>]+>", " ", t)
     return htmlmod.unescape(re.sub(r"\s+", " ", t)).strip()
 
