@@ -241,7 +241,7 @@ def _batch_two():
     ])
     faqs = [
         faq("Do putting greens need infill like regular turf?", "Yes, typically a fine silica sand brushed in lightly to help the blades stand and give a consistent roll. It's a different grade than lawn infill, but it falls under the same natural-material rule as any other residential turf."),
-        faq("How long does a backyard putting green take to install?", "A basic flat green often takes one to two days; adding contouring, a chipping pad or multiple cups extends that, since shaping a subbase correctly takes more time than compacting a flat one."),
+        faq("How many days should I plan for a putting green build?", "A basic flat green often takes one to two days; adding contouring, a chipping pad or multiple cups extends that, since shaping a subbase correctly takes more time than compacting a flat one."),
         faq("Does a sloped yard rule out a putting green?", "Not usually. A shaped subbase can work with moderate existing grade, and a slight natural slope can even become part of the green's break instead of a problem to correct."),
         faq("What's a realistic stimp speed for a home green?", "Most residential greens land in the 8-10 range on a stimpmeter, slower than a tournament green, because pile height and infill are tuned for durability outdoors, not maximum speed."),
         faq("Do I need HOA approval for a backyard putting green?", f"If it's visible from the street or a neighboring lot, likely yes. {a('/laws/hoa-rules/', 'A fenced backyard not visible from the frontage')} is generally protected from HOA restriction under Florida law."),

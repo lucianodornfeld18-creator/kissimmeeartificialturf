@@ -1,6 +1,6 @@
-pages: 46
+pages: 56
 FAIL: 0
-WARN: 11
+WARN: 9
 
 
 WARN  inlinks 0 < 3: /accessibility/
@@ -12,5 +12,3 @@ WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 1 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
-WARN  sentence on 2 pages: "run your own numbers in the turf vs" e.g. ['/', '/blog/artificial-turf-vs-sod-cost-florida/']
-WARN  sentence on 2 pages: "how long does a backyard putting green take to install" e.g. ['/blog/backyard-putting-green-cost-florida/', '/putting-greens/']
