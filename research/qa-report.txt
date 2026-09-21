@@ -1,12 +1,10 @@
-pages: 56
+pages: 69
 FAIL: 0
-WARN: 9
+WARN: 7
 
 
 WARN  inlinks 0 < 3: /accessibility/
-WARN  inlinks 2 < 3: /blog/backyard-putting-green-cost-florida/
 WARN  inlinks 2 < 3: /blog/best-time-of-year-to-install-artificial-turf-florida/
-WARN  inlinks 2 < 3: /blog/diy-vs-professional-artificial-turf-installation/
 WARN  inlinks 2 < 3: /faq/cost/
 WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 1 < 3: /faq/pets-heat/
