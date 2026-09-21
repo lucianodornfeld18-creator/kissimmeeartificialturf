@@ -91,7 +91,7 @@ def get_pages():
         faq("Does turf cost more in Celebration or Lake Nona than in Poinciana?", "No. Material and labor cost the same across the area. What differs is access, grading, tree roots and whether an architectural review application is needed."),
         faq("Can I lower the price by doing the demo myself?", "Sometimes. Removing sod and hauling it off can take $1–$2 a square foot out of a quote. The grade still has to be right before base goes in, so talk to the installer first about depth and slope."),
         faq("Do you charge for an estimate?", f"No. We measure the yard, look at drainage and access, and send a written quote. Call or text {PHONE}."),
-        faq("Are there rebates for replacing grass with turf in Osceola County?", "We haven't found an active turf-replacement rebate from Toho Water Authority or the water management districts as of September 2026. Conservation programs here have focused on irrigation hardware. If that changes we'll update this page."),
+        faq("What is the cheapest way to get turf without cutting corners?", "Keep the shape simple, because rectangles waste the least material. Choose a mid-height turf with standard silica infill, turf only the area that gives you trouble, and ask whether removing the sod yourself lowers the quote. Don't economize on the base or the seams; those are what you'd pay to redo."),
     ]
     hub = page("/artificial-turf-cost/", "price",
                "Artificial Turf Cost in Kissimmee, FL (2026): Per Sq Ft & By Yard",
