@@ -1,4 +1,4 @@
-pages: 27
+pages: 31
 FAIL: 0
 WARN: 4
 

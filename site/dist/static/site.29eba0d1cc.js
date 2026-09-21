@@ -1,7 +1,6 @@
 (function () {
   "use strict";
   var d = document;
-  d.documentElement.classList.remove("nojs");
   function track(name, params) {
     try { (window.__katEvents = window.__katEvents || []).push([name, params || {}]); if (window.gtag) window.gtag("event", name, params || {}); } catch (e) {}
   }

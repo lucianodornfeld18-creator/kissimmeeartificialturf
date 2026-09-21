@@ -19,7 +19,7 @@ except Exception:
     WIKI = {}
 
 CSS = """
-@font-face{font-family:"DM Serif Display";src:url(/static/fonts/dm-serif-display-latin.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"DM Serif Display";src:url(/static/fonts/dm-serif-display-latin.woff2) format("woff2");font-weight:400;font-style:normal;font-display:optional}
 :root{--bg:#FBF7EE;--card:#FFFDF8;--ink:#14261F;--text:#22352E;--mute:#4C5F57;--line:#DDD3BF;--pine:#1C6A29;--pine-d:#0B4A18;--sun:#B8431A;--sun-d:#953512;--sand:#F1E7D2;--r:10px;--w:1120px;
 --disp:"DM Serif Display",Georgia,"Times New Roman",serif;--body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
 *{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
@@ -65,8 +65,8 @@ input,select,textarea{width:100%;font:inherit;font-size:1rem;padding:11px 12px;b
 footer.site{background:var(--ink);color:#D9D3C4;margin-top:56px;padding:40px 0 26px;font-size:.95rem}footer.site a{color:#F3EBDA}footer.site h2{font-family:var(--body);font-size:.82rem;letter-spacing:.12em;text-transform:uppercase;color:#fff;margin:0 0 .7em}
 .fg{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin:.1em 0}footer.site li a{display:inline-block;padding:5px 0}
 .legal{border-top:1px solid #33463E;margin-top:28px;padding-top:16px;font-size:.87rem;color:#B9B3A4}
-.badge{text-align:center}.badge img{width:min(360px,70vw)}.layers{display:block;max-width:460px;margin:1.2em auto}.layers text{font:600 11px var(--body);fill:var(--ink)}
-@media (max-width:860px){.top span:first-child{display:none}.top .wrap{justify-content:center}.brand{font-size:1.08rem;gap:8px;min-width:0}.brand svg{width:40px;height:40px}.brand small{font-size:.62rem}header.site .wrap{gap:10px}.hero.home{grid-template-columns:1fr;padding-top:30px}#navb{display:block}nav.main{flex-basis:100%;display:none}nav.main.open{display:block}html.nojs nav.main{display:block}nav.main ul{flex-direction:column;padding-bottom:12px}form.lead{grid-template-columns:1fr}}
+.badge{text-align:center}.badge img{width:min(360px,70vw);aspect-ratio:1/1}.layers{display:block;max-width:460px;margin:1.2em auto}.layers text{font:600 11px var(--body);fill:var(--ink)}
+@media (max-width:860px){.top span:first-child{display:none}.top .wrap{justify-content:center}.brand{font-size:1.08rem;gap:8px;min-width:0}.brand svg{width:40px;height:40px}.brand small{font-size:.62rem}header.site .wrap{gap:10px}.hero.home{grid-template-columns:1fr;padding-top:30px}#navb{display:block}nav.main{flex-basis:100%;display:none}nav.main.open{display:block}nav.main ul{flex-direction:column;padding-bottom:12px}form.lead{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{header.site,footer.site,.top,.cta,form.lead{display:none}}
 """
@@ -166,7 +166,7 @@ def _header(p):
     nav = "".join(f'<li><a href="{r}"{" aria-current=\"page\"" if p["route"] == r else ""}>{t}</a></li>' for r, t in NAV)
     return f"""<a class="skip" href="#main">Skip to content</a>
 <div class="top"><div class="wrap"><span>Artificial turf installers serving Kissimmee &amp; Central Florida</span><span>Call or text <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a></span></div></div>
-<header class="site"><div class="wrap"><a class="brand" href="/" aria-label="{esc(PUBLIC_NAME)} home">{LOGO}<span>{esc(PUBLIC_NAME)}<small>Est. 2024 · Kissimmee, FL</small></span></a>
+<header class="site"><div class="wrap"><a class="brand" href="/">{LOGO}<span>{esc(PUBLIC_NAME)}<small>Est. 2024 · Kissimmee, FL</small></span></a>
 <button id="navb" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
 <nav class="main" id="nav" aria-label="Main"><ul>{nav}</ul></nav></div></header>"""
 
@@ -207,7 +207,7 @@ def render_page(p):
     if p.get("form", p["kind"] in ("home", "service", "cityservice", "city", "price")):
         form_html = f'<section id="get-quote" class="auto"><h2>{esc(p.get("form_title") or "Tell us about the yard")}</h2><p>Send the basics and we call back to set a time to measure. Prefer to talk? Call or text <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a>.</p>{lead_form(p)}</section>'
     if p["kind"] == "home":
-        hero = f'<div class="wrap"><div class="hero home"><div><p class="eyebrow">{esc(p.get("eyebrow", ""))}</p><h1>{p["h1"]}</h1>{p["lede"]}<div class="hero-cta"><a class="btn" href="#get-quote">Get a measured quote</a><a class="btn alt" href="tel:{PHONE_E164}">Call {PHONE_DISPLAY}</a></div></div><div class="badge"><img src="/static/img/logo-badge.webp" srcset="/static/img/logo-badge-320.webp 320w, /static/img/logo-badge.webp 640w" sizes="(max-width:860px) 240px, 360px" width="640" height="640" alt="Kissimmee Artificial Turf logo: grass blades inside a green ring, established 2024" fetchpriority="high" decoding="async"></div></div></div>'
+        hero = f'<div class="wrap"><div class="hero home"><div><p class="eyebrow">{esc(p.get("eyebrow", ""))}</p><h1>{p["h1"]}</h1>{p["lede"]}<div class="hero-cta"><a class="btn" href="#get-quote">Get a measured quote</a><a class="btn alt" href="tel:{PHONE_E164}">Call {PHONE_DISPLAY}</a></div></div><div class="badge"><img src="/static/img/logo-badge.webp" srcset="/static/img/logo-badge-320.webp 320w, /static/img/logo-badge-480.webp 480w, /static/img/logo-badge.webp 640w" sizes="(max-width:860px) 240px, 360px" width="640" height="640" alt="Kissimmee Artificial Turf logo: grass blades inside a green ring, established 2024" fetchpriority="high" decoding="async"></div></div></div>'
         narrow = ""
     else:
         eb = f'<p class="eyebrow">{esc(p["eyebrow"])}</p>' if p.get("eyebrow") else ""
@@ -217,13 +217,13 @@ def render_page(p):
     main = f'<main id="main">{hero}<div class="wrap{wide}">{p["body"]}{faq_html}{form_html}{rel_html}{src_html}</div></main>'
     og_type = "article" if p["kind"] == "post" else "website"
     return f"""<!doctype html>
-<html lang="en-US" class="nojs"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(p["title"])}</title><meta name="description" content="{esc(p["meta"])}"><meta name="robots" content="{robots}"><link rel="canonical" href="{url}">
 <link rel="preload" href="/static/fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="{og_type}"><meta property="og:site_name" content="{esc(PUBLIC_NAME)}"><meta property="og:title" content="{esc(p["title"])}"><meta property="og:description" content="{esc(p["meta"])}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE_URL}/static/img/og.png"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/static/img/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0B4A18">
 <link rel="alternate" type="application/rss+xml" title="{esc(PUBLIC_NAME)} blog" href="/feed.xml">
-<style>{CSS}</style>
+<style>{CSS}</style><noscript><style>nav.main{{display:block}}#navb{{display:none}}</style></noscript>
 <script type="application/ld+json">{jsonld(p)}</script>
 <script src="{SITE_JS}" defer></script>
 </head><body>

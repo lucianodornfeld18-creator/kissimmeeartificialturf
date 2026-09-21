@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Service pages: turf & pavers, turf repair, turf cleaning, turf replacement."""
 from _data import PRICE_DATE
-from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, cs, post, src, ext, price
+from _helpers import page, capsule, sec, table, faq, steps, cta, a, svc, city, post, src, ext, price
 
 TURFRESH_REPAIR = "https://turfresh.com/blog/artificial-turf-repair-vs-replace/"
 INSTALLARTIFICIAL_LA_REPAIR = "https://www.installartificial.com/how/repair-artificial-grass-in-los-angeles-cost-and-methods"
@@ -51,7 +51,8 @@ def pavers_page():
             f"<p>Rinse the strip with a hose along with the rest of the yard; a paver-and-turf ribbon collects more windblown grit than an open lawn because it's narrow and often runs along a hard edge that channels debris. Brush the pile against the grain a few times a year so it doesn't lie flat toward the paver, the direction both water and foot traffic push it. Keep an eye on the paver joints themselves separately, since the sand there is a different material with its own refresh schedule than the turf's infill.</p>"
             + f"<p>After a named storm, walk the full edge. A lifted corner caught early is a small {svc('repair', 'repair')}, and the state's anchoring requirement exists precisely because wind gets under an unanchored edge before rain does.</p>"),
         sec("Who is the best turf and paver installer near me?",
-            f"<p>That's the right question to ask before signing anything, and the honest answer is that you can't tell from a finished photo. Ask three things: whether the quote lists one compacted base spec for the whole area instead of a vague \"standard prep,\" whether the edge restraint is named outright (paver, bender board or spike edge) rather than assumed, and whether the crew has actually tied turf into an existing paver layout before, since that's a different skill from either trade alone. A contractor who answers all three without hesitation has likely done it more than once.</p>"),
+            f"<p>That's the right question to ask before signing anything, and the honest answer is that you can't tell from a finished photo. Ask three things: whether the quote lists one compacted base spec for the whole area instead of a vague \"standard prep,\" whether the edge restraint is named outright (paver, bender board or spike edge) rather than assumed, and whether the crew has actually tied turf into an existing paver layout before, since that's a different skill from either trade alone. A contractor who answers all three without hesitation has likely done it more than once.</p>"
+            + cta("Get a measured quote", "Tell us the paver pattern and where the strip runs, and we'll work out the base and edge details before we quote it.")),
     ])
     faqs = [
         faq("Can turf go between pavers I already have, or do the pavers have to be new?", "Existing pavers work fine as long as they're level and the joint is at least a couple of inches wide. We check the paver's bedding for firmness first; if it's already settling, that gets corrected before turf goes in next to it, or the fix won't last."),
@@ -67,7 +68,7 @@ def pavers_page():
                 "Turf between pavers in Kissimmee: one shared layout, joint width, edge restraint and drainage for ribbons, stepping stones and checkerboard patios.",
                 "Turf between pavers in Kissimmee, Florida",
                 capsule(f"Turf between pavers ties a driveway, walkway or patio together with a green line instead of loose rock or bare joint sand. In Kissimmee the turf itself still runs the usual {price('residential')} a square foot, but a narrow strip prices near the top of that range because the edge work, not the area, takes the crew's time. Most jobs finish in a day."),
-                body, faqs=faqs, service="pavers", crumbs=[("Services", "/services/")], crumb="Turf & pavers",
+                body, faqs=faqs, service="pavers", crumbs=[("Services", "/services/")], crumb="Turf & pavers", form=False,
                 sources=["fs7203045", "dep-rule", "marathon-pr", "sgw-faq", "horsemans-heat", "attampa-cost"],
                 related=[("/artificial-grass-installation/", "Residential turf installation"), ("/pool-turf/", "Turf around pools and lanais"),
                          ("/compare/turf-vs-pavers-vs-rock-side-yard/", "Turf vs. pavers vs. rock, compared"),
@@ -116,7 +117,8 @@ def repair_page():
         sec("After the repair",
             f"<p>Keep foot traffic light on a fresh seam for about a day while the adhesive fully cures. Brush the repaired section against the grain once it's set so it blends with the surrounding pile, then give it a hose rinse to settle the new infill. Walk the yard after the next named storm the way you would any other time; a repair holds up to the same wind and rain as the rest of the lawn, no better and no worse. If the same spot fails twice, that's the signal to ask about the base rather than request a third patch. {post('does-homeowners-insurance-cover-artificial-turf', 'This guide')} covers when a storm-related repair might be a claim instead of an out-of-pocket fix.</p>"),
         sec("Who is the best turf repair contractor near me?",
-            "<p>Ask that question with a follow-up: will they explain why the problem happened, not just what they'll do to hide it? A contractor worth hiring lifts the damaged area, shows you the base, and tells you whether the cause is fixed or just covered. Ask whether they'll repair turf they didn't install, since a surprising number of companies won't touch another crew's work, and ask for the minimum charge up front so a twenty-minute fix doesn't turn into a surprise invoice.</p>"),
+            "<p>Ask that question with a follow-up: will they explain why the problem happened, not just what they'll do to hide it? A contractor worth hiring lifts the damaged area, shows you the base, and tells you whether the cause is fixed or just covered. Ask whether they'll repair turf they didn't install, since a surprising number of companies won't touch another crew's work, and ask for the minimum charge up front so a twenty-minute fix doesn't turn into a surprise invoice.</p>"
+            + cta("Get a repair quote", "Send photos of the seam, wrinkle or spot and we'll tell you what tier it's likely in before we schedule a visit.")),
     ])
     faqs = [
         faq("Can a wrinkle be fixed without replacing the whole lawn?", "Yes, in almost every case. The panel is lifted, re-stretched drum-tight and re-secured at the edge. Replacing the whole lawn over a wrinkle is rarely necessary unless the same panel has wrinkled more than once, which usually points to a base problem instead of a stretching problem."),
@@ -132,7 +134,7 @@ def repair_page():
                 "Artificial turf repair in Kissimmee: fixes for wrinkles, open seams, lifted edges and melt spots, with 2026 market-range pricing and repair-vs-replace signs.",
                 "Artificial turf repair in Kissimmee, Florida",
                 capsule("Artificial turf repair fixes the specific thing that failed, not the whole lawn: a wrinkle, an open seam, a lifted edge, a burn spot from window glare, or a low area that holds water after a Kissimmee storm. Most single-issue repairs are a half-day visit. Published national ranges run roughly $350 to $2,400 depending on scope; a firm number follows photos or a site visit."),
-                body, faqs=faqs, service="repair", crumbs=[("Services", "/services/")], crumb="Turf repair",
+                body, faqs=faqs, service="repair", crumbs=[("Services", "/services/")], crumb="Turf repair", form=False,
                 sources=["dep-rule", "marathon-pr", "horsemans-heat",
                          ("TurfResh — repair or replace artificial turf, a 2026 cost breakdown", TURFRESH_REPAIR),
                          ("InstallArtificial — cost to repair artificial grass in Los Angeles, 2026", INSTALLARTIFICIAL_LA_REPAIR)],
@@ -187,7 +189,8 @@ def cleaning_page():
         sec("Between visits",
             f"<p>Rinse pet areas with a hose a few times a week between professional visits, more often at the peak of a Florida summer. Brush high-traffic paths against the grain every month or two so the pile keeps standing up on its own. Rake or blow off leaves and lovebug residue within a day or two rather than letting an afternoon storm work them into the infill. {post('oak-leaves-and-debris-on-artificial-turf', 'This guide')} covers debris season in more detail. If a spot keeps re-staining or smelling no matter how often it's rinsed, that's usually a sign for {svc('repair', 'a repair visit')} rather than another cleaning.</p>"),
         sec("How do you find the best turf cleaning company near me?",
-            "<p>Ask what's actually included: a rinse and a broom is not the same service as an enzyme treatment worked into the infill, and the price should say which one you're getting. Ask whether infill gets topped up as part of the visit or billed separately, since a clean that leaves infill thin looks worse within weeks. And ask how they handle water pressure; a company that can't explain why it uses a hose instead of a pressure washer probably hasn't thought about what a blast of water does to years-old backing.</p>"),
+            "<p>Ask what's actually included: a rinse and a broom is not the same service as an enzyme treatment worked into the infill, and the price should say which one you're getting. Ask whether infill gets topped up as part of the visit or billed separately, since a clean that leaves infill thin looks worse within weeks. And ask how they handle water pressure; a company that can't explain why it uses a hose instead of a pressure washer probably hasn't thought about what a blast of water does to years-old backing.</p>"
+            + cta("Get a cleaning quote", "Tell us the yard size, whether pets use it, and when it was last cleaned, and we'll quote the visit.")),
     ])
     faqs = [
         faq("How long after a cleaning visit can pets or kids use the yard again?", "Usually right away for a basic rinse and broom. If an enzyme or sanitizing treatment was applied, give it fifteen to twenty minutes to sit before heavy use, and a bit longer in shade where things dry more slowly."),
@@ -203,7 +206,7 @@ def cleaning_page():
                 "Artificial turf cleaning service in Kissimmee: a Central Florida maintenance calendar, pet-odor removal and 2026 market-range pricing for power brooming.",
                 "Artificial turf cleaning service in Kissimmee, Florida",
                 capsule("An artificial turf cleaning service rinses, power brooms and deodorizes turf so it drains, smells and looks the way it did on installation day. In Kissimmee, a basic visit runs roughly $80 to $150 and a deep clean with pet-odor treatment runs $150 to $400, based on published 2026 market ranges. Central Florida's oak leaf drop, pollen and lovebug seasons all shape the schedule."),
-                body, faqs=faqs, service="cleaning", crumbs=[("Services", "/services/")], crumb="Turf cleaning",
+                body, faqs=faqs, service="cleaning", crumbs=[("Services", "/services/")], crumb="Turf cleaning", form=False,
                 sources=["dep-rule", "marathon-pr", "sgw-faq",
                          ("Sparkly Turf — artificial grass cleaning cost, 2026", SPARKLYTURF_CLEAN),
                          ("UF/IFAS Sarasota County Extension — lovebugs, the bug we love to hate", IFAS_LOVEBUGS),
@@ -257,7 +260,8 @@ def replacement_page():
         sec("After the new turf goes down",
             "<p>Treat a replacement's first few months like a new install: keep heavy furniture off it while the base settles, rinse and brush on the same schedule as before, and walk the perimeter after the first real storm to check that every edge and seam is holding. Keep the product's spec sheet and the invoice describing the base work done; useful if an HOA ever asks again, and useful to us if a question comes up later about what's under the new lawn.</p>"),
         sec("Who is the best artificial turf replacement company near me?",
-            "<p>Ask to see the base before it's covered; a contractor confident in the work will show you the compacted material and the grade before the last roll of turf goes down. Ask what happens to the old turf and whether disposal is itemized in the quote. And ask directly whether the new install will meet the current state standard, anchored edges, capped irrigation, a PFAS-free product, since that's a fair baseline for anyone replacing turf in Florida now, not an upsell.</p>"),
+            "<p>Ask to see the base before it's covered; a contractor confident in the work will show you the compacted material and the grade before the last roll of turf goes down. Ask what happens to the old turf and whether disposal is itemized in the quote. And ask directly whether the new install will meet the current state standard, anchored edges, capped irrigation, a PFAS-free product, since that's a fair baseline for anyone replacing turf in Florida now, not an upsell.</p>"
+            + cta("Get a replacement quote", "We'll look at what's underneath before pricing anything, and tell you honestly if a repair would do instead.")),
     ])
     faqs = [
         faq("How do I know if my base needs to be rebuilt or just corrected?", "We probe it in several spots with a rod or a shovel. Firm, dry material that hasn't shifted usually just needs recompacting; soft, wet or spongy material in more than one spot means the base itself has failed and needs to come out and be rebuilt."),
@@ -273,7 +277,7 @@ def replacement_page():
                 "Artificial turf replacement in Kissimmee: repair-vs-replace signs, what gets reused, Florida disposal reality, and updating an old lawn to the 2026 turf rule.",
                 "Artificial turf replacement in Kissimmee, Florida",
                 capsule("Artificial turf replacement means pulling out a worn-out lawn, correcting the base underneath it, and laying a new surface, usually once a lawn is ten to fifteen years into Florida's sun. A full tear-out and rebuild prices close to a new install; a sound base that only needs the old turf removed trims a meaningful share off that. Most jobs also bring an older install up to the current state turf standard."),
-                body, faqs=faqs, service="replacement", crumbs=[("Services", "/services/")], crumb="Turf replacement",
+                body, faqs=faqs, service="replacement", crumbs=[("Services", "/services/")], crumb="Turf replacement", form=False,
                 sources=["dep-rule", "marathon-pr", "fs7203045", "stn-life", "attampa-cost",
                          ("Total Turf Supply — how to properly dispose of synthetic grass", TOTALTURF_DISPOSAL),
                          ("Waste Advantage Magazine — ways you can recycle artificial turf", WASTEADV_RECYCLE)],
