@@ -1,0 +1,11 @@
+pages: 19
+FAIL: 0
+WARN: 6
+
+
+WARN  words 3799 < 3800 (home): /
+WARN  inlinks 0 < 3: /accessibility/
+WARN  inlinks 2 < 3: /blog/
+WARN  inlinks 0 < 3: /terms/
+WARN  inlinks 2 < 3: /tools/
+WARN  sentence on 3 pages: "tell us about the yard send the basics and we call back to set a time to measure" e.g. ['/', '/areas/', '/artificial-turf-cost/']

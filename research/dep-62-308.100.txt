@@ -1,0 +1,23 @@
+HYPERLINK "https://flrules.org/gateway/department.asp?id=62" \t "department"
+HYPERLINK "https://flrules.org/gateway/ruleNo.asp?id=62-308.100" \t "ruleNo"
+
+Synthetic Turf
+PURPOSE AND EFFECT: Chapter 2025-140, Laws of Florida, established a new statute, section 125.572, F.S., relating to synthetic turf. Section 125.572(4), F.S., requires the Department to adopt rules to implement this section. Rulemaking will adopt minimum standards for the installation of synthetic turf on single-family residential properties one acre or less in size. Upon adoption, a local government may not adopt or enforce any ordinance, resolution, order, rule, or policy that (1) prohibits, or is enforced to prohibit, a property owner from installing synthetic turf that complies with Department of Environmental Protection standards; or (2) regulates synthetic turf inconsistent with the Department of Environmental Protection standards.
+SUBJECT AREA TO BE ADDRESSED: Rule 62-308.100 will be created to adopt minimum standards for the installation of synthetic turf on single-family residential properties one acre or less in size in accordance with state law.
+RULEMAKING AUTHORITY: 
+HYPERLINK "https://flrules.org/gateway/statute.asp?id=125.572(4)" \t "statute"
+HYPERLINK "https://flrules.org/gateway/statute.asp?id=125.572(4)" \t "statute"
+, F.S.
+A RULE DEVELOPMENT WORKSHOP WILL BE HELD AT THE DATE, TIME AND PLACE SHOWN BELOW:
+DATE AND TIME: August 5, 2025, 9:00 a.m.
+PLACE: 3900 Commonwealth Blvd., Room 137, Tallahassee, FL 32399
+VIRTUAL OPTION: Email DWRA.Rulemaking@FloridaDEP.gov for an invitation.
+THE PERSON TO BE CONTACTED REGARDING THE PROPOSED RULE DEVELOPMENT AND A COPY OF THE PRELIMINARY DRAFT, IF AVAILABLE, IS: Amanda Peck, Florida Department of Environmental Protection, Division of Water Restoration Assistance, 3900 Commonwealth Boulevard, MS 3600, Tallahassee, FL 32399-3000, telephone: (850)245-2952, Email: DWRA.Rulemaking@FloridaDEP.gov. 
+Draft rule language and workshop materials will be available before the workshop by contacting the person above and at https://floridadep.gov/wra/wra/content/division-rules-and-rulemaking.
+Public participation is solicited without regard to race, color, religion, sex, pregnancy, national origin, age, handicap, or marital status. Persons who require special accommodations under the American with Disabilities Act (ADA) or persons who require translation services (free of charge) are asked to contact DEP’s Limited English Proficiency Coordinator at (850)245-2118 or LEP@FloridaDEP.gov at least ten (10) days before the meeting. If you have a hearing or speech impairment, please contact the agency using the Florida Relay Service, (800)955-8771 (TDD) or (800)955-8770 (voice).
+THE PRELIMINARY TEXT OF THE PROPOSED RULE DEVELOPMENT IS NOT AVAILABLE.
+
+theme/theme/_rels/themeManager.xml.relsPK
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<a:clrMap xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" bg1="lt1" tx1="dk1" bg2="lt2" tx2="dk2" accent1="accent1" accent2="accent2" accent3="accent3" accent4="accent4" accent5="accent5" accent6="accent6" hlink="hlink" folHlink="folHlink"/>
