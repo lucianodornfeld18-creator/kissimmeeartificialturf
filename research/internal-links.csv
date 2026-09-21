@@ -9,12 +9,12 @@ route,kind,inlinks_from_main,outlinks
 /artificial-turf-cost/calculator/,tool,5,25
 /blog/,index,2,24
 /commercial-turf/,service,3,26
-/contact/,page,12,25
+/contact/,page,16,25
 /laws/,law,6,27
 /laws/florida-hb-683/,law,11,25
-/laws/hoa-rules/,law,15,26
+/laws/hoa-rules/,law,16,26
 /pet-turf/,service,7,26
-/playground-turf/,service,4,25
+/playground-turf/,service,4,26
 /pool-turf/,service,5,26
 /privacy/,page,17,24
 /putting-greens/,service,4,26
