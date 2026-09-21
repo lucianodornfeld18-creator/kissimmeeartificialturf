@@ -1,6 +1,6 @@
-pages: 69
+pages: 82
 FAIL: 0
-WARN: 7
+WARN: 25
 
 
 WARN  inlinks 0 < 3: /accessibility/
@@ -10,3 +10,21 @@ WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 1 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
+WARN  sentence on 2 pages: "why does a shared property need a documented service contract not a habit" e.g. ['/commercial-turf/kissimmee/', '/commercial-turf/st-cloud/']
+WARN  sentence on 2 pages: "we suggest checking the repaired section specifically after the next storm rather than wai" e.g. ['/turf-repair/kissimmee/', '/turf-repair/st-cloud/']
+WARN  sentence on 2 pages: "warm months call for the most attention both because heat accelerates odor and because a r" e.g. ['/pet-turf/kissimmee/', '/pet-turf/st-cloud/']
+WARN  sentence on 2 pages: "this isnt a deep clean just enough attention to notice a change from the week before which" e.g. ['/turf-cleaning/kissimmee/', '/turf-cleaning/st-cloud/']
+WARN  sentence on 2 pages: "this is a quick habit during a live oaks seasonal drop when debris accumulates faster than" e.g. ['/playground-turf/kissimmee/', '/playground-turf/st-cloud/']
+WARN  sentence on 2 pages: "theres no single fixed schedule that fits every household a single dog on a small run need" e.g. ['/pet-turf/kissimmee/', '/pet-turf/st-cloud/']
+WARN  sentence on 2 pages: "skipping several months between brushings lets the fiber settle into whatever direction fo" e.g. ['/putting-greens/kissimmee/', '/putting-greens/st-cloud/']
+WARN  sentence on 2 pages: "rinsing the strip along with the rest of the yard during a regular hose pass usually clear" e.g. ['/turf-and-pavers/kissimmee/', '/turf-and-pavers/st-cloud/']
+WARN  sentence on 2 pages: "rinsing more often in peak summer than in a mild spring is normal and theres no schedule t" e.g. ['/artificial-grass-installation/kissimmee/', '/artificial-grass-installation/st-cloud/']
+WARN  sentence on 2 pages: "rinsing a lawn instead of watering it a synthetic lawn never gets watered through an ingro" e.g. ['/artificial-grass-installation/kissimmee/', '/artificial-grass-installation/st-cloud/']
+WARN  sentence on 2 pages: "rainyseason storms between june and september handle some of that rinsing on their own but" e.g. ['/pool-turf/kissimmee/', '/pool-turf/st-cloud/']
+WARN  sentence on 2 pages: "oak leaf drop and pollen season both add debris between scheduled brushings so tying the r" e.g. ['/sports-turf/kissimmee/', '/sports-turf/st-cloud/']
+WARN  sentence on 2 pages: "keeping shock and acid containers off the turfs edge avoids undoing the rinse entirely" e.g. ['/pool-turf/kissimmee/', '/pool-turf/st-cloud/']
+WARN  sentence on 2 pages: "growing resort corridors nearby sometimes track construction dust onto a yard that would o" e.g. ['/vacation-rental-turf/kissimmee/', '/vacation-rental-turf/st-cloud/']
+WARN  sentence on 2 pages: "a slight settling difference at that seam is normal and usually minor but catching it earl" e.g. ['/turf-replacement/kissimmee/', '/turf-replacement/st-cloud/']
+WARN  sentence on 2 pages: "a play area checked weekly during peak leafdrop stays safer underfoot than one checked onl" e.g. ['/playground-turf/kissimmee/', '/playground-turf/st-cloud/']
+WARN  sentence on 2 pages: "a gentle frequent touch keeps the surface predictable in a way that one thorough grooming " e.g. ['/putting-greens/kissimmee/', '/putting-greens/st-cloud/']
+WARN  sentence on 2 pages: "a documented schedule powerbrooming infill checks seasonal debris cleanup gives a board so" e.g. ['/commercial-turf/kissimmee/', '/commercial-turf/st-cloud/']
