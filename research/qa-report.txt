@@ -1,4 +1,4 @@
-pages: 228
+pages: 241
 FAIL: 0
 WARN: 51
 
@@ -14,26 +14,26 @@ WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 2 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
-WARN  sentence on 4 pages: "what looks like a nail simply pulling loose is often that eroded gap letting the edge flex" e.g. ['/turf-repair/celebration/', '/turf-repair/lake-nona/', '/turf-repair/poinciana/']
-WARN  sentence on 4 pages: "washed opengraded crushed rock underneath keeps that added flow moving rather than binding" e.g. ['/pool-turf/celebration/', '/pool-turf/lake-nona/', '/pool-turf/poinciana/']
-WARN  sentence on 4 pages: "washed opengraded crushed rock and careful compaction matter at any scale but checking the" e.g. ['/commercial-turf/celebration/', '/commercial-turf/lake-nona/', '/commercial-turf/poinciana/']
-WARN  sentence on 4 pages: "that fall gets rechecked with a level once the first lift of rock is compacted since two t" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/lake-nona/', '/artificial-grass-installation/poinciana/']
-WARN  sentence on 4 pages: "that deeper layer combined with a backing built to pass over thirty inches of water an hou" e.g. ['/pet-turf/celebration/', '/pet-turf/lake-nona/', '/pet-turf/poinciana/']
-WARN  sentence on 4 pages: "that crust doesnt announce itself as a problem until the turf above it is pulled up during" e.g. ['/turf-replacement/celebration/', '/turf-replacement/lake-nona/', '/turf-replacement/poinciana/']
-WARN  sentence on 4 pages: "skimping on depth because the footprint is small is a common shortcut and it backfires fas" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/lake-nona/', '/turf-and-pavers/poinciana/']
-WARN  sentence on 4 pages: "reseating the nails without rebuilding the washedout section underneath fixes the symptom " e.g. ['/turf-repair/celebration/', '/turf-repair/lake-nona/', '/turf-repair/poinciana/']
-WARN  sentence on 4 pages: "planning footing locations against the base layout at the start keeps the compacted rock a" e.g. ['/sports-turf/celebration/', '/sports-turf/lake-nona/', '/sports-turf/poinciana/']
-WARN  sentence on 4 pages: "matching the bases one to two percent grade to an existing structure takes more field meas" e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/lake-nona/', '/vacation-rental-turf/poinciana/']
-WARN  sentence on 4 pages: "loose fill packed in close to a footing after the fact settles unevenly over time and can " e.g. ['/sports-turf/celebration/', '/sports-turf/lake-nona/', '/sports-turf/poinciana/']
-WARN  sentence on 4 pages: "how deep the washed rock runs under a narrow strip a turf strip tucked between pavers stil" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/lake-nona/', '/turf-and-pavers/poinciana/']
-WARN  sentence on 4 pages: "getting the transition wrong leaves a low spot right where the two surfaces meet which is " e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/lake-nona/', '/vacation-rental-turf/poinciana/']
-WARN  sentence on 4 pages: "getting both requirements satisfied in the same base is what separates a green built by so" e.g. ['/putting-greens/celebration/', '/putting-greens/lake-nona/', '/putting-greens/poinciana/']
-WARN  sentence on 4 pages: "flat isnt the same as functional which is why we check for a crust not just for slope befo" e.g. ['/turf-replacement/celebration/', '/turf-replacement/lake-nona/', '/turf-replacement/poinciana/']
-WARN  sentence on 4 pages: "fines from unwashed fill binding into a crust dont just block drainage under a pad they al" e.g. ['/playground-turf/celebration/', '/playground-turf/lake-nona/', '/playground-turf/poinciana/']
-WARN  sentence on 4 pages: "a rinse or a light broom moves surface debris but doesnt fully break up infill thats compa" e.g. ['/turf-cleaning/celebration/', '/turf-cleaning/lake-nona/', '/turf-cleaning/poinciana/']
-WARN  sentence on 4 pages: "a pad that isnt seated evenly performs inconsistently across the use zone even if its rate" e.g. ['/playground-turf/celebration/', '/playground-turf/lake-nona/', '/playground-turf/poinciana/']
-WARN  sentence on 4 pages: "a green shaped purely for interesting breaks without that underlying slope will hold water" e.g. ['/putting-greens/celebration/', '/putting-greens/lake-nona/', '/putting-greens/poinciana/']
-WARN  sentence on 4 pages: "a base that takes longer than that to visibly clear is too shallow or too tightly compacte" e.g. ['/pet-turf/celebration/', '/pet-turf/lake-nona/', '/pet-turf/poinciana/']
+WARN  sentence on 5 pages: "what looks like a nail simply pulling loose is often that eroded gap letting the edge flex" e.g. ['/turf-repair/celebration/', '/turf-repair/lake-nona/', '/turf-repair/poinciana/']
+WARN  sentence on 5 pages: "washed opengraded crushed rock underneath keeps that added flow moving rather than binding" e.g. ['/pool-turf/celebration/', '/pool-turf/lake-nona/', '/pool-turf/poinciana/']
+WARN  sentence on 5 pages: "washed opengraded crushed rock and careful compaction matter at any scale but checking the" e.g. ['/commercial-turf/celebration/', '/commercial-turf/lake-nona/', '/commercial-turf/poinciana/']
+WARN  sentence on 5 pages: "that fall gets rechecked with a level once the first lift of rock is compacted since two t" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/lake-nona/', '/artificial-grass-installation/poinciana/']
+WARN  sentence on 5 pages: "that deeper layer combined with a backing built to pass over thirty inches of water an hou" e.g. ['/pet-turf/celebration/', '/pet-turf/lake-nona/', '/pet-turf/poinciana/']
+WARN  sentence on 5 pages: "that crust doesnt announce itself as a problem until the turf above it is pulled up during" e.g. ['/turf-replacement/celebration/', '/turf-replacement/lake-nona/', '/turf-replacement/poinciana/']
+WARN  sentence on 5 pages: "skimping on depth because the footprint is small is a common shortcut and it backfires fas" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/lake-nona/', '/turf-and-pavers/poinciana/']
+WARN  sentence on 5 pages: "reseating the nails without rebuilding the washedout section underneath fixes the symptom " e.g. ['/turf-repair/celebration/', '/turf-repair/lake-nona/', '/turf-repair/poinciana/']
+WARN  sentence on 5 pages: "planning footing locations against the base layout at the start keeps the compacted rock a" e.g. ['/sports-turf/celebration/', '/sports-turf/lake-nona/', '/sports-turf/poinciana/']
+WARN  sentence on 5 pages: "matching the bases one to two percent grade to an existing structure takes more field meas" e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/lake-nona/', '/vacation-rental-turf/poinciana/']
+WARN  sentence on 5 pages: "loose fill packed in close to a footing after the fact settles unevenly over time and can " e.g. ['/sports-turf/celebration/', '/sports-turf/lake-nona/', '/sports-turf/poinciana/']
+WARN  sentence on 5 pages: "how deep the washed rock runs under a narrow strip a turf strip tucked between pavers stil" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/lake-nona/', '/turf-and-pavers/poinciana/']
+WARN  sentence on 5 pages: "getting the transition wrong leaves a low spot right where the two surfaces meet which is " e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/lake-nona/', '/vacation-rental-turf/poinciana/']
+WARN  sentence on 5 pages: "getting both requirements satisfied in the same base is what separates a green built by so" e.g. ['/putting-greens/celebration/', '/putting-greens/lake-nona/', '/putting-greens/poinciana/']
+WARN  sentence on 5 pages: "flat isnt the same as functional which is why we check for a crust not just for slope befo" e.g. ['/turf-replacement/celebration/', '/turf-replacement/lake-nona/', '/turf-replacement/poinciana/']
+WARN  sentence on 5 pages: "fines from unwashed fill binding into a crust dont just block drainage under a pad they al" e.g. ['/playground-turf/celebration/', '/playground-turf/lake-nona/', '/playground-turf/poinciana/']
+WARN  sentence on 5 pages: "a rinse or a light broom moves surface debris but doesnt fully break up infill thats compa" e.g. ['/turf-cleaning/celebration/', '/turf-cleaning/lake-nona/', '/turf-cleaning/poinciana/']
+WARN  sentence on 5 pages: "a pad that isnt seated evenly performs inconsistently across the use zone even if its rate" e.g. ['/playground-turf/celebration/', '/playground-turf/lake-nona/', '/playground-turf/poinciana/']
+WARN  sentence on 5 pages: "a green shaped purely for interesting breaks without that underlying slope will hold water" e.g. ['/putting-greens/celebration/', '/putting-greens/lake-nona/', '/putting-greens/poinciana/']
+WARN  sentence on 5 pages: "a base that takes longer than that to visibly clear is too shallow or too tightly compacte" e.g. ['/pet-turf/celebration/', '/pet-turf/lake-nona/', '/pet-turf/poinciana/']
 WARN  sentence on 3 pages: "working out the full stacks thickness on paper before any soil comes out avoids discoverin" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/hunters-creek/', '/playground-turf/kissimmee/']
 WARN  sentence on 3 pages: "working infill in against the grain with a stiff brush a little at a time keeps the rate c" e.g. ['/turf-and-pavers/championsgate/', '/turf-and-pavers/hunters-creek/', '/turf-and-pavers/lake-nona/']
 WARN  sentence on 3 pages: "why unwashed fill causes more trouble in a paver joint floridas turf standard requires sub" e.g. ['/turf-and-pavers/championsgate/', '/turf-and-pavers/davenport/', '/turf-and-pavers/four-corners/']
