@@ -34,9 +34,10 @@ HUB = page(
     capsule(
         "Celebration sits about 8 miles west of downtown " + city("kissimmee") + ", an unincorporated Osceola "
         "County community The Walt Disney Company began building in the early 1990s around rear alleys, so "
-        "garages sit off a back lane and the street-facing yard stays shallow. Installed turf runs "
-        + price("residential") + " a square foot as of September 2026, and a project here answers to both "
-        "Osceola County's permit desk and the Celebration Residential Owners Association's design review."
+        "garages sit off a back lane and the street-facing yard stays shallow. A lawn conversion here prices "
+        "at " + price("residential") + " a square foot, the Central Florida market rate this September 2026, "
+        "and clears both Osceola County's permit desk and the Celebration Residential Owners Association's "
+        "own design review before work starts."
     ),
     "".join([
         sec("What makes a Celebration yard different from a typical Osceola County lot?",
@@ -50,8 +51,8 @@ HUB = page(
             "single-family homes with townhomes, follows a separate build era from those first villages. A "
             + svc("residential") + " project has to start by identifying which lot type and which zone of it, "
             "front, side, alley or private, actually holds the planned work.</p>"),
-        table("Celebration yard types and what we do differently",
-              ["Yard type", "Where", "What's different", "What we do differently"],
+        table("How lot type changes a Celebration turf job",
+              ["Lot type", "Location in Celebration", "What changes on site", "How we adjust the build"],
               [
                   ["Front yard on an alley-loaded lot", "Original villages: Downtown, Lake Evalyn and similar",
                    "Shallow, street-visible zone under the Pattern Book's front façade rules", "Treat it as a full architectural review submittal from the first sketch"],
@@ -61,7 +62,7 @@ HUB = page(
                   ["Townhome or condo courtyard", "Georgetown-style condos and townhome clusters", "Private Zone shared with a neighbor's wall, little open soil", "A shallower base and tighter edge anchoring built for a shared party wall"],
                   ["Artisan Park lot", "Artisan Park, a newer section built after the original villages", "A different construction era than the 1996-2003 villages", "Check which Design Guidelines edition and lot type actually govern before assuming downtown's rules apply"],
               ],
-              "Prices don't change by yard type; access, base depth and which review applies do."),
+              "Square-foot price holds steady across every lot type; what moves is access, base depth and which review board signs off."),
         sec("Does Osceola County or Celebration itself review a turf project?",
             "<p>Celebration has never incorporated as its own city, so there's no town hall issuing building "
             "permits here. That job belongs to Osceola County's Community Development Department at 1 "
@@ -149,9 +150,10 @@ HUB = page(
             "maintains the Downtown lake and esplanade, common-area landscaping and street trees; it doesn't "
             "set rules for what goes on a private lot."),
         faq("How close can turf sit to a Celebration pond or the golf course?",
-            "At least 10 feet from the water's edge unless a seawall or bulkhead already separates the yard "
-            "from it, the same rule that applies statewide. Celebration's stormwater ponds are permitted "
-            "through the South Florida Water Management District and the Reedy Creek Improvement District."),
+            "Rule 62-308.100 sets one statewide floor no matter which town the water is in: turf stops within "
+            "10 feet of a pond or lake's edge, waived only where a seawall or bulkhead already stands between "
+            "the yard and the water. Celebration's stormwater ponds are permitted through the South Florida "
+            "Water Management District and the Reedy Creek Improvement District."),
         faq("Is reclaimed water available for a Celebration lawn?",
             "In parts of the system, yes, but reclaimed customers follow the same restricted watering-day "
             "schedule as a potable account. Neither reclaimed nor potable in-ground irrigation can legally run "
@@ -180,11 +182,11 @@ LOCAL["residential"] = {
     "meta": "Artificial grass in Celebration, FL runs $8-$18 a sq ft installed as of September 2026, on alley-loaded lots that answer to Osceola County and CROA's ARC.",
     "h1": "Artificial grass for Celebration's alley-loaded villages and newer sections",
     "lede": capsule(
-        "A synthetic lawn in Celebration, Florida costs " + price("residential") + " a square foot installed "
-        "as of September 2026, the same range as anywhere else in Central Florida. What changes here is the "
-        "paperwork and the footprint: a shallow front yard governed by CROA's Pattern Book, a rear alley yard "
-        "the guidelines say the owner must keep irrigated and tidy, and an Osceola County permit desk that "
-        "handles the county side regardless of which village the lot sits in."
+        "Converting a Celebration lawn to synthetic turf runs " + price("residential") + " a square foot, the "
+        "market rate everywhere else in Central Florida too as of September 2026. What sets this town apart "
+        "is the paperwork and the footprint: a shallow front yard governed by CROA's Pattern Book, a rear "
+        "alley yard the guidelines say the owner must keep irrigated and tidy, and an Osceola County permit "
+        "desk that handles the county side no matter which village the lot sits in."
     ),
     "sections": [
         ("A front yard here answers to the Pattern Book before it answers to a shovel",
@@ -226,7 +228,7 @@ LOCAL["residential"] = {
             "Usually yes: Osceola County's Community Development Department reviews the permit side, and "
             "CROA's Architectural Review Committee separately reviews anything visible from the street or an "
             "adjacent lot under the community's Design Guidelines."),
-        faq("How do I find the best artificial grass installer near me for a Celebration lot?",
+        faq("Searching for the best artificial grass installer near me in Celebration?",
             "Ask whether they've filed a CROA architectural review submittal before, not just an Osceola "
             "County permit. An installer who only knows the county side hasn't done a Celebration front yard "
             "recently."),
@@ -293,8 +295,8 @@ LOCAL["putting"] = {
     "meta": "Backyard putting greens in Celebration, FL run $14-$30 a sq ft installed as of September 2026, sized for golf-lot backyards and CROA's architectural review.",
     "h1": "Putting greens for Celebration's golf-course and Estate lots",
     "lede": capsule(
-        "A backyard putting green in Celebration, Florida runs " + price("putting") + " a square foot "
-        "installed as of September 2026. Lot type drives the design more than almost anything else here: a "
+        "Building a backyard putting green in Celebration costs " + price("putting") + " a square foot, the "
+        "market range this September 2026. Which lot type it goes on matters more than the price does: a "
         "Manor or Estate lot backing the golf course has room for a multi-tier layout, while a Cottage or "
         "Garden lot in one of the original villages usually calls for a single-tier green tucked into a "
         "smaller footprint."
@@ -405,48 +407,54 @@ LOCAL["pool"] = {
     "meta": "Pool and lanai turf in Celebration, FL prices like a residential lawn, $8-$18 a sq ft as of September 2026, sized for compact Private Zone pool cages.",
     "h1": "Turf around Celebration pool cages and screened lanais",
     "lede": capsule(
-        "Turf around a Celebration pool or inside a screened lanai prices the same as a residential lawn, "
-        + price("residential") + " a square foot as of September 2026. Because most pools here sit inside a "
-        "compact Private Zone rather than a wide-open backyard, the ring of turf around the cage is usually a "
-        "narrower, more detailed job than the same idea would be on a larger suburban lot."
+        "Turf around a Celebration pool or inside a screened lanai costs the same as a residential lawn, "
+        + price("residential") + " a square foot, the market range this September 2026. What actually changes "
+        "the job here is the screen mesh itself: most Celebration cages sit out of street view entirely, which "
+        "shifts both whether CROA has to review the work and how the state's wind-anchoring rule applies "
+        "inside an enclosure."
     ),
     "sections": [
-        ("A Private Zone pool cage leaves a tight ring to work with",
-         "<p>On a Cottage or Garden lot, the Private Zone often holds a pool cage, a garage and little else, "
-         "which means the turf ring between the screen and the property line can run just a few feet wide on "
-         "every side. That tight footprint puts more weight on edge work, gluing and seaming cleanly against "
-         "the cage's concrete curb, than a wider residential lawn ever would, since there's less forgiving "
-         "open ground to blend an uneven cut into.</p>"),
-        ("Golf-course and pond-backing lanais carry the 10-foot setback into the pool area",
-         "<p>Where a screened lanai opens toward a pond or the golf course on a Manor or Estate lot, turf "
-         "around the pool still has to respect the state's 10-foot waterbody setback measured from the "
-         "shoreline, not from the pool cage itself, unless a seawall or bulkhead already separates the two. A "
-         "lanai built close to an open pond edge ends up with less usable turf area than the screen's "
-         "footprint alone would suggest.</p>"),
-        ("Capping an old sprinkler zone around the cage",
-         "<p>Older Celebration pool cages sometimes carry a dedicated irrigation zone that once kept sod alive "
-         "right up to the screen track, and that zone gets capped at the valve box the same as any other line "
-         "once turf goes in, since Florida's synthetic turf rule bars watering turf through an in-ground "
-         "system regardless of whether the water is potable or, in parts of town, reclaimed.</p>"),
+        ("A screened cage often clears CROA's visibility test on its own",
+         "<p>CROA's Design Guidelines trigger an Architectural Review Committee submittal for anything visible "
+         "from the street, an adjacent lot or a shared alley, and a pool cage wrapped in mesh on every open "
+         "side is frequently the one part of a Celebration lot that clears that bar without a formal filing, "
+         "since the screen blocks the same sightlines a fence would. That changes on a Manor or Estate lot "
+         "where the lanai opens toward the golf course or a pond instead of a backyard fence: a fairway walker "
+         "or a neighbor across the water can still see into the enclosure, which puts the project back under "
+         "CROA's review even though the street side never would have flagged it.</p>"),
+        ("Reclaimed and potable lines under the deck get capped the same way",
+         "<p>Some Celebration accounts carry a reclaimed water line alongside the potable service Toho Water "
+         "Authority bills for, and an older pool deck sometimes ran a dedicated zone off either one to keep a "
+         "strip of sod green right up to the screen track. The state's synthetic turf rule doesn't split the "
+         "two: reclaimed or potable, an in-ground line can't legally water synthetic turf, so both kinds get "
+         "capped at the valve box the same way once the ring around the cage goes in.</p>"),
+        ("The state's anchoring rule carries more weight inside an enclosure",
+         "<p>Rule 62-308.100 requires turf anchored at every edge and seam to withstand wind, and a screened "
+         "lanai concentrates gusts against that border rather than letting them spend themselves across an "
+         "open lawn. A narrow strip of turf running tight against the cage's concrete curb needs that anchoring "
+         "done properly for exactly that reason, more than a wide residential yard where wind has open ground "
+         "to cross before it ever reaches a seam.</p>"),
     ],
     "scenario": (
-        "Say you have a 300 sq ft pool deck ring",
-        "<p>Say you have a 300 sq ft ring of turf between a screened pool cage and the Private Zone's rear "
-        "fence on an Estate lot, with the original sod worn thin along the gate path. At "
-        + price("residential", True) + " a square foot, that section runs roughly $3,000 to $4,800, glued and "
-        "seamed to the cage's concrete curb with a drainage underlay so water clears the screen track instead "
-        "of pooling against it. If the lot backs onto a pond, the layout also needs to confirm the 10-foot "
-        "setback before the crew finalizes where turf can start.</p>"
+        "Say you have a 260 sq ft lanai ring on a golf-course lot",
+        "<p>Say you have a Manor-lot lanai wrapping three sides of the pool cage, 260 square feet of sod "
+        "squeezed between the screen and the concrete curb, thin from chlorine splash and never quite "
+        "recovering between waterings. Turf for that ring costs " + price("residential", True)
+        + " a square foot, so the job lands between $2,600 and $4,160, and because the open side of the lanai "
+        "faces the fairway rather than the street, it still counts as visible under CROA's Guidelines even "
+        "though the mesh hides it from the road. The reclaimed line that used to feed that strip gets capped "
+        "at the valve box the same day the new turf goes down.</p>"
     ),
     "faqs": [
-        faq("Does turf around a Celebration pool cost more than a plain lawn?",
-            "It prices in the same range as a residential lawn, though a narrow ring against a concrete curb "
-            "in a tight Private Zone often lands toward the upper half of that range because of the extra "
-            "edge work involved."),
-        faq("Can turf go right up to a screened lanai on a Celebration pond lot?",
-            "Only if the screen and pool sit outside the state's 10-foot waterbody setback, or a seawall "
-            "already separates the yard from the water. A site visit confirms the distance before any layout "
-            "gets finalized."),
+        faq("Does pool-area turf in Celebration cost more than a plain lawn?",
+            "The per-square-foot range matches any residential lawn. What pushes a job toward the top of that "
+            "range is the edge work: seaming tight against a concrete curb inside a screened enclosure takes "
+            "longer than finishing an open stretch of yard."),
+        faq("Does a fully screened pool cage still need a CROA submittal?",
+            "Often not, since Design Guidelines review turns on what's visible from the street, an adjacent "
+            "lot or a shared alley, and a fully screened cage on an interior lot usually clears that test. A "
+            "lanai open toward the golf course or a pond is the exception, since that view counts as visible "
+            "too."),
     ],
     "sources": SRC,
 }
@@ -456,10 +464,11 @@ LOCAL["str"] = {
     "meta": "Vacation rental turf in Celebration, FL is a small market: CROA's charter sets year-long minimum leases, unlike the nightly-rental corridors nearby.",
     "h1": "Turf for Celebration rental homes, where nightly stays aren't allowed",
     "lede": capsule(
-        "Turf for a Celebration rental property prices like a residential lawn, " + price("residential")
-        + " a square foot as of September 2026, but the nightly-rental market that drives this service near "
-        "the theme parks barely exists here. CROA's governing charter sets a one-year minimum lease term for "
-        "most homes, and Osceola County's short-term-rental overlay zoning excludes Celebration outright."
+        "Turf for a Celebration rental property costs the same as any residential lawn, " + price("residential")
+        + " a square foot, this September's market rate, but the nightly-rental demand that drives this "
+        "service closer to the theme parks barely exists here. CROA's governing charter sets a one-year "
+        "minimum lease term for most homes, and Osceola County's short-term-rental overlay zoning excludes "
+        "Celebration outright."
     ),
     "sections": [
         ("CROA's charter rules out the nightly-rental model most turf here would serve",
@@ -486,10 +495,10 @@ LOCAL["str"] = {
     "scenario": (
         "Say you have a furnished long-term rental yard",
         "<p>Say you have a furnished single-family rental on a one-year CROA-compliant lease, with a 400 sq "
-        "ft backyard that shows bare patches between tenant turnovers. At " + price("residential", True)
-        + " a square foot, turf for that yard runs roughly $4,000 to $6,400, and because the property still "
-        "sits inside a village lot, a CROA architectural review submittal applies the same as it would for an "
-        "owner-occupied home, on top of the Osceola County permit.</p>"
+        "ft backyard that shows bare patches between tenant turnovers. Priced at " + price("residential", True)
+        + " a square foot, that backyard costs between $4,000 and $6,400 to convert, and because the property "
+        "still sits inside a village lot, a CROA architectural review submittal applies the same as it would "
+        "for an owner-occupied home, on top of the Osceola County permit.</p>"
     ),
     "faqs": [
         faq("Can I run a nightly Airbnb out of a Celebration house?",
@@ -511,9 +520,9 @@ LOCAL["commercial"] = {
     "meta": "Commercial turf in Celebration, FL is quoted per job from drawings, covering Town Center storefronts, condo courtyards and CDD-maintained common areas.",
     "h1": "Commercial and common-area turf around Celebration's Town Center",
     "lede": capsule(
-        "Commercial turf in Celebration, Florida is quoted per job from a site visit or drawings rather than "
-        "one square-foot range, since a Town Center storefront, a condo courtyard and a CDD-maintained common "
-        "area each carry different base and approval needs. A compact downtown built around a small lake "
+        "A Celebration commercial project gets priced from a site visit or a set of drawings, not a single "
+        "square-foot range, because a Town Center storefront, a condo courtyard and a CDD-maintained common "
+        "area each carry their own base and approval needs. A compact downtown built around a small lake "
         "means most commercial turf work here is small-footprint rather than sprawling."
     ),
     "sections": [
@@ -541,17 +550,17 @@ LOCAL["commercial"] = {
     "scenario": (
         "Say you have a 900 sq ft condo courtyard",
         "<p>Say you have a 900 sq ft shared courtyard at a Georgetown-style condo building near the Town "
-        "Center, currently thin St. Augustine that struggles under foot traffic between units. That project "
-        "gets quoted from a site visit rather than a flat per-square-foot number, since shared irrigation "
-        "lines, existing hardscape and the association's own approval process all factor into labor more than "
-        "a private backyard would. The board would need its own sign-off plus a CROA review before work "
+        "Center, currently thin St. Augustine that struggles under foot traffic between units. Pricing that "
+        "job takes a walk-through rather than a flat per-square-foot figure, since shared irrigation lines, "
+        "existing hardscape and the association's own approval process all weigh on labor more heavily than "
+        "a private backyard ever would. The board would need its own sign-off plus a CROA review before work "
         "starts, separate from the Osceola County permit for the parcel.</p>"
     ),
     "faqs": [
         faq("How is commercial turf priced in Celebration?",
-            "By the job, from a site visit or drawings, since a Town Center storefront, a condo courtyard and "
-            "a CDD common area all carry different access, irrigation and approval requirements. There's no "
-            "single per-square-foot number that fits all three."),
+            "From a walk-through or a set of drawings, not one flat number, since a Town Center storefront, a "
+            "condo courtyard and a CDD common area each carry different access, irrigation and approval "
+            "requirements. There's no single per-square-foot figure that fits all three."),
         faq("Can turf go in a Celebration CDD-maintained common area?",
             "It would need to go through the district's own process, since the CDD maintains the Downtown "
             "lake, esplanade and common-area landscaping as a unit of local government, not through CROA's "
@@ -569,10 +578,10 @@ LOCAL["sports"] = {
     "meta": "Sports and fitness turf in Celebration, FL is quoted per job, fitting compact bocce and putting-adjacent lanes into Manor and Estate Private Zones.",
     "h1": "Home sports turf sized for Celebration's compact lots",
     "lede": capsule(
-        "Sports and fitness turf in Celebration, Florida, a bocce lane, a small agility strip or a sled track, "
-        "is quoted per job from a site visit rather than a flat square-foot range, since layout matters more "
-        "than area alone. Lot size here runs smaller across the board than in most towns on our service map, "
-        "which narrows what actually fits before price ever enters the conversation."
+        "Fitting a bocce lane, a small agility strip or a sled track into a Celebration yard gets priced from "
+        "a site visit, not a flat square-foot number, because layout eats more of the budget than area does. "
+        "Lot size here runs smaller across the board than in most towns on our service map, which decides "
+        "what actually fits before price ever enters the conversation."
     ),
     "sections": [
         ("Manor and Estate lots have the only real room for a longer feature",
@@ -586,28 +595,32 @@ LOCAL["sports"] = {
          "a short putting fringe doubling as a chipping target, or a narrow sled-push lane tucked against a "
          "fence line. Fitting a sports surface into one of these smaller footprints means accepting a shorter, "
          "single-purpose design rather than scaling down a layout built for a bigger lot.</p>"),
-        ("CROA review applies to a sports feature the same as any hardscape change",
-         "<p>A bocce court, a batting cage frame or a sled track counts as a visible addition under CROA's "
-         "Design Guidelines whenever it can be seen from the street, an adjacent lot or a shared alley, which "
-         "means an Architectural Review Committee submittal typically runs alongside the Osceola County permit "
-         "for anything beyond a low-profile turf strip.</p>"),
+        ("A golf-course-facing feature draws CROA's review even when a fenced one wouldn't",
+         "<p>A bocce court or a sled lane tucked behind a privacy fence away from the alley can sometimes read "
+         "as low-profile enough to skip a lengthy Architectural Review Committee process, but the same feature "
+         "built along a Manor or Estate lot's open side toward the fairway doesn't get that pass, since a golf "
+         "cart path counts as a public sightline under CROA's Design Guidelines the same as the street does. "
+         "That distinction, not the sport itself, usually decides how long the paperwork takes.</p>"),
     ],
     "scenario": (
-        "Say you have a 12 by 30 ft strip on a Manor lot",
-        "<p>Say you have a 12 by 30 ft strip along the side yard of a Manor lot backing a stormwater pond, "
-        "wanting a synthetic sled and agility lane rather than mowed grass that stays soggy after a summer "
-        "storm. That project gets quoted from a site visit rather than a set range, since the lane's length "
-        "and the base depth needed for repeated sled traffic both factor into labor more than square footage "
-        "alone, and the pond means confirming the 10-foot setback before the layout is finalized.</p>"
+        "Say you have a 10 by 60 ft bocce lane on a golf-course Manor lot",
+        "<p>Say you have a Manor lot backing the golf course with room along the side yard for a regulation-"
+        "width bocce lane, 10 feet by 60 feet, sitting in view of the cart path rather than screened behind a "
+        "fence. Because that side of the lot counts as visible under CROA's Design Guidelines, the "
+        "Architectural Review Committee submittal has to cover the lane's retaining edge and base detail, not "
+        "just the turf spec, before the county permit gets filed. Pricing the lane still takes a site visit "
+        "rather than a flat number, since the base depth a true bocce surface needs under repeated play "
+        "weighs on labor more than the lane's length by itself.</p>"
     ),
     "faqs": [
         faq("What sports surfaces fit on a Celebration lot?",
             "A full bocce court or a longer agility lane generally needs a Manor or Estate lot's larger "
             "Private Zone. A Cottage, Bungalow or Garden lot usually fits only a shorter, single-purpose "
             "feature."),
-        faq("How is sports turf priced in Celebration?",
-            "By the job, from a site visit, since layout, length and any waterbody setback vary more across "
-            "sports surfaces here than they do across residential lawns of similar size."),
+        faq("Does a golf-course-facing sports feature need CROA approval even if it's small?",
+            "Usually yes. A cart path counts as a public sightline the same way a street does, so a compact "
+            "bocce lane or agility strip facing the fairway still goes through the Architectural Review "
+            "Committee even when a similar feature behind a privacy fence might not."),
     ],
     "sources": SRC,
 }
@@ -617,9 +630,9 @@ LOCAL["pavers"] = {
     "meta": "Turf between pavers in Celebration, FL is quoted per job, from alley-side paver strips to front-loaded driveways on newer Artisan Park lots.",
     "h1": "Turf ribbons and paver paths for Celebration's alleys and driveways",
     "lede": capsule(
-        "Turf set between pavers in Celebration, Florida is quoted per job rather than a flat square-foot "
-        "range, since an alley-side apron, a driveway ribbon and a stepping-stone path all use different "
-        "quantities of paver and turf for the same footprint. Most driveways here connect to a rear alley "
+        "Pricing turf between pavers in Celebration takes a site visit rather than one square-foot figure, "
+        "because an alley-side apron, a driveway ribbon and a stepping-stone path each call for a different "
+        "split of paver and turf across the same footprint. Most driveways here connect to a rear alley "
         "rather than the front street, which changes where this kind of project actually goes.</p>"
     ),
     "sections": [
@@ -644,11 +657,10 @@ LOCAL["pavers"] = {
     "scenario": (
         "Say you have a 25 ft alley apron",
         "<p>Say you have a 25 ft by 10 ft paver apron connecting a village lot's garage to the alley, with a "
-        "narrow turf ribbon planned along one edge to soften the hardscape. That project gets quoted from the "
-        "apron's drawings rather than a flat per-square-foot rate, since the paver base has to hold up to "
-        "regular vehicle and trash-service traffic while the turf strip beside it needs its own drainage path, "
-        "and coordinating both with the paver crew's schedule is part of the job as much as the turf "
-        "itself.</p>"
+        "narrow turf ribbon planned along one edge to soften the hardscape. Sizing that job means walking the "
+        "apron first, not quoting from a per-square-foot chart, since the paver base has to carry regular "
+        "vehicle and trash-service loads while the turf strip beside it needs a drainage path of its own, and "
+        "the two crews have to work off one shared grade rather than two separate ones.</p>"
     ),
     "faqs": [
         faq("Does an alley apron need a sturdier build than a front driveway strip?",
@@ -667,10 +679,11 @@ LOCAL["repair"] = {
     "meta": "Turf repair in Celebration, FL is quoted per visit, covering alley-yard edges worn by daily traffic and pond-backing lots near the golf course.",
     "h1": "Fixing turf on Celebration's alley yards and pond-backing lots",
     "lede": capsule(
-        "Turf repair in Celebration, Florida is quoted per visit rather than a flat square-foot rate, since a "
-        "lifted seam, a settled corner and a washed-out edge each take different work to fix. Two settings "
-        "account for most of the repair calls we'd expect in this town: alley-facing yards that see daily "
-        "traffic, and older installs on lots backing a pond or the golf course."
+        "A repair visit in Celebration gets priced after a walk of the yard, not from a flat square-foot "
+        "rate, because what's actually wrong, a lifted seam, a settled corner, infill that's washed thin, "
+        "changes the labor more than the size of the area does. Two things draw more repair calls here than "
+        "the rest of the lot: the alley-facing edge, and turf old enough to predate the state's current "
+        "infill rule."
     ),
     "sections": [
         ("Alley-yard edges take more day-to-day wear than a front lawn",
@@ -685,31 +698,37 @@ LOCAL["repair"] = {
          "natural point to confirm the existing footprint still meets that distance rather than simply "
          "patching the same layout back into place. Wind and water exposure at an open pond edge also works "
          "at a seam or a nailed border harder over the years than a lawn set back from any water feature.</p>"),
-        ("A base that was never built to today's washed-rock standard shows up eventually",
-         "<p>Turf installed in Celebration's earlier years, before the state formally required a washed, "
-         "open-graded base, sometimes sits on unwashed fill that binds into a crust over time, and Basinger "
-         "and Immokalee soils common to this part of the county make that crusting worse wherever the water "
-         "table already runs close to the surface. A repair call on one of these older installs often traces "
-         "back to that base rather than to the surface itself.</p>"),
+        ("A repair is the point to swap out infill the state no longer allows on a lawn",
+         "<p>Turf installed in Celebration before Rule 62-308.100 took effect on May 19, 2026 sometimes carries "
+         "a crumb rubber infill that was ordinary practice at the time, and a repair visit that involves "
+         "topping up or replacing infill is a natural point to change that out, since the rule now keeps "
+         "rubber or any other synthetic infill to the footprint of playground equipment and limits a plain "
+         "lawn to silica sand, zeolite or a coated sand product instead. Putting off that swap at a repair "
+         "just means doing it again at the next one.</p>"),
     ],
     "scenario": (
-        "Say you have an 8-year-old alley-yard strip",
-        "<p>Say you have a turf strip installed about eight years ago along a village lot's alley yard, with "
-        "one corner lifting after last season's storms and a soft, spongy feel underfoot near that same edge. "
-        "A repair visit checks whether the base washed out from years of alley runoff before simply renailing "
-        "the corner, since reseating the edge without addressing an eroded base underneath fixes the problem "
-        "for weeks rather than years. That diagnosis, more than the repair itself, is what the visit is quoted "
-        "around.</p>"
+        "Say you have a lifted corner in a 10-year-old alley yard",
+        "<p>Say you have a turf strip along a village lot's alley yard, installed about ten years ago with a "
+        "crumb rubber infill that was standard then, now lifting at one corner after last season's storms. "
+        "Because the fix stays inside the same footprint as the original install, CROA generally treats it as "
+        "maintenance rather than a new architectural change, so the visit itself doesn't need a fresh Design "
+        "Guidelines submittal the way a resized or relocated strip would. While the crew is already at that "
+        "corner, the crumb rubber washing out of it gets swapped for silica sand, since rubber infill on a "
+        "plain lawn isn't what the state allows today.</p>"
     ),
     "faqs": [
         faq("Why does alley-yard turf need more repair than a front lawn in Celebration?",
-            "Daily traffic along the alley cartway, garbage trucks, deliveries and foot traffic, works at an "
-            "edge harder over time than a shallow, quieter front yard ever sees, which is why alley-side "
-            "borders get checked first on a repair visit."),
+            "Daily traffic along the alley cartway, garbage trucks, deliveries and foot traffic, wears at an "
+            "edge harder over time than a shallow, quieter front yard ever experiences, which is why "
+            "alley-side borders get checked first on a repair visit."),
+        faq("Does a repair visit change what infill is used?",
+            "It can. If the original install used crumb rubber, common before May 2026, a repair is a "
+            "practical point to switch to silica sand, zeolite or coated sand, since the rule now keeps "
+            "rubber infill to the footprint of playground equipment on a residential lot."),
         faq("Does repairing pond-lot turf change how close it sits to the water?",
-            "It can. If the original install predates the current 10-foot setback, a repair visit is the "
-            "natural point to confirm the layout still meets that distance unless a seawall already separates "
-            "the yard from the water."),
+            "Sometimes. An install older than Rule 62-308.100 can sit closer to a pond than a new project "
+            "could today, so a repair is a fair point to re-measure the edge, with a seawall or bulkhead "
+            "counting as the only exception to that 10-foot floor."),
     ],
     "sources": SRC,
 }
@@ -719,47 +738,50 @@ LOCAL["cleaning"] = {
     "meta": "Turf cleaning in Celebration, FL is quoted by yard size and visit, timed around CDD street-tree leaf drop and moisture near ponds and the golf course.",
     "h1": "Keeping Celebration turf clean, from shaded alleys to pond-adjacent lawns",
     "lede": capsule(
-        "Turf cleaning in Celebration, Florida is quoted by yard size and how long it's been since the last "
-        "visit, not a flat square-foot rate. Two local factors set the schedule more than anything else here: "
-        "leaf drop from the mature street trees the CDD maintains, and how close a lawn sits to one of the "
-        "town's ponds or the golf course."
+        "Pricing a cleaning visit in Celebration comes down to yard size and time since the last one, not a "
+        "flat rate, since brushing infill upright, clearing debris and rinsing off haze take different time "
+        "depending on recent use. Two things move that schedule more than size does: how much canopy from "
+        "the CDD's street trees hangs over the yard, and how close the lot sits to a pond or the golf course."
     ),
     "sections": [
-        ("Mature street trees shed onto Private Zones as much as onto the street",
-         "<p>Street trees planted when Celebration's villages were new have grown large enough that their "
-         "canopies now reach past the sidewalk into the Private Zones behind them, and a Celebration lawn "
-         "under that canopy can collect enough leaf litter in a couple of weeks to start affecting drainage if "
-         "it's left alone. Clearing debris before it works down into the infill matters more on these "
-         "older, tree-covered lots than on a newer Artisan Park yard with a smaller canopy so far.</p>"),
-        ("Pond and golf-course-adjacent lawns hold more moisture between visits",
-         "<p>Lots backing a pond or a fairway water feature sit closer to Basinger soil's seasonal high water "
-         "table than lots on higher village ground do, and a lawn on that lower ground can need a tighter "
-         "cleaning schedule during the wettest months for that reason alone, independent of how well the turf "
-         "itself was built. Standing water anywhere near the infill layer is worth flagging on a cleaning "
-         "visit rather than waiting for a smell to develop.</p>"),
-        ("A tight Private Zone shows debris buildup faster than an open lawn",
-         "<p>Because so much of a Celebration lot's outdoor space sits inside a small Private Zone, debris and "
-         "infill wear tend to concentrate rather than spread out the way they would across an open half-acre "
-         "yard. A courtyard or alley-yard cleaning visit often covers less square footage than one at a larger "
-         "suburban home, but needs a similarly careful pass given how much traffic that small footprint "
-         "absorbs.</p>"),
+        ("An Alley Yard still has to look kept, even without irrigation running",
+         "<p>CROA's own guideline holds the owner responsible for keeping the Alley Yard \"fully irrigated and "
+         "maintained,\" language written before synthetic turf was a live option back there. A capped Alley "
+         "Yard can't meet the irrigated half of that anymore, so the maintained half carries more weight: "
+         "brushing the pile upright and clearing leaf litter before it flattens into the infill is what keeps "
+         "a strip along the alley reading as kept, to a CROA inspection walk or a neighbor passing on the "
+         "cartway.</p>"),
+        ("Lower ground near a pond holds moisture longer between visits",
+         "<p>A lawn on a Manor or Estate lot backing a pond or the golf course sits where Basinger soil's "
+         "water table runs closer to the surface than it does on higher village ground, and that extra "
+         "moisture under the base can leave infill damp well after a storm has passed elsewhere in town. "
+         "Checking for standing water at the infill layer during a visit catches that early, before a slow-"
+         "draining patch turns into a smell.</p>"),
+        ("A small Private Zone concentrates wear a bigger yard would spread out",
+         "<p>Because most of a Celebration lot's outdoor space sits inside a compact Private Zone rather than "
+         "a sprawling half-acre yard, foot traffic, pet use and falling debris all land on the same few "
+         "hundred square feet instead of spreading across an open lawn. A courtyard or alley-strip visit "
+         "usually covers less ground than one at a larger suburban home, but the concentrated wear still "
+         "calls for the same careful pass.</p>"),
     ],
     "scenario": (
-        "Say you have a 250 sq ft courtyard under a mature oak",
-        "<p>Say you have a 250 sq ft Private Zone courtyard shaded by an oak planted when the village was "
-        "built in the late 1990s, with visible leaf litter working into the infill after a few weeks without "
-        "attention. A cleaning visit there is quoted around that seasonal debris load and the time since the "
-        "last visit, not a flat per-square-foot number, since a courtyard that's gone months without clearing "
-        "needs meaningfully more work than one cleaned every few weeks through the drop season.</p>"
+        "Say you have a 250 sq ft Alley Yard strip going unbrushed",
+        "<p>Say you have a 250 sq ft strip of turf along a village lot's Alley Yard, capped since it went in "
+        "and now matting down at the high-traffic spot by the gate, with a neighbor's oak dropping enough "
+        "litter to start working into the pile. Pricing that visit depends on how long it's been since the "
+        "last brushing and rinse, not a flat per-square-foot figure, and the work does double duty: restoring "
+        "the pile also keeps the strip reading as \"maintained\" the way CROA's own Alley Yard language still "
+        "expects, even though nothing about it gets watered anymore.</p>"
     ),
     "faqs": [
-        faq("How often should turf under Celebration's street trees be cleaned?",
-            "More often during leaf-drop periods than the rest of the year, since mature canopies reaching "
-            "into a Private Zone can drop enough debris in a couple of weeks to start affecting drainage if "
-            "it's left alone."),
+        faq("Does an Alley Yard still need to look maintained once turf goes in?",
+            "Yes, in CROA's own terms. The guideline requiring the Alley Yard to stay maintained predates "
+            "synthetic turf, and with irrigation capped, brushing and clearing debris is what keeps that strip "
+            "reading as kept rather than neglected."),
         faq("Does turf near a Celebration pond need cleaning more often than an inland lot?",
-            "It can. Lots closer to a pond or the golf course sit nearer the seasonal high water table in "
-            "Basinger soil, which can call for a tighter cleaning schedule during the wettest months."),
+            "It can. Lots closer to a pond or the golf course sit nearer Basinger soil's seasonal high water "
+            "table, and that extra ground moisture can call for a tighter schedule during the wettest "
+            "months."),
     ],
     "sources": SRC,
 }
@@ -769,50 +791,57 @@ LOCAL["replacement"] = {
     "meta": "Turf replacement in Celebration, FL is quoted per job, for lawns installed in the town's first villages that are nearing the end of a typical service life.",
     "h1": "Replacing worn turf in Celebration's original villages and newer sections",
     "lede": capsule(
-        "Turf replacement in Celebration, Florida is quoted per job after a base inspection, not a flat "
-        "square-foot rate. The town's original villages were built starting when the first residents arrived "
-        "in 1996, which means turf converted in those early years, often among the first in this part of "
-        "Osceola County, is now old enough that replacement, not just repair, becomes the honest "
-        "recommendation."
+        "Replacing worn-out turf in Celebration gets priced from what the tear-out finds, not a flat "
+        "square-foot rate, since the base underneath and, on an older lawn, what infill comes out of it both "
+        "weigh on labor more than area alone. The town's original villages go back to 1996, so a meaningful "
+        "share of that turf now predates the state's infill rule and is old enough that replacement, not "
+        "another repair, is the honest call."
     ),
     "sections": [
-        ("The 1996-2003 villages are reaching turf's replacement window",
-         "<p>With turf generally lasting 10 to 20 years depending on stabilization, traffic and infill, a lawn "
-         "converted in Celebration's original villages during the early 2010s is now old enough that a base "
-         "inspection makes more sense than another round of spot repairs. Replacement at that point usually "
-         "means rebuilding the base to the state's current washed, open-graded standard rather than reusing "
-         "whatever unwashed fill sat underneath the original install.</p>"),
+        ("Pre-2026 lawns sometimes carry an infill the state no longer allows",
+         "<p>A lawn converted in one of Celebration's original villages before Rule 62-308.100 took effect on "
+         "May 19, 2026 may have gone in with a rubber crumb infill, an ordinary choice at the time and now "
+         "allowed only within the footprint of playground equipment. A full replacement is the point to "
+         "correct that: pulling the old turf out takes the infill with it, and the new lawn goes back down "
+         "with silica sand, zeolite or a coated sand product instead, while the base underneath gets rebuilt "
+         "to the state's current washed, open-graded standard at the same time.</p>"),
         ("Re-checking the pond setback on an older golf-lot or waterfront replacement",
-         "<p>An older turf install on a Manor or Estate lot backing a pond or the golf course sometimes "
-         "predates the state's current 10-foot waterbody setback, adopted as part of Rule 62-308.100 in May "
-         "2026, and a full replacement is the natural point to confirm the new layout meets that distance "
-         "rather than relaying turf in the same footprint as before.</p>"),
-        ("Artisan Park's newer turf isn't at this point yet",
-         "<p>Because Artisan Park was built after Celebration's original villages, most turf conversions there "
-         "are younger and further from the replacement window than lawns in Downtown or Lake Evalyn. A "
-         "homeowner comparing notes across the two sections shouldn't expect the same timeline, since the "
-         "underlying installs simply aren't the same age.</p>"),
+         "<p>An older turf install on a Manor or Estate lot backing a pond or the golf course can predate the "
+         "state's current 10-foot waterbody setback, and a full replacement is the point to bring the layout "
+         "in line with that distance instead of relaying the same footprint that was there before. A seawall "
+         "or bulkhead already standing between the yard and the water is the one case where that distance "
+         "doesn't move the new edge.</p>"),
+        ("A like-for-like replacement clears CROA faster than a resized one",
+         "<p>Because a full tear-out and relay counts as new construction under CROA's Design Guidelines, even "
+         "a straightforward like-for-like replacement still goes to the Architectural Review Committee, unlike "
+         "a small repair that stays inside an already-approved footprint. What changes is how quickly that "
+         "submittal moves: reproducing the same shape, edge and lot line the earlier approval covered "
+         "typically clears faster than a project that also grows the footprint toward the Front Façade Zone "
+         "or the alley.</p>"),
     ],
     "scenario": (
-        "Say you have a 2013-installed village front yard",
-        "<p>Say you have a front lawn converted to turf in 2013 in one of Celebration's original villages, now "
-        "matted flat near the walkway with a base that's started holding water after storms in a way it never "
-        "used to. At roughly 13 years old, that lawn sits within a typical service window but close enough to "
-        "the end of it that a replacement quote would include probing the base in more than one spot before "
-        "deciding whether the rock underneath can stay or needs to come out with the old turf.</p>"
+        "Say you have a 2013-installed village front yard with rubber infill",
+        "<p>Say you have a front lawn converted to turf in 2013 in one of Celebration's original villages, put "
+        "in with a rubber crumb infill that was ordinary practice then, now matted near the walkway with a "
+        "base that holds water after storms in a way it never used to. At roughly 13 years old the turf "
+        "itself sits within a typical service life, but the infill doesn't belong on a plain lawn anymore "
+        "under the state's rule, so a full replacement swaps it for silica sand or zeolite while the base "
+        "gets rebuilt. Because the new lawn keeps the footprint CROA already approved, the Architectural "
+        "Review Committee process for it tends to move faster than a first-time submittal would.</p>"
     ),
     "faqs": [
         faq("How do I know if Celebration turf needs replacing instead of repairing?",
-            "A base inspection at more than one spot is the reliable way to tell. Turf that's matted but "
-            "sitting on a base that still drains fine can often be repaired; a base that's crusted or holding "
-            "water usually means replacement."),
+            "It comes down to what a tear-out would find. Turf that's just matted on a base that still drains "
+            "can often be repaired in place; a base that's crusted or holding water, or a rubber infill on a "
+            "plain lawn, points toward a full replacement instead."),
         faq("Does replacing older turf near a Celebration pond change the setback?",
-            "It can. If the original install predates the state's current 10-foot setback, a replacement "
-            "project resets the layout to meet that distance unless a seawall already separates the yard from "
-            "the water."),
-        faq("Is turf in Artisan Park as old as turf in Celebration's original villages?",
-            "Generally no. Artisan Park was built after the town's original villages, so turf conversions "
-            "there tend to be younger and further from a typical replacement window."),
+            "It can. An install that predates the state's current 10-foot setback gets brought in line with "
+            "it during a full replacement, with a seawall or bulkhead as the one exception that keeps the "
+            "edge where it already sits."),
+        faq("Does a like-for-like turf replacement still need CROA approval?",
+            "Yes, since a full tear-out and relay counts as new construction under the Design Guidelines. It "
+            "typically clears the Architectural Review Committee faster than a first-time submittal, though, "
+            "when the new lawn reproduces the shape and edge the earlier approval covered."),
     ],
     "sources": SRC,
 }

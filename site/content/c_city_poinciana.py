@@ -59,21 +59,21 @@ HUB = page(
             "one applies, and see our " + a("/laws/permits/osceola-county/", "Osceola County permit page")
             + " and " + a("/laws/permits/polk-county/", "Polk County permit page") + " for what "
             "each office asks for.</p>"),
-        table("Poinciana yard types and what we do differently",
-              ["Yard type", "Where", "What's different", "What we do differently"],
+        table("How a Poinciana lot's paperwork changes by pin on the map",
+              ["Where the lot sits", "Who signs off on ground cover", "What changes in the build"],
               [
-                  ["APV village lot", "Villages 1-9, Osceola or Polk side", "Builder sod on a small fenced lot, Design Control Board review",
-                   "File the landscaping plan with the DCB before ordering material, since ground cover is part of the approval"],
-                  ["Solivita villa", "Polk County, gated, golf course frontage common", "Architectural Review Committee approval, no tennis or play courts allowed on the lot",
-                   "Route a lawn or green change through the ARC's landscape submittal rather than a general building permit"],
-                  ["Broadmoor mobile home lot", "Village 9, Osceola County, off Poinciana Boulevard", "Public sewer required, no septic tank, no fencing where a drainage canal runs the lot line",
-                   "Build around the sewer connection and leave the canal bank open where fencing isn't allowed"],
-                  ["Canal- or pond-backed lot", "Either county, common across Poinciana's platted grid", "State setback measured from the water's edge, not the house",
-                   "Hold turf back at least 10 feet from the bank unless a seawall already separates the yard from the water"],
-                  ["Lot near the Lake Marion Creek buffer", "Near Village 7 and Solivita's northern edge", "Managed conservation land runs along the rear property line",
-                   "Keep grading and turf inside the platted lot and clear of the management area's boundary"],
+                  ["APV village lot, Villages 1-9", "County building office plus the DCB's landscape review",
+                   "Submit the turf plan as a sodding alternative before material gets ordered"],
+                  ["Solivita villa", "Polk County plus the ARC's separate landscape submittal",
+                   "Route the change through Solivita's own review, not APV's DCB"],
+                  ["Broadmoor mobile home lot, Village 9", "Osceola County; public sewer, no septic tank",
+                   "Keep the sewer connection clear and leave the canal bank open where fencing is barred"],
+                  ["Canal- or pond-backed lot, either county", "State water-quality rule measured from the bank",
+                   "Start turf ten feet off the water unless a seawall already stands there"],
+                  ["Lot against the Lake Marion Creek buffer", "Managed conservation land along the rear line",
+                   "Keep grading and turf inside the platted lot, clear of the buffer boundary"],
               ],
-              "Prices don't change by yard type; access, base depth and paperwork do."),
+              "A lot's paperwork changes with its pin on the map; the price per square foot does not."),
         sec("Which office reviews the permit, and how do you check a parcel?",
             "<p>" + ext("https://www.osceola.org/Doing-Business/Building-and-Permits", "Osceola County's Building and Permits office")
             + " covers the Osceola-side villages at 407-742-0200, with an online permit portal for "
@@ -188,9 +188,11 @@ HUB = page(
             "separately from APV's Design Control Board. Neither document names synthetic turf "
             "specifically."),
         faq("How close can turf go to a canal or pond in Poinciana?",
-            "At least 10 feet from the water's edge, unless a seawall or bulkhead already separates "
-            "the yard from the water. The same setback applies to a retention pond or a stretch of "
-            "the Lake Marion Creek conservation buffer near Village 7 and Solivita."),
+            "Ten feet, measured from the canal or pond's actual edge rather than the house or the "
+            "fence line, is the state's minimum; a property with a seawall or bulkhead already in "
+            "place satisfies that distance without an added gap. The same measurement governs the "
+            "Lake Marion Creek buffer between Village 7 and Solivita, where the creek itself sets "
+            "the line rather than a platted lot boundary."),
         faq("Is Poinciana on septic tanks or public sewer?",
             "Toho Water Authority provides both water and sewer service on both the Osceola and "
             "Polk sides, according to the utility's own service-area page. Broadmoor's mobile home "
@@ -219,11 +221,12 @@ LOCAL["residential"] = {
     "meta": "Artificial grass in Poinciana, FL runs $8-$18 a sq ft installed as of September 2026. APV's fully-sodded rule, county permits and starter-home lots, explained.",
     "h1": "Artificial grass for Poinciana's starter-home villages",
     "lede": capsule(
-        f"A synthetic lawn in Poinciana, Florida costs {price('residential')} a square foot "
-        "installed as of September 2026, the same range as anywhere else in Central Florida. "
-        "What changes locally is the paperwork: most lots sit inside an Association of Poinciana "
-        "Villages neighborhood built around a fully-sodded lawn standard, and which county's "
-        "building office reviews the work depends on which village the address falls in."
+        f"Installed cost for a synthetic Poinciana lawn sits at {price('residential')} a square "
+        "foot as of September 2026, the same market range Central Florida sees regardless of "
+        "address, since price doesn't move by ZIP. What does move here is the paperwork: most "
+        "lots sit inside an Association of Poinciana Villages neighborhood built around a "
+        "fully-sodded lawn standard, and which county's building office reviews the work depends "
+        "on which village the address falls in."
     ),
     "sections": [
         ("Sod is the written baseline, so a lawn conversion needs its own approval",
@@ -299,13 +302,16 @@ LOCAL["pet"] = {
          "smaller than a lot of dog-run layouts we'd otherwise recommend for two large dogs, which "
          "means the drainage and infill choice inside that footprint matter more here than they "
          "would on an open acreage lot with room to spread the run out.</p>"),
-        ("A fenced backyard clears the visibility question a front yard can't",
-         "<p>Under " + src("fs7203045", "F.S. 720.3045") + ", an association can't restrict "
-         "something not visible from the parcel's frontage or an adjacent parcel, and a privacy-fenced "
-         "backyard on a standard Poinciana lot generally clears that bar. A side yard facing a "
-         "neighbor's driveway, or a corner lot with two street-facing sides, doesn't get the same "
-         "protection automatically, which is worth checking before assuming a run built there is "
-         "shielded from review the same way a plain rear-yard run would be.</p>"),
+        ("Statute protects the run from being banned, not from being reviewed",
+         "<p>" + src("fs7203045", "F.S. 720.3045") + " keeps the Design Control Board from banning a "
+         "dog run that a neighbor or the street can't see, but it doesn't excuse the run from the "
+         "same landscaping submittal any other ground-cover change goes through. A run tucked "
+         "behind a privacy fence on an interior village lot still needs the DCB paperwork "
+         "describing the turf, the dog house and the six-foot enclosure height before work starts; "
+         "the statute only stops the board from saying no on sightline grounds once that paperwork "
+         "is filed. A corner lot fenced along two street-facing sides is the case worth flagging "
+         "early, since neither side may clear the visibility bar the way a plain rear yard "
+         "does.</p>"),
         ("Flatwoods soil raises the stakes on drainage more than on a plain lawn",
          "<p>Poinciana's ground maps to the same fine-sand flatwoods series common across this part "
          "of Osceola and Polk, Immokalee, Smyrna and Myakka among them, with a water table that "
@@ -332,10 +338,11 @@ LOCAL["pet"] = {
             "per household along with a six-foot height limit and a one-run maximum. Solivita's "
             "rules are separate and don't set the same numeric cap, but any addition there still "
             "needs ARC approval first."),
-        faq("Does a Poinciana HOA count pet turf as artificial turf it can restrict?",
-            "If it sits inside a fenced backyard not visible from the street or an adjacent lot, "
-            "F.S. 720.3045 protects it regardless of the label. A run along a side yard facing a "
-            "neighbor's driveway may not get that same protection, so check sightlines first."),
+        faq("Does F.S. 720.3045 mean a Poinciana dog run skips DCB review entirely?",
+            "No. The statute stops the board from banning a run it can't see from the street or an "
+            "adjacent lot, but the run still needs the same landscaping submittal any other "
+            "ground-cover change goes through. A corner lot fenced on two street-facing sides is "
+            "worth checking before assuming either side counts as hidden."),
     ],
     "sources": SRC,
 }
@@ -345,11 +352,11 @@ LOCAL["putting"] = {
     "meta": "Backyard putting greens in Poinciana, FL run $14-$30 a sq ft installed as of September 2026, sized for Solivita's golf-front villas and standard APV lots alike.",
     "h1": "Backyard greens for Solivita's fairways and Poinciana's village lots",
     "lede": capsule(
-        f"A backyard putting green in Poinciana, Florida runs {price('putting')} a square foot "
-        "installed as of September 2026. Lot type drives the design more than almost anything "
-        "else here: a Solivita villa backing onto a fairway has a fence setback and a review "
-        "board built around golf-course sightlines, while a standard village lot on the Osceola "
-        "or Polk side has more straightforward paperwork but less room to work with."
+        f"Installed cost for a Poinciana putting green sits at {price('putting')} a square foot "
+        "as of September 2026, but the lot decides the design more than the price range does: a "
+        "Solivita villa backing a fairway carries a fence setback and a review board built around "
+        "golf-course sightlines, while a standard village lot on the Osceola or Polk side has "
+        "plainer paperwork and a smaller footprint to work with."
     ),
     "sections": [
         ("Solivita's fence rule shapes a green built along a fairway",
@@ -441,11 +448,11 @@ LOCAL["playground"] = {
         "Say you have a 220 sq ft corner of a Village 4 backyard",
         "<p>Say you have a 220 sq ft corner of a fenced Village 4 backyard set aside for a swing "
         "set on a 5-foot fall height, tucked toward the rear of the house the way APV's rule "
-        "expects. At " + price("playground", True) + " a square foot, a shock-pad system sized to "
-        "that equipment runs roughly $2,640 to $4,180, filed with the DCB as a landscaping "
-        "alternative alongside the play structure's own placement request. Since the lot sits on "
-        "flatwoods soil with a shallow water table for parts of the year, the base underneath "
-        "carries more of the drainage job than it would on higher ground.</p>"
+        "expects. At " + price("playground", True) + " a square foot, the shock pad built to "
+        "match that fall height prices out to roughly $2,640 to $4,180, filed with the DCB as a "
+        "landscaping alternative alongside the play structure's own placement request. Since the "
+        "lot sits on flatwoods soil with a shallow water table for parts of the year, the base "
+        "underneath carries more of the drainage job than it would on higher ground.</p>"
     ),
     "faqs": [
         faq("Does APV restrict where a play structure can go in the yard?",
@@ -465,57 +472,62 @@ LOCAL["pool"] = {
     "meta": "Pool and lanai turf in Poinciana, FL prices like a residential lawn, $8-$18 a sq ft as of September 2026, for cages built under two different design boards.",
     "h1": "Turf around Poinciana pool cages, from APV villages to Solivita",
     "lede": capsule(
-        f"Turf around a Poinciana pool or inside a screened lanai prices the same as a "
-        f"residential lawn, {price('residential')} a square foot as of September 2026. What "
-        "differs by village is the pool rule itself: APV allows an above-ground pool behind a "
-        "solid privacy fence, while Solivita bans above-ground pools outright and requires ARC "
-        "approval for any in-ground one."
+        f"A Poinciana pool deck or screened lanai turf job prices at the residential rate, "
+        f"{price('residential')} a square foot as of September 2026, since the material and "
+        "install method don't change for a water feature. What changes by village is the pool "
+        "rule that gets checked first: APV requires a solid privacy fence around an above-ground "
+        "pool, while Solivita bars above-ground pools altogether and routes any in-ground pool "
+        "through the ARC."
     ),
     "sections": [
-        ("Two different pool rules, one turf answer",
-         "<p>APV's Design Control Board Criteria permit an in-ground pool without special review "
-         "and allow an above-ground pool only inside a fully enclosed six-foot solid privacy "
-         "fence tall enough to block the view from any public side. Solivita's Architectural "
-         "Review Requirements go further, permitting in-ground pools with ARC sign-off but "
-         "prohibiting above-ground pools entirely. Whichever rule applies, the turf around the "
-         "cage's edge is the same product and the same install method, since a screened enclosure "
-         "changes the drainage detail far more than which association wrote the pool rule.</p>"),
-        ("Sod struggles hardest right at the deck edge",
-         "<p>A pool cage poured on compacted fill up to the deck edge creates the same narrow, "
-         "high-traffic strip in Poinciana that it does anywhere else in Central Florida: the fill "
-         "drains differently than native ground, foot traffic concentrates at the gate, and "
-         "chemical splash browns a band of grass that never fully recovers between waterings. That "
-         "combination is why the ring around a screened pool is often the first place a homeowner "
-         "here asks about turf, ahead of the rest of the lawn. "
-         + post("install-artificial-turf-over-concrete-pavers-or-grass", "Our guide to installing turf over an existing concrete deck")
-         + " covers the base detail that changes when turf meets a slab.</p>"),
-        ("A canal- or pond-adjacent lanai still has to clear the state setback",
-         "<p>A smaller number of Poinciana pool homes sit close to a drainage canal or a retention "
-         "pond on the lot's edge, and turf around that pool cage still has to respect the state's "
-         "10-foot waterbody setback measured from the water, not from the pool itself, unless a "
-         "seawall or bulkhead already separates the two. That distance can trim the usable turf "
-         "area on a lanai built close to an open bank more than the deck's footprint alone would "
-         "suggest.</p>"),
+        ("An above-ground pool's fence often does double duty",
+         "<p>An above-ground pool on an APV lot needs a fully enclosed six-foot privacy fence "
+         "before the DCB will approve it, tall enough that the pool can't be seen from a public "
+         "side of the property. That same fence usually screens whatever turf goes in around the "
+         "deck, so the visibility protection under " + src("fs7203045", "F.S. 720.3045")
+         + " and the pool fence often line up on the same enclosure. Solivita skips that "
+         "arrangement by prohibiting above-ground pools outright; an in-ground pool there still "
+         "needs ARC sign-off before a shovel goes in the ground, turf included.</p>"),
+        ("The narrow strip against the cage rarely holds sod",
+         "<p>Most Poinciana pool cages sit on a concrete slab poured to the screen frame, and the "
+         "strip of ground just outside that slab, where a gate opens onto the yard, takes more "
+         "foot traffic and more chlorine splash-out than any other few feet of lawn on the "
+         "property. Sod planted there rarely gets the recovery time between waterings that the "
+         "rest of the yard does, since the gate path compacts the same track day after day. That "
+         "narrow strip, not the open lawn beyond it, is usually the first section a homeowner "
+         "asks about, and it's the section where a drainage underlay under the turf backing "
+         "matters most, since the slab sheds water instead of letting it soak in the way native "
+         "sand does. " + post("install-artificial-turf-over-concrete-pavers-or-grass", "Our guide to installing turf over an existing concrete deck")
+         + " covers what changes when turf meets that kind of base.</p>"),
+        ("A canal-adjacent lanai puts the setback line inside the yard, not at its edge",
+         "<p>Poinciana's platted grid put a canal or a retention pond behind a meaningful share "
+         "of its pool lots, and the state's water rule doesn't care how far the pool itself sits "
+         "from the bank, only how far the turf does. Where the yard narrows between the screen "
+         "frame and an open canal edge, the ten-foot line often falls inside the lanai rather "
+         "than along the property's rear boundary, which can leave a strip of exposed ground "
+         "between the turf and the water unless a seawall already stands there. Confirming that "
+         "line before the layout is drawn avoids relaying a section of turf a second time.</p>"),
     ],
     "scenario": (
-        "Say you have a 300 sq ft pool deck ring",
-        "<p>Say you have a 300 sq ft ring of turf between a screened pool cage and the rear fence "
-        "on a Village 6 lot, where the original sod is worn to dirt along the gate path. At "
-        + price("residential", True) + " a square foot, that section runs roughly $3,000 to "
-        "$4,800, glued and seamed to the concrete deck's edge with a drainage underlay so water "
-        "clears the screen track. Since the lot doesn't back onto a canal or pond, the layout "
-        "doesn't need to account for the state's waterbody setback, though the DCB application "
-        "still covers the landscaping change itself.</p>"
+        "Say you have a 260 sq ft strip around a screened cage",
+        "<p>Say you have a 260 sq ft strip of turf between a screened pool cage and the rear "
+        "property line on a Village 4 lot, thin and patchy along the gate path where chlorine "
+        "splash-out has browned the grass for years. Priced at " + price("residential", True)
+        + " a square foot, that section runs roughly $2,600 to $4,160, seamed and glued to the "
+        "slab edge with the drainage underlay a concrete base needs. Because this particular lot "
+        "doesn't back onto a canal or pond, the waterbody setback never enters the layout, though "
+        "the DCB still reviews the ground-cover change the same as it would for a lot that "
+        "did.</p>"
     ),
     "faqs": [
         faq("Can I have an above-ground pool with turf around it in Poinciana?",
-            "It depends on the village. APV allows an above-ground pool behind a fully enclosed "
-            "six-foot privacy fence; Solivita bans above-ground pools entirely and only permits "
-            "in-ground pools with ARC approval."),
+            "Only behind a fully enclosed six-foot privacy fence on the APV side, where the DCB "
+            "approves it as part of that fence requirement; Solivita bans above-ground pools "
+            "entirely and only permits an in-ground pool with ARC sign-off."),
         faq("Does pool-area turf cost more than a plain Poinciana lawn?",
-            "It prices in the same range, though small glue-down sections against a concrete deck "
-            "often land toward the higher end because of the extra edge work and drainage underlay "
-            "a slab requires."),
+            "It prices in the same range as any residential lawn; a small glue-down section "
+            "against a slab just tends to land near the top of that range because of the extra "
+            "edge and underlay work concrete requires."),
     ],
     "sources": SRC,
 }
@@ -525,11 +537,12 @@ LOCAL["str"] = {
     "meta": "Short-term rental turf in Poinciana, FL is a small market compared with Kissimmee's US-192 corridor. Association rules and county zoning both shape what's allowed.",
     "h1": "Rental-home turf where Poinciana isn't built for nightly guests",
     "lede": capsule(
-        f"Turf for a Poinciana rental property prices like a residential lawn, "
-        f"{price('residential')} a square foot as of September 2026, but the market for it is "
-        "small compared with the nightly-rental subdivisions closer to the theme parks. "
-        "Poinciana was built and is still governed as a family and retiree community, and both "
-        "county zoning and the village associations shape what a rental property can actually do."
+        f"A rental property in Poinciana prices its turf at the same residential rate, "
+        f"{price('residential')} a square foot as of September 2026, but comparatively few of "
+        "these jobs come from nightly-rental listings the way they would closer to the theme "
+        "parks. Poinciana was built and is still governed as a family and retiree community, and "
+        "both county zoning and the village associations shape what a rental property can "
+        "actually do."
     ),
     "sections": [
         ("Poinciana isn't a nightly-rental subdivision the way Storey Lake or ChampionsGate is",
@@ -581,11 +594,11 @@ LOCAL["commercial"] = {
     "meta": "Commercial turf in Poinciana, FL is quoted per job from a site visit, covering APV and Solivita amenity centers, clubhouses and community entrances.",
     "h1": "Turf for Poinciana's clubhouses, entrances and amenity campuses",
     "lede": capsule(
-        "Commercial turf in Poinciana, Florida is quoted per job from a site visit or drawings "
-        "rather than one square-foot range, since a clubhouse lawn, a community entrance median "
-        "and a commercial parcel each carry different drainage and access needs. Much of the "
-        "commercial-scale work here sits inside the same design-review structure that governs a "
-        "single home, just at a larger footprint."
+        "A clubhouse lawn, a village entrance median and a commercial parcel in Poinciana each "
+        "price from a site visit or a set of drawings rather than a single square-foot figure, "
+        "since drainage and access needs differ by project more than they do between two "
+        "backyards. Much of that commercial-scale work still answers to the same design-review "
+        "structure that governs an individual lot, just at a larger footprint."
     ),
     "sections": [
         ("Amenity centers answer to the same design boards as individual lots",
@@ -598,34 +611,36 @@ LOCAL["commercial"] = {
          "requires. A turf project for either kind of common area should expect that same layer "
          "of review before a county permit even enters the picture.</p>"),
         ("Growth is pulling more commercial construction toward the corridor",
-         "<p>Poinciana's population growth since the 1990s has brought retail, medical offices and "
-         "new institutional buildings along the roads connecting the villages, and much of that "
-         "construction sits on the same graded, flatwoods-adjacent ground as the residential lots "
-         "around it. The same drainage planning that matters for a single backyard, keeping runoff "
-         "on the property and clear of any swale, applies at a larger scale to a commercial pad or "
-         "a shared clubhouse lawn.</p>"),
+         "<p>Retail strips, medical offices and new institutional buildings have followed "
+         "Poinciana's population growth since the 1990s out along the roads connecting the "
+         "villages, most of it built on the same graded, flatwoods-adjacent ground the "
+         "surrounding houses sit on. A commercial pad built on that ground has to solve the "
+         "identical drainage problem a backyard does, keep water inside the property line and "
+         "out of the nearest swale, just scaled up to a parking apron or a shared clubhouse lawn "
+         "instead of a fenced yard.</p>"),
         ("City or county code still governs the building itself",
-         "<p>Whichever design board signs off on the appearance, the underlying commercial "
-         "structure still has to meet Osceola County's or Polk County's building and zoning code "
-         "for that parcel, and a commercial site plan typically runs a longer review timeline than "
-         "the more routine path available for a residential permit. Confirming both the "
-         "association's process and the county's timeline early keeps a landscape contractor's "
-         "schedule from slipping against a larger build-out.</p>"),
+         "<p>Design-board approval never substitutes for the underlying zoning code: the building "
+         "still has to satisfy Osceola County's or Polk County's rules for that parcel, and a "
+         "commercial site plan usually takes longer to clear than the more routine review a "
+         "single home's permit gets. Lining up both approvals, the association's and the "
+         "county's, before scheduling a crew keeps a bigger build-out from stalling halfway "
+         "through.</p>"),
     ],
     "scenario": (
         "Say you have a 1,000 sq ft village entrance median",
-        "<p>Say you have a 1,000 sq ft entrance median at an APV village gate, currently St. "
-        "Augustine that browns out every dry season despite a working irrigation system. That "
-        "project gets quoted from a site visit rather than a flat per-square-foot number, since "
-        "the median's curbing, existing irrigation removal and traffic exposure all factor into "
-        "labor differently than a private backyard would. The village association's own approval "
-        "process runs alongside, not in place of, whatever county code applies to that median.</p>"
+        "<p>Say you have a 1,000 sq ft entrance median at an APV village gate, sod that's patchy "
+        "along the curb line where mower decks scalp it every cut and the irrigation heads miss "
+        "the corners. Pricing that median starts with a site visit rather than a square-foot "
+        "rate, since curb radius, how much of the old irrigation gets pulled, and daytime "
+        "traffic past the gate all change the labor math in a way a private backyard never does. "
+        "The DCB's own review still runs alongside whatever Osceola or Polk County requires for "
+        "the parcel, not instead of it.</p>"
     ),
     "faqs": [
         faq("How is commercial turf priced in Poinciana?",
-            "By the job, from a site visit or drawings, since access, existing irrigation, curbing "
-            "and traffic exposure vary more between commercial sites than between residential "
-            "backyards of similar size."),
+            "Each project gets its own site-visit quote rather than a square-foot rate, since "
+            "access, existing irrigation, curb work and how much daytime traffic passes the site "
+            "all vary more between commercial jobs than between two similarly sized backyards."),
         faq("Does an amenity center need its own approval on top of a county permit?",
             "Yes. APV's Design Control Board or Solivita's Architectural Review Committee reviews "
             "the appearance and landscaping separately from whatever building department has "
@@ -639,53 +654,58 @@ LOCAL["sports"] = {
     "meta": "Home sports turf in Poinciana, FL is quoted per job. Solivita bars courts on individual lots outright, while APV village lots leave more room to work with.",
     "h1": "Sports and fitness turf on Poinciana's village-sized lots",
     "lede": capsule(
-        "Sports and fitness turf in Poinciana, Florida, a bocce strip, an agility lane or a "
-        "home-gym sled track, is quoted per job from a site visit rather than a flat "
-        "square-foot range, since layout and length matter more than area alone. Where it fits "
-        "depends heavily on which village the lot sits in, since one of Poinciana's largest "
-        "communities rules out on-lot courts entirely."
+        "Sports and fitness turf in Poinciana, a bocce lane, an agility strip or a home-gym sled "
+        "track, gets quoted per job once the layout and length are known, not from a flat "
+        "square-foot rate, since a narrow lane costs differently than an equivalent patch of "
+        "lawn. Which village a lot sits in matters more here than almost anywhere else in the "
+        "build, since Solivita rules out an on-lot court entirely."
     ),
     "sections": [
         ("Solivita's rule is worth stating plainly: courts aren't allowed",
-         "<p>Solivita's Architectural Review Requirements state that \"tennis courts, play courts "
-         "and game courts are not permitted within Lots,\" which rules out a home sports surface "
-         "on an individual villa regardless of size or design. A homeowner there asking about a "
-         "sports surface is more often looking at a small fitness strip, like a sled track along a "
-         "side yard, than a court-style layout, and even that still needs ARC approval as any "
-         "other landscaping change would.</p>"),
+         "<p>Solivita's Architectural Review Requirements state plainly that \"tennis courts, play "
+         "courts and game courts are not permitted within Lots,\" which takes a fixed sports "
+         "surface off the table for any individual villa there regardless of size or design. What "
+         "a Solivita homeowner usually ends up asking for instead is something narrower, a sled "
+         "or agility strip along a side yard rather than a marked court, and even that "
+         "scaled-down request still needs the same ARC sign-off as any other exterior "
+         "change.</p>"),
         ("A standard APV village lot has more room to work with, not more approval to skip",
-         "<p>Outside Solivita, a village lot on the Osceola or Polk side doesn't carry the same "
-         "court ban, and a bocce strip or a compact agility lane can fit along a side yard or "
-         "backyard fence line. The DCB's setback rules still apply, ancillary structures 10 feet "
-         "from the rear property line and seven and a half feet from the side, and basketball "
-         "hoops specifically are limited to one per household in one of three approved locations. "
-         "A sports surface layout has to work inside those same lines.</p>"),
+         "<p>Outside Solivita, the DCB's Design Control Board Criteria don't ban a court the way "
+         "Solivita's do, but they still box in where one can go: an ancillary structure has to "
+         "sit at least 10 feet off the rear property line and seven and a half feet off the "
+         "side, and a basketball hoop is capped at one per household in one of three approved "
+         "locations. A bocce lane or a compact agility strip fits inside those same setbacks "
+         "along a side or rear fence line on a standard village lot, more room than Solivita "
+         "allows but still a bounded footprint rather than an open one.</p>"),
         ("Flatwoods drainage matters more on a longer, narrower surface",
-         "<p>A sled track or agility lane runs longer and narrower than a typical lawn section, "
-         "which means more of its footprint sits at whatever grade the base was built to, and on "
-         "Poinciana's flatwoods soil, that grade has to move water off a longer run just as "
-         "reliably as it does off a compact square. " + post("artificial-turf-glossary", "Our glossary of turf terms")
-         + " is a useful reference when comparing pile height and backing options across a sports "
-         "surface versus a plain lawn.</p>"),
+         "<p>A sled lane or an agility strip runs long and narrow compared with a lawn section, "
+         "which means a bigger share of its footprint sits right at whatever grade the crew "
+         "builds into the base. On Poinciana's flatwoods soil, that grade has to carry water off "
+         "a run twenty or thirty feet long just as reliably as it clears a compact square of "
+         "lawn, or the low end of the lane holds water the rest of the yard sheds fine. "
+         + post("artificial-turf-glossary", "Our glossary of turf terms")
+         + " is worth checking when comparing pile height and backing options between a sports "
+         "lane and a plain lawn.</p>"),
     ],
     "scenario": (
-        "Say you have a 15 by 40 ft side yard",
-        "<p>Say you have a 15 by 40 ft side yard along the fence line of a standard Village 8 "
-        "lot, flat and clear, wanting a sled and agility lane rather than mowed grass that stays "
-        "soggy after a summer storm. That project gets quoted from a site visit rather than a set "
-        "range, since the lane's length and the base depth needed for repeated sled traffic both "
-        "factor into labor more than square footage alone. The same request on a Solivita villa "
-        "wouldn't move forward as a fixed court, though a smaller fitness strip could still be "
-        "proposed through the ARC.</p>"
+        "Say you have a 12 by 35 ft side yard",
+        "<p>Say you have a Village 8 side yard, 12 feet wide and running 35 feet along the fence "
+        "line, currently mowed grass that holds water for a day or two after any real summer "
+        "storm. A sled and agility lane built into that strip clears the DCB's seven-and-a-half-"
+        "foot side setback with room to spare, and gets priced from a site visit rather than a "
+        "set range, since the base depth needed for repeated sled traffic drives labor more than "
+        "the lane's square footage does. The same layout on a Solivita villa would never clear as "
+        "a fixed lane, though a shorter fitness strip could still go in front of the ARC.</p>"
     ),
     "faqs": [
         faq("Can I put in a home sports court in Solivita?",
-            "No. Solivita's Architectural Review Requirements specifically state that tennis, "
-            "play and game courts aren't permitted on individual lots, regardless of size or "
-            "design."),
+            "No. Solivita's Architectural Review Requirements rule out tennis, play and game "
+            "courts on any individual lot regardless of size or design; a smaller fitness lane "
+            "can still go before the ARC as a landscaping request."),
         faq("How is sports turf priced in Poinciana?",
-            "By the job, from a site visit, since layout, length and base depth vary more across "
-            "sports surfaces than they do across residential lawns of similar size."),
+            "Each lane or court gets its own site-visit quote instead of a square-foot rate, "
+            "since length, layout and the base depth a specific surface needs vary more here "
+            "than they do between two similarly sized lawns."),
     ],
     "sources": SRC,
 }
@@ -695,11 +715,11 @@ LOCAL["pavers"] = {
     "meta": "Turf between pavers in Poinciana, FL is quoted per job, working within APV's driveway width limits and walkway rules that apply across the villages.",
     "h1": "Turf ribbons and paver paths built to Poinciana's driveway rules",
     "lede": capsule(
-        "Turf set between pavers in Poinciana, Florida is quoted per job rather than a flat "
-        "square-foot range, since a driveway ribbon, a stepping-stone path and a patio border "
-        "each use different quantities of paver and turf for the same footprint. APV's own "
-        "driveway rules set a hard width limit that shapes the layout before the design gets "
-        "drawn."
+        "A driveway ribbon, a stepping-stone path and a patio border in Poinciana each use "
+        "different quantities of paver and turf for the same footprint, which is why this work "
+        "gets priced per job rather than at a flat rate per square foot. Here the layout starts "
+        "with APV's own driveway width limit, a hard number that shapes the design before anyone "
+        "draws it."
     ),
     "sections": [
         ("APV's width limits set the driveway layout first",
@@ -728,11 +748,12 @@ LOCAL["pavers"] = {
     "scenario": (
         "Say you have a 40 ft driveway ribbon",
         "<p>Say you have a 40 ft by 3 ft turf ribbon planned down the center of a new paver "
-        "driveway on a Village 3 lot, installed alongside the pavers themselves and staying well "
-        "under the 24-foot combined width cap. That project gets quoted from the driveway's "
-        "drawings rather than a flat per-square-foot rate, since the paver base and the turf base "
-        "have to meet at one consistent grade despite compacting differently, and the DCB "
-        "application covers both materials as one submittal rather than two separate approvals.</p>"
+        "driveway on a Village 3 lot, going in alongside the pavers themselves and staying well "
+        "under the 24-foot combined width cap. Pricing comes from the driveway's own drawings "
+        "instead of a flat rate per square foot, since the paver base and the turf strip beside "
+        "it compact differently but still have to land at one shared grade, and the DCB reviews "
+        "both materials together as a single landscaping submittal rather than two separate "
+        "ones.</p>"
     ),
     "faqs": [
         faq("Does APV limit how wide a Poinciana driveway can be?",
@@ -751,53 +772,68 @@ LOCAL["repair"] = {
     "meta": "Turf repair in Poinciana, FL is quoted per visit, covering the original 1970s-80s villages where installs are aging and canal-adjacent yards that take more wear.",
     "h1": "Fixing turf across Poinciana's original and newer villages",
     "lede": capsule(
-        "Turf repair in Poinciana, Florida is quoted per visit rather than a flat square-foot "
-        "rate, since a lifted seam, a settled corner and a washed-out edge each take different "
-        "work to fix. Two settings account for most repair calls we'd expect here: turf installed "
-        "years ago in the original 1970s-80s villages, and yards backing onto a canal or "
-        "retention pond."
+        "What a repair costs in Poinciana depends on what the crew finds once the turf is pulled "
+        "back, so each visit is quoted on its own rather than by the square foot. Two questions "
+        "shape most calls here: how old the install is in one of the original 1970s-80s "
+        "villages, and whether the property is about to change hands, since a resale on these "
+        "streets often surfaces turf nobody's inspected in years."
     ),
     "sections": [
-        ("The oldest villages carry the oldest installs",
+        ("A resale on an older street is when repair questions surface",
          "<p>Poinciana's first villages date to the community's 1972 founding, and turf converted "
-         "in those neighborhoods over the past 10 to 15 years is old enough in places that a base "
-         "inspection makes more sense than another round of spot repairs. A repair call on one of "
-         "these older installs often traces back to a base that predates today's washed-rock "
-         "standard, since that requirement is more recent than a meaningful share of the turf "
-         "already in the ground here. " + post("does-homeowners-insurance-cover-artificial-turf", "Our guide to insurance and turf damage")
-         + " is worth a read before assuming a repair is covered.</p>"),
-        ("Canal and pond edges take more weather than an interior lot",
-         "<p>Turf along one of Poinciana's drainage canals or retention ponds takes more water "
-         "exposure at its perimeter than a lawn set well back from any water feature, since storm "
-         "runoff working at an unprotected edge can loosen a seam or a nailed border faster than it "
-         "would on an interior lot. A lifted edge near water is worth checking against the state's "
-         "10-foot setback too, since an older install that predates the current rule sometimes sits "
-         "closer to the bank than a new project would be allowed to start today.</p>"),
-        ("A hurricane season repair often means a full base check, not a patch",
-         "<p>Central Florida's storm season can lift or shift turf that was anchored to an older "
-         "standard, and a Poinciana repair visit after a named storm typically starts by checking "
-         "whether the base underneath washed out before simply renailing a corner back down. "
-         + post("artificial-turf-hurricane-flooding", "Our piece on turf after a hurricane or flood")
+         "there over the past 10 to 15 years changes hands with the house more often than it gets "
+         "inspected on its own terms. A resale on one of these older streets is usually the first "
+         "time anyone asks whether a manufacturer's warranty transfers to a new owner, and the "
+         "honest answer is that it depends on paperwork the seller may or may not still have: "
+         "most warranties want the original invoice, and some want proof the base was built to "
+         "spec. A repair call ahead of a closing is worth treating as a chance to document what's "
+         "actually under the turf, since that record is what any later warranty question comes "
+         "back to. " + post("does-homeowners-insurance-cover-artificial-turf", "Our guide to insurance and turf damage")
+         + " covers the separate question of what a storm claim does and doesn't pay for.</p>"),
+        ("A Solivita repair still clears the same review as new work",
+         "<p>Fixing a lifted seam or a settled corner on a Solivita villa sounds like plain "
+         "maintenance, but the ARC doesn't automatically treat a like-for-like repair differently "
+         "from a new landscaping change; the Architectural Review Requirements cover \"any "
+         "exterior addition, changes, modifications or alterations,\" and a repair that touches "
+         "the visible surface of the lawn falls inside that wording. In practice a straightforward "
+         "reseat of an existing edge rarely needs the full submittal a new installation would, but "
+         "a repair that expands the footprint or swaps in a different product is the kind of "
+         "change worth confirming with the ARC before the crew starts rather than after.</p>"),
+        ("Canal-adjacent turf takes the most weather, and the setback is worth rechecking",
+         "<p>A lawn backing onto one of Poinciana's drainage canals or retention ponds takes more "
+         "water at its perimeter than an interior lot does, since storm runoff working against an "
+         "unprotected edge can loosen a seam or a nailed border faster than it would away from "
+         "open water. Central Florida's storm season adds to that wear: a named storm can lift or "
+         "shift an older install anchored to a lighter standard than today's rule requires, and a "
+         "repair visit after one typically starts by checking whether the base underneath washed "
+         "out before simply renailing a corner back down. A lifted edge near a canal is also "
+         "worth checking against the state's 10-foot waterbody setback, since an install that "
+         "predates the current rule sometimes sits closer to the bank than the state would allow "
+         "for a brand-new layout. " + post("artificial-turf-hurricane-flooding", "Our piece on turf after a hurricane or flood")
          + " covers what that inspection looks for.</p>"),
     ],
     "scenario": (
-        "Say you have a decade-old dog run in Village 1",
-        "<p>Say you have a dog run installed about ten years ago in Village 1, now matted flat "
-        "along the fence line with a base that's started holding water after storms in a way it "
-        "never used to. A repair visit checks whether the rock underneath washed out from years of "
-        "runoff before simply renailing the corner, since reseating the edge without addressing an "
-        "eroded base fixes the problem for weeks rather than years. That diagnosis, more than the "
-        "repair itself, is what the visit is quoted around.</p>"
+        "Say you have a repair call ahead of closing on a Village 1 resale",
+        "<p>Say you have a repair call ahead of closing on a Village 1 resale, a decade-old dog "
+        "run along the fence line with one corner lifting and a seller who can't find the "
+        "original invoice. The visit starts with the same diagnosis any repair gets, checking "
+        "whether the rock underneath washed out before renailing the corner, but it also means "
+        "documenting what the crew finds, base depth, drainage condition, infill type, since that "
+        "record is what the buyer's own warranty question will lean on later. Reseating the edge "
+        "without that documentation fixes the corner but leaves the ownership question exactly "
+        "where it was.</p>"
     ),
     "faqs": [
-        faq("Is older turf in Poinciana's original villages worth repairing or replacing?",
-            "It depends on the base underneath. A repair fixes a surface issue like a lifted "
-            "seam; if the base was never built to the current washed-rock standard, replacement is "
-            "usually the more lasting fix."),
-        faq("Does turf near a Poinciana canal need more repair than an interior lot?",
-            "It can. Water exposure at an unprotected edge works at seams and borders harder over "
-            "time than a lawn set back from any water feature, which is why perimeter checks "
-            "matter more there."),
+        faq("Does a manufacturer's turf warranty transfer to a new owner in Poinciana?",
+            "It depends on the manufacturer and the paperwork the seller kept. Most warranties "
+            "ask for the original invoice, and some ask for proof the base met spec at "
+            "installation, so confirming that documentation before closing is worth doing on any "
+            "of the community's older resale streets."),
+        faq("Does a like-for-like repair in Solivita need ARC approval?",
+            "Often not a full submittal for a straightforward reseat of an existing edge, but the "
+            "Architectural Review Requirements cover any exterior alteration, so a repair that "
+            "changes the footprint or swaps in a different product is worth confirming with the "
+            "ARC first rather than after."),
     ],
     "sources": SRC,
 }
@@ -807,10 +843,11 @@ LOCAL["cleaning"] = {
     "meta": "Turf cleaning in Poinciana, FL is quoted by yard size and visit history, timed around the rainy season and the water table on canal- and pond-adjacent lots.",
     "h1": "Keeping Poinciana turf clean, from village lawns to canal-side yards",
     "lede": capsule(
-        "Turf cleaning in Poinciana, Florida is quoted by yard size and how long it's been "
-        "since the last visit, not a flat square-foot rate. The rainy-season water table on "
-        "Poinciana's flatwoods soil, and how close a lot sits to one of its many drainage canals "
-        "or retention ponds, matter more to the cleaning schedule here than tree canopy does."
+        "How big the yard is and how long it's been since the last visit set the price for turf "
+        "cleaning in Poinciana, not a flat rate per square foot. Two things drive the schedule "
+        "here more than tree canopy does: the rainy-season water table under Poinciana's "
+        "flatwoods soil, and how close the lot sits to one of the community's drainage canals or "
+        "retention ponds."
     ),
     "sections": [
         ("A platted grid of canals and ponds sets the cleaning rhythm",
@@ -838,20 +875,20 @@ LOCAL["cleaning"] = {
     "scenario": (
         "Say you have a 500 sq ft lawn near a retention pond",
         "<p>Say you have a 500 sq ft pet-turf lawn on a lot backing onto a village retention pond, "
-        "shaded by young landscaping that hasn't matured into heavy leaf drop yet. A cleaning "
-        "visit there is quoted around the pond-adjacent moisture and the time since the last "
-        "visit, not a flat per-square-foot number, since a lawn that's gone months without "
-        "clearing needs meaningfully more work than one cleaned on a tighter summer schedule.</p>"
+        "shaded by young landscaping too new to drop much leaf litter yet. Pricing that visit "
+        "starts with how damp the pond-adjacent ground has kept the infill and how many months "
+        "have passed since anyone last cleared it, since a lawn left alone over a full rainy "
+        "season needs meaningfully more work than one kept on a tighter summer rotation.</p>"
     ),
     "faqs": [
         faq("Does turf near a Poinciana pond need cleaning more often than an interior lot?",
-            "It can. Lots closer to a retention pond or canal sit on ground that holds moisture "
-            "closer to the surface, which can call for a tighter cleaning schedule during the "
-            "wettest months than a similar-sized lawn on higher ground."),
+            "Often, since ground next to a retention pond or canal holds moisture nearer the "
+            "surface than higher lots do elsewhere in the same village, and that extra dampness "
+            "is usually what pushes a lawn onto a tighter schedule through the wettest months."),
         faq("Do Poinciana's older villages need more frequent cleaning than newer ones?",
-            "Often yes, since established landscaping in the original 1970s-80s villages sheds "
-            "more leaf litter and organic debris than the younger plantings common in newer "
-            "sections."),
+            "Usually, since the mature landscaping in the original 1970s-80s villages drops more "
+            "leaf litter and organic debris than the younger plantings in sections built since "
+            "the 2000s."),
     ],
     "sources": SRC,
 }
@@ -861,51 +898,60 @@ LOCAL["replacement"] = {
     "meta": "Turf replacement in Poinciana, FL is quoted per job after a base inspection, for lawns converted in the community's earliest 1970s-80s villages.",
     "h1": "Replacing worn turf in Poinciana's earliest villages",
     "lede": capsule(
-        "Turf replacement in Poinciana, Florida is quoted per job after a base inspection, not a "
-        "flat square-foot rate. Poinciana's original villages date to 1972, and turf converted "
-        "there over the past 10 to 20 years is now old enough in places that replacement, not "
-        "another repair, becomes the honest recommendation."
+        "A full tear-out and relay in Poinciana gets priced per job once the crew has opened up "
+        "the old lawn, not from a flat rate per square foot. The community's original villages "
+        "date to 1972, and turf put in there anywhere from the early 2010s back is now old "
+        "enough in places that replacement, rather than another round of spot repair, is the "
+        "straight answer."
     ),
     "sections": [
-        ("Some of the community's oldest turf is reaching the end of its window",
+        ("Two growth waves left two different replacement timelines",
          "<p>Turf generally lasts 10 to 20 years depending on UV stabilization, traffic and "
-         "infill, and lawns converted in Poinciana's first villages soon after the community's "
-         "1972 founding, or during the growth wave that followed Avatar's takeover in the "
-         "mid-1980s, are now old enough that a base inspection makes more sense than another round "
-         "of spot repairs. " + post("how-long-does-artificial-turf-last-in-florida", "Our guide to turf lifespan in Florida")
+         "infill, and Poinciana's oldest conversions cluster around two distinct building waves: "
+         "the first villages built soon after the 1972 founding, and the larger wave that "
+         "followed once Avatar Holdings, later AV Homes, took over development in the mid-1980s. "
+         "A lawn converted early in either wave is closer to the upper end of that service-life "
+         "range than one converted in a 2000s-era section of the same village, which matters more "
+         "to a replacement timeline than the house's own age does. "
+         + post("how-long-does-artificial-turf-last-in-florida", "Our guide to turf lifespan in Florida")
          + " covers what shortens that window on a given lot.</p>"),
-        ("A full replacement is the point to correct an older base",
-         "<p>Replacement at that stage usually means rebuilding to the current washed, open-graded "
-         "standard rather than reusing whatever sat underneath the original install, since that "
-         "requirement postdates a meaningful share of the turf already in Poinciana's ground. It's "
-         "also the practical point to re-check a canal- or pond-adjacent layout against the "
-         "state's 10-foot waterbody setback, in case the original install predates the current "
-         "rule.</p>"),
-        ("The village's design board reviews a replacement the same as new work",
-         "<p>Because a full tear-out and relay counts as an exterior change under APV's or "
-         "Solivita's landscaping criteria, a replacement project goes through the same DCB or ARC "
-         "submittal a brand-new installation would, even though the yard has carried turf for a "
-         "decade or more already. " + post("what-does-artificial-turf-warranty-cover", "Our piece on what a turf warranty actually covers")
-         + " is worth reading before deciding whether a manufacturer's coverage applies to the old "
-         "install.</p>"),
+        ("The state's material rule is newer than a lot of the turf already down",
+         "<p>Rule 62-308.100 didn't take effect until May 2026, which means turf installed in "
+         "Poinciana any time before that could have gone in over unwashed base material or with "
+         "an infill the rule wouldn't allow on a new job today. A full replacement is the point "
+         "where that gets corrected as a matter of course, since the old base and infill come out "
+         "with the worn turf anyway; there's no separate obligation to retrofit a yard that isn't "
+         "being touched, but rebuilding to the current standard while the ground is already open "
+         "costs little extra against putting the same specification back.</p>"),
+        ("Replacement is also when the village board looks again",
+         "<p>APV's and Solivita's landscaping criteria treat a full tear-out and relay as an "
+         "exterior change no different from a first-time install, so a replacement project goes "
+         "back through the DCB or the ARC even on a lawn that's carried turf for a decade or more "
+         "already. That second look is also the practical moment to confirm a canal- or "
+         "pond-adjacent layout against the state's 10-foot waterbody setback, since an install "
+         "that predates the current rule can sit closer to the water than a new submittal would "
+         "be approved for today. " + post("what-does-artificial-turf-warranty-cover", "Our piece on what a turf warranty actually covers")
+         + " is worth reading before assuming a manufacturer's coverage still applies to a lawn "
+         "this old.</p>"),
     ],
     "scenario": (
         "Say you have a 2011-installed lawn in Village 2",
-        "<p>Say you have a lawn converted to turf in 2011 in Village 2, now matted flat across "
-        "the high-traffic path from the driveway to the back gate, with a base that's started "
-        "holding water after storms. At roughly 15 years old, that lawn sits near the upper end "
-        "of a typical service life, and a replacement quote would include probing the base in more "
-        "than one spot before deciding whether the rock underneath can stay or needs to come out "
-        "with the old turf.</p>"
+        "<p>Say you have a lawn converted to turf in 2011 in Village 2, worn thin along the path "
+        "from the driveway to the back gate and slower to drain than it used to be after a "
+        "storm. At roughly 15 years in the ground, that lawn is deep into its expected service "
+        "window, and a replacement quote works out from what the crew finds once the old turf "
+        "comes up, whether the rock underneath still drains well enough to reuse or has to come "
+        "out along with everything on top of it.</p>"
     ),
     "faqs": [
         faq("How do I know if Poinciana turf needs replacing instead of repairing?",
-            "A base inspection at more than one spot on the lawn is the reliable way to tell. Turf "
-            "that's matted but sitting on a base that still drains fine can often be repaired; a "
-            "base that's crusted or holding water usually means replacement."),
+            "The condition of the rock underneath, not just how the surface looks, is what "
+            "decides it. If that base still drains well once probed, a repair on the surface is "
+            "often enough; if it's crusted over or holding water, replacement is the more honest "
+            "fix, and the only way to tell for certain is to open up a section and look."),
         faq("Does a replacement project need DCB or ARC approval again?",
-            "Yes. A full tear-out and relay counts as an exterior change under either board's "
-            "criteria, so it goes through the same landscaping submittal a new installation would, "
+            "Yes. Either board treats a full tear-out and relay as an exterior change no "
+            "different from new construction, so the same landscaping submittal applies "
             "regardless of how long turf was already on the lot."),
     ],
     "sources": SRC,
