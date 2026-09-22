@@ -1,17 +1,17 @@
-pages: 171
+pages: 176
 FAIL: 0
 WARN: 51
 
 
 WARN  inlinks 0 < 3: /accessibility/
+WARN  inlinks 2 < 3: /areas/lake-county/
+WARN  inlinks 2 < 3: /areas/seminole-county/
 WARN  inlinks 2 < 3: /blog/best-time-of-year-to-install-artificial-turf-florida/
 WARN  inlinks 1 < 3: /blog/how-to-make-artificial-grass-look-real/
 WARN  inlinks 2 < 3: /blog/pet-turf-vs-regular-artificial-grass/
 WARN  inlinks 2 < 3: /faq/cost/
 WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 2 < 3: /faq/pets-heat/
-WARN  inlinks 2 < 3: /laws/permits/lake-county/
-WARN  inlinks 2 < 3: /laws/permits/seminole-county/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
 WARN  sentence on 3 pages: "working out the full stacks thickness on paper before any soil comes out avoids discoverin" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/hunters-creek/', '/playground-turf/kissimmee/']
