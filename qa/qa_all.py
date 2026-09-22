@@ -86,6 +86,8 @@ def main():
         for b in INTERNAL:
             if re.search(r"(?<![a-z])" + re.escape(b) + r"(?![a-z])", low):
                 fails.append(f"internal term '{b}': {route}")
+        if re.search(r"\{(svc|city|county|cs|post|a|ext|src|price|tel)\(", txt):
+            fails.append(f"unrendered helper call in text: {route}")
         for b in TRACK:
             if re.search(r"(?<![a-z])" + re.escape(b) + r"(?![a-z])", low):
                 fails.append(f"track-record claim '{b}': {route}")

@@ -46,6 +46,8 @@ for name in sys.argv[1:]:
                 issues.append(f"banned '{b}'")
         if low.count("ensure") > 1:
             issues.append(f"'ensure' x{low.count('ensure')}")
+        if re.search(r"\{(svc|city|county|cs|post|a|ext|src|price|tel)\(", txt):
+            issues.append("unrendered helper call")
         if "!" in txt:
             issues.append("exclamation mark")
         if txt.count("—") > 2:
