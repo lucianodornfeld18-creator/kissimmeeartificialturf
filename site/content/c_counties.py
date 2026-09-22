@@ -127,7 +127,7 @@ def orange_co():
                      jrow("Winter Garden", "Own Building Division; no synthetic-turf code found", "407-877-5136", town="winter-garden"),
                      jrow("Winter Park", "Own Building & Permitting Services; a secondhand code comparison suggests the city code addresses synthetic turf (pervious path, canopy limits) — confirm at the counter", "407-599-3237", town="winter-park"),
                      jrow("Maitland", "Own Community Development Department; land development code recodified in 2024, no synthetic-turf section found", "407-539-6150", town="maitland"),
-                     jrow("Oakland", "Runs its own permitting; not individually researched", "Town hall; call before starting"),
+                     jrow("Oakland", "Building and permit review contracted to a private engineering firm; no synthetic-turf code found", "Town hall; see the town page", town="oakland"),
                      jrow("Apopka", "Own Building Safety Division; no synthetic-turf code found", "407-703-1713", town="apopka")],
                     "Checked against each office's published code September 2026. The nine cities without their own line here haven't been researched individually; the state standard in the two right-hand columns above still sets the floor everywhere in the county.")),
         sec("Distance from our Kissimmee crew to Orange County towns", "<p>All figures below are straight-line distance from downtown Kissimmee.</p>"
@@ -240,7 +240,7 @@ def lake():
                     [jrow("Lake County (unincorporated)", "No mention in the Land Development Regulations", "Building Services, 352-343-9653", "lake-county"),
                      jrow("Clermont", "Own Building Services division; no synthetic-turf code found", "352-241-7315", town="clermont"),
                      jrow("Minneola", "Own Building Department (staffed through a contracted provider); no synthetic-turf code found", "352-394-3598", town="minneola"),
-                     jrow("Montverde", "Runs its own permitting; not individually researched", "Town hall; call before starting"),
+                     jrow("Montverde", "Town hall takes permit applications and contracts inspections to a private firm; Bella Collina is unincorporated Lake County", "Town hall; see the town page", town="montverde"),
                      jrow("Groveland", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Mascotte", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Mount Dora", "Runs its own permitting; not individually researched", "City hall; call before starting")],
