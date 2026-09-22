@@ -33,8 +33,9 @@ def plink(key, text=None):
     return a(f"/laws/permits/{key}/", text or PERMIT_PAGES[key])
 
 
-def jrow(name, finding, office, key=None):
-    return [name, finding, office, plink(key, "Details") if key else "Not published"]
+def jrow(name, finding, office, key=None, town=None):
+    last = plink(key, "Details") if key else (a(CITIES[town]["route"], "Town page") if town else "Not published")
+    return [name, finding, office, last]
 
 
 def drow(slug):
@@ -119,15 +120,15 @@ def orange_co():
                     ["Jurisdiction", "What we found on synthetic turf", "Office to call", "Permit page"],
                     [jrow("City of Orlando", "Specific artificial-turf rules in the landscape code (engineering permit)", "Permitting Services, 407-246-2121", "city-of-orlando"),
                      jrow("Orange County (unincorporated, including Hunters Creek, Meadow Woods, Lake Nona, Dr. Phillips, Horizon West)", "“Turf” defined as natural grass species only; no synthetic-turf section", "Permitting Services, 407-836-5550", "orange-county"),
-                     jrow("Belle Isle", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Edgewood", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Windermere", "Runs its own permitting; not individually researched", "Town hall; call before starting"),
-                     jrow("Ocoee", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Winter Garden", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Winter Park", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Maitland", "Runs its own permitting; not individually researched", "City hall; call before starting"),
+                     jrow("Belle Isle", "No in-house building department; plan review and inspections are contracted to a private engineering firm", "City hall; see the town page", town="belle-isle"),
+                     jrow("Edgewood", "No building official; the city reviews zoning, then routes the permit to Orange County through Fast Track", "City hall, then Orange County", town="edgewood"),
+                     jrow("Windermere", "Own Building Department; no synthetic-turf code found", "Town hall, 407-876-2563", town="windermere"),
+                     jrow("Ocoee", "Own Building Division; no synthetic-turf code found", "407-905-3104, permits.ocoee.org", town="ocoee"),
+                     jrow("Winter Garden", "Own Building Division; no synthetic-turf code found", "407-877-5136", town="winter-garden"),
+                     jrow("Winter Park", "Own Building & Permitting Services; a secondhand code comparison suggests the city code addresses synthetic turf (pervious path, canopy limits) — confirm at the counter", "407-599-3237", town="winter-park"),
+                     jrow("Maitland", "Own Community Development Department; land development code recodified in 2024, no synthetic-turf section found", "407-539-6150", town="maitland"),
                      jrow("Oakland", "Runs its own permitting; not individually researched", "Town hall; call before starting"),
-                     jrow("Apopka", "Runs its own permitting; not individually researched", "City hall; call before starting")],
+                     jrow("Apopka", "Own Building Safety Division; no synthetic-turf code found", "407-703-1713", town="apopka")],
                     "Checked against each office's published code September 2026. The nine cities without their own line here haven't been researched individually; the state standard in the two right-hand columns above still sets the floor everywhere in the county.")),
         sec("Distance from our Kissimmee crew to Orange County towns", "<p>All figures below are straight-line distance from downtown Kissimmee.</p>"
             + table("Distance from Kissimmee: Orange County towns", DIST_HEAD,
@@ -173,18 +174,18 @@ def polk():
             + table("Who reviews a synthetic turf job in Polk County",
                     ["Jurisdiction", "What we found on synthetic turf", "Office to call", "Permit page"],
                     [jrow("Polk County (unincorporated)", "No turf-specific section in the Land Development Code", "Building Division, 863-534-6080", "polk-county"),
-                     jrow("Davenport", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Haines City", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Dundee", "Runs its own permitting; not individually researched", "Town hall; call before starting"),
-                     jrow("Lake Alfred", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Polk City", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Winter Haven", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Auburndale", "Runs its own permitting; not individually researched", "City hall; call before starting"),
+                     jrow("Davenport", "Own Building & Planning Department inside the city limits; the surrounding unincorporated area is Polk County", "863-419-3300", town="davenport"),
+                     jrow("Haines City", "Own Development Services Building Division; no synthetic-turf code found", "863-421-3600", town="haines-city"),
+                     jrow("Dundee", "Own Development Services (Building) Department; applications by emailed form", "863-438-8330", town="dundee"),
+                     jrow("Lake Alfred", "Own Building Inspection Division; no synthetic-turf code found", "863-291-5748", town="lake-alfred"),
+                     jrow("Polk City", "No building department of its own; Polk County's Building Division reviews permits inside the city limits", "Polk County, 863-534-6080", town="polk-city"),
+                     jrow("Winter Haven", "Own Building & Permitting Division; no synthetic-turf code found", "863-291-5695", town="winter-haven"),
+                     jrow("Auburndale", "Own Construction Services division; no synthetic-turf code found", "863-965-5530", town="auburndale"),
                      jrow("Lake Wales", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Lakeland", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Bartow", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Frostproof", "Runs its own permitting; not individually researched", "City hall; call before starting")],
-                    "Checked against the county's published code September 2026. Cities marked “not individually researched” haven't each been checked for their own turf rule; call ahead rather than assume any of them matches the county's silence.")),
+                    "Checked against the county's published code September 2026. Cities with a “Town page” link were checked individually when their pages were written; cities marked “not individually researched” haven't been; call ahead rather than assume any of them matches the county's silence.")),
         sec("The Lake Wales Ridge under a Polk County yard",
             f"<p>Once the ground rises toward Lake Wales, Winter Haven and the ridge running through the county's middle, the soil changes from flatwoods sand to Candler series: excessively drained, very rapid to rapid permeability, built from thick wind-blown and marine sand deposits with slopes running from flat up to 12 percent in most spots ({ext(CANDLER_OSD[1], 'USDA’s official series description')}). That kind of ground barely holds water at all, which sounds like an advantage until a crew is trying to compact a stable base on sand that shifts before the plate compactor finishes a pass.</p>"
             + f"<p>Ridge lots also bring real slope into the picture in a way flatter Osceola or Orange yards rarely do, since a subdivision built into old citrus grove terrain can carry several feet of grade change across one backyard. That changes anchoring and drainage planning more than it changes the turf itself.</p>"),
@@ -237,8 +238,8 @@ def lake():
             + table("Who reviews a synthetic turf job in Lake County",
                     ["Jurisdiction", "What we found on synthetic turf", "Office to call", "Permit page"],
                     [jrow("Lake County (unincorporated)", "No mention in the Land Development Regulations", "Building Services, 352-343-9653", "lake-county"),
-                     jrow("Clermont", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Minneola", "Runs its own permitting; not individually researched", "City hall; call before starting"),
+                     jrow("Clermont", "Own Building Services division; no synthetic-turf code found", "352-241-7315", town="clermont"),
+                     jrow("Minneola", "Own Building Department (staffed through a contracted provider); no synthetic-turf code found", "352-394-3598", town="minneola"),
                      jrow("Montverde", "Runs its own permitting; not individually researched", "Town hall; call before starting"),
                      jrow("Groveland", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Mascotte", "Runs its own permitting; not individually researched", "City hall; call before starting"),
@@ -285,11 +286,11 @@ def seminole():
             + table("Who reviews a synthetic turf job in Seminole County",
                     ["Jurisdiction", "What we found on synthetic turf", "Office to call", "Permit page"],
                     [jrow("Seminole County (the limited unincorporated area)", "No turf-specific section in the Land Development Code", "Building Division, 407-665-7050", "seminole-county"),
-                     jrow("Altamonte Springs", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Casselberry", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Oviedo", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Winter Springs", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Longwood", "Runs its own permitting; not individually researched", "City hall; call before starting"),
+                     jrow("Altamonte Springs", "Own Building and Fire Safety Department; no synthetic-turf code found", "407-571-8446", town="altamonte-springs"),
+                     jrow("Casselberry", "Own Building Division; no synthetic-turf code found", "407-262-7700", town="casselberry"),
+                     jrow("Oviedo", "Own Building Division; no synthetic-turf code found", "City hall; see the town page", town="oviedo"),
+                     jrow("Winter Springs", "Own Building Division; no synthetic-turf code found", "City hall; see the town page", town="winter-springs"),
+                     jrow("Longwood", "Own Building Division; no synthetic-turf code found", "407-260-3486", town="longwood"),
                      jrow("Lake Mary", "Runs its own permitting; not individually researched", "City hall; call before starting"),
                      jrow("Sanford", "Runs its own permitting; not individually researched", "City hall; call before starting")],
                     "Checked against the county's published code September 2026. If an address isn't inside one of the seven cities above, it's worth confirming with the county rather than assuming which office applies.")
