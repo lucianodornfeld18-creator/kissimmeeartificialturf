@@ -1,10 +1,9 @@
-pages: 328
+pages: 349
 FAIL: 0
-WARN: 48
+WARN: 47
 
 
 WARN  inlinks 0 < 3: /accessibility/
-WARN  inlinks 2 < 3: /areas/lake-county/
 WARN  inlinks 2 < 3: /areas/seminole-county/
 WARN  inlinks 2 < 3: /faq/cost/
 WARN  inlinks 2 < 3: /faq/hoa-permits/
