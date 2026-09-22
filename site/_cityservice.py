@@ -33,12 +33,31 @@ def exists(city_slug, service):
     return has_module(city_slug) and service in TIER_SERVICES[CITIES[city_slug]["tier"]]
 
 
+def _gf8_mul(x, y):
+    """Multiplication in GF(8) with modulus x^3 + x + 1."""
+    r = 0
+    for _ in range(3):
+        if y & 1:
+            r ^= x
+        y >>= 1
+        x <<= 1
+        if x & 8:
+            x ^= 0b1011
+    return r & 7
+
+
 def _variant(city_slug, j, n):
+    """Which variant of block j city_slug gets. Codes are chosen so two cities share as few blocks as possible:
+    with 8 variants, a linear code over GF(8) (64 codes, any two cities share at most ONE block);
+    with 5 variants, a degree-2 polynomial over GF(5) (125 codes, at most TWO shared blocks)."""
     order = _T1 + _REST
     i = order.index(city_slug)
-    if n in (5, 7):
-        a, b = divmod(i % (n * n), n)
-        return (a + b * j) % n
+    if n == 8:
+        a, b = divmod(i % 64, 8)
+        return a ^ _gf8_mul(b, j)
+    if n == 5:
+        a, b, c = i % 5, (i // 5) % 5, (i // 25) % 5
+        return (a + b * j + c * j * j) % 5
     return (i * (j + 2) + j) % n
 
 

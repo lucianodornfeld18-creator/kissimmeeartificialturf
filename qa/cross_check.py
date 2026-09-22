@@ -47,11 +47,12 @@ def runs(wa, gb):
 
 def main():
     mods = sys.argv[1:]
-    mine = {}
+    mine, owner = {}, {}
     for name in mods:
         for p in importlib.import_module(name).get_pages():
             p.setdefault("_lastmod", REVIEWED)
             mine[p["route"]] = words(main_text(strip_bank(render_page(p))))
+            owner[p["route"]] = name
     others = {}
     for f in DIST.rglob("index.html"):
         route = "/" + str(f.parent.relative_to(DIST)).replace("\\", "/").strip(".") + "/"
@@ -59,10 +60,13 @@ def main():
         if route in mine:
             continue
         others[route] = words(main_text(strip_bank(f.read_text(encoding="utf-8"))))
+    # pages of a different module passed in the same run are compared too (a writer given two towns must not copy between them)
     bad = 0
     for r, wa in mine.items():
         ga = grams(wa)
-        for o, wb in others.items():
+        pool = dict(others)
+        pool.update({o: wb for o, wb in mine.items() if owner[o] != owner[r]})
+        for o, wb in pool.items():
             if len(wb) < 60:
                 continue
             gb = set(grams(wb))

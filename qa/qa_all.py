@@ -138,21 +138,30 @@ def main():
     for n, s, where in rep[:40]:
         warns.append(f"sentence on {n} pages: \"{s[:90]}\" e.g. {where}")
     if do_sim:
-        grams = {}
-        for r, txt in texts.items():
-            w = re.sub(r"[^a-z0-9 ]", "", txt.lower()).split()
-            grams[r] = {hash(" ".join(w[i:i + 8])) for i in range(len(w) - 7)}
-        rs = [r for r in grams if len(grams[r]) > 200]
-        worst = []
+        # Two measures: (a) writer text only (bank blocks stripped) -> FAIL over 15%; (b) everything the reader sees -> WARN over 15%.
+        def gramset(t):
+            w = re.sub(r"[^a-z0-9 ]", "", t.lower()).split()
+            return {hash(" ".join(w[i:i + 8])) for i in range(len(w) - 7)}
+        own = {r: gramset(main_text(re.sub(r'<section class="bank">.*?</section>', " ", pages[r], flags=re.S))) for r in pages}
+        full = {r: gramset(txt) for r, txt in texts.items()}
+        rs = [r for r in full if len(full[r]) > 200]
+        worst, raw = [], []
         for i, a in enumerate(rs):
             for b in rs[i + 1:]:
-                inter = len(grams[a] & grams[b])
-                if inter:
-                    o = inter / min(len(grams[a]), len(grams[b]))
-                    if o > 0.15:
-                        worst.append((o, a, b))
+                inter = len(full[a] & full[b])
+                if not inter:
+                    continue
+                o = inter / min(len(full[a]), len(full[b]))
+                if o > 0.15:
+                    raw.append((o, a, b))
+                    io = len(own[a] & own[b]) / max(1, min(len(own[a]), len(own[b])))
+                    if io > 0.15:
+                        worst.append((io, a, b))
         for o, a, b in sorted(worst, reverse=True)[:60]:
-            fails.append(f"8-gram overlap {o:.0%}: {a} ~ {b}")
+            fails.append(f"8-gram overlap {o:.0%} (writer text): {a} ~ {b}")
+        for o, a, b in sorted(raw, reverse=True)[:60]:
+            warns.append(f"8-gram overlap {o:.0%} incl. shared bank blocks: {a} ~ {b}")
+        print(f"[qa] pairs over 15% including bank blocks: {len(raw)}")
         print(f"[qa] similarity pairs over 15%: {len(worst)}")
     rep_txt = [f"pages: {len(pages)}", f"FAIL: {len(fails)}", f"WARN: {len(warns)}", ""] + ["FAIL  " + x for x in fails] + [""] + ["WARN  " + x for x in warns]
     (OUT / "qa-report.txt").write_text("\n".join(rep_txt), encoding="utf-8")
