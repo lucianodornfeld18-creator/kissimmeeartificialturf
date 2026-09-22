@@ -1,8 +1,7 @@
 pages: 482
-FAIL: 1
+FAIL: 0
 WARN: 46
 
-FAIL  unrendered helper call in text: /areas/southchase/
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 2 < 3: /faq/cost/
