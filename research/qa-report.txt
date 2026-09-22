@@ -1,6 +1,6 @@
-pages: 112
+pages: 138
 FAIL: 0
-WARN: 30
+WARN: 51
 
 
 WARN  inlinks 0 < 3: /accessibility/
@@ -11,25 +11,46 @@ WARN  inlinks 2 < 3: /faq/cost/
 WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 2 < 3: /faq/pets-heat/
 WARN  inlinks 2 < 3: /laws/permits/lake-county/
-WARN  inlinks 2 < 3: /laws/permits/polk-county/
 WARN  inlinks 2 < 3: /laws/permits/seminole-county/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
+WARN  sentence on 3 pages: "what looks like a nail simply pulling loose is often that eroded gap letting the edge flex" e.g. ['/turf-repair/celebration/', '/turf-repair/poinciana/', '/turf-repair/st-cloud/']
+WARN  sentence on 3 pages: "washed opengraded crushed rock underneath keeps that added flow moving rather than binding" e.g. ['/pool-turf/celebration/', '/pool-turf/poinciana/', '/pool-turf/st-cloud/']
+WARN  sentence on 3 pages: "washed opengraded crushed rock and careful compaction matter at any scale but checking the" e.g. ['/commercial-turf/celebration/', '/commercial-turf/poinciana/', '/commercial-turf/st-cloud/']
+WARN  sentence on 3 pages: "turf thats matted but sitting on a base that still drains fine can often be repaired a bas" e.g. ['/turf-replacement/celebration/', '/turf-replacement/poinciana/', '/turf-replacement/st-cloud/']
+WARN  sentence on 3 pages: "that fall gets rechecked with a level once the first lift of rock is compacted since two t" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/poinciana/', '/artificial-grass-installation/st-cloud/']
+WARN  sentence on 3 pages: "that diagnosis more than the repair itself is what the visit is quoted around" e.g. ['/turf-repair/celebration/', '/turf-repair/poinciana/', '/turf-repair/st-cloud/']
+WARN  sentence on 3 pages: "that deeper layer combined with a backing built to pass over thirty inches of water an hou" e.g. ['/pet-turf/celebration/', '/pet-turf/poinciana/', '/pet-turf/st-cloud/']
+WARN  sentence on 3 pages: "that crust doesnt announce itself as a problem until the turf above it is pulled up during" e.g. ['/turf-replacement/celebration/', '/turf-replacement/poinciana/', '/turf-replacement/st-cloud/']
+WARN  sentence on 3 pages: "skimping on depth because the footprint is small is a common shortcut and it backfires fas" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/poinciana/', '/turf-and-pavers/st-cloud/']
+WARN  sentence on 3 pages: "reseating the nails without rebuilding the washedout section underneath fixes the symptom " e.g. ['/turf-repair/celebration/', '/turf-repair/poinciana/', '/turf-repair/st-cloud/']
+WARN  sentence on 3 pages: "planning footing locations against the base layout at the start keeps the compacted rock a" e.g. ['/sports-turf/celebration/', '/sports-turf/poinciana/', '/sports-turf/st-cloud/']
+WARN  sentence on 3 pages: "matching the bases one to two percent grade to an existing structure takes more field meas" e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/poinciana/', '/vacation-rental-turf/st-cloud/']
+WARN  sentence on 3 pages: "loose fill packed in close to a footing after the fact settles unevenly over time and can " e.g. ['/sports-turf/celebration/', '/sports-turf/poinciana/', '/sports-turf/st-cloud/']
+WARN  sentence on 3 pages: "how deep the washed rock runs under a narrow strip a turf strip tucked between pavers stil" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/poinciana/', '/turf-and-pavers/st-cloud/']
+WARN  sentence on 3 pages: "getting the transition wrong leaves a low spot right where the two surfaces meet which is " e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/poinciana/', '/vacation-rental-turf/st-cloud/']
+WARN  sentence on 3 pages: "getting both requirements satisfied in the same base is what separates a green built by so" e.g. ['/putting-greens/celebration/', '/putting-greens/poinciana/', '/putting-greens/st-cloud/']
+WARN  sentence on 3 pages: "flat isnt the same as functional which is why we check for a crust not just for slope befo" e.g. ['/turf-replacement/celebration/', '/turf-replacement/poinciana/', '/turf-replacement/st-cloud/']
+WARN  sentence on 3 pages: "fines from unwashed fill binding into a crust dont just block drainage under a pad they al" e.g. ['/playground-turf/celebration/', '/playground-turf/poinciana/', '/playground-turf/st-cloud/']
+WARN  sentence on 3 pages: "a rinse or a light broom moves surface debris but doesnt fully break up infill thats compa" e.g. ['/turf-cleaning/celebration/', '/turf-cleaning/poinciana/', '/turf-cleaning/st-cloud/']
+WARN  sentence on 3 pages: "a pad that isnt seated evenly performs inconsistently across the use zone even if its rate" e.g. ['/playground-turf/celebration/', '/playground-turf/poinciana/', '/playground-turf/st-cloud/']
+WARN  sentence on 3 pages: "a green shaped purely for interesting breaks without that underlying slope will hold water" e.g. ['/putting-greens/celebration/', '/putting-greens/poinciana/', '/putting-greens/st-cloud/']
+WARN  sentence on 3 pages: "a base that takes longer than that to visibly clear is too shallow or too tightly compacte" e.g. ['/pet-turf/celebration/', '/pet-turf/poinciana/', '/pet-turf/st-cloud/']
 WARN  sentence on 2 pages: "why does a shared property need a documented service contract not a habit" e.g. ['/commercial-turf/kissimmee/', '/commercial-turf/st-cloud/']
+WARN  sentence on 2 pages: "what a photo cant show is the condition of the base underneath so that first estimate is a" e.g. ['/turf-repair/kissimmee/', '/turf-repair/poinciana/']
+WARN  sentence on 2 pages: "we walk the full run with a tape measure before any material is cut catching those drifts " e.g. ['/turf-and-pavers/kissimmee/', '/turf-and-pavers/poinciana/']
 WARN  sentence on 2 pages: "we suggest checking the repaired section specifically after the next storm rather than wai" e.g. ['/turf-repair/kissimmee/', '/turf-repair/st-cloud/']
 WARN  sentence on 2 pages: "warm months call for the most attention both because heat accelerates odor and because a r" e.g. ['/pet-turf/kissimmee/', '/pet-turf/st-cloud/']
+WARN  sentence on 2 pages: "this sequencing matters more on a replacement than a firsttime install since theres old ma" e.g. ['/turf-replacement/kissimmee/', '/turf-replacement/poinciana/']
 WARN  sentence on 2 pages: "this isnt a deep clean just enough attention to notice a change from the week before which" e.g. ['/turf-cleaning/kissimmee/', '/turf-cleaning/st-cloud/']
 WARN  sentence on 2 pages: "this is a quick habit during a live oaks seasonal drop when debris accumulates faster than" e.g. ['/playground-turf/kissimmee/', '/playground-turf/st-cloud/']
 WARN  sentence on 2 pages: "theres no single fixed schedule that fits every household a single dog on a small run need" e.g. ['/pet-turf/kissimmee/', '/pet-turf/st-cloud/']
-WARN  sentence on 2 pages: "skipping several months between brushings lets the fiber settle into whatever direction fo" e.g. ['/putting-greens/kissimmee/', '/putting-greens/st-cloud/']
-WARN  sentence on 2 pages: "rinsing the strip along with the rest of the yard during a regular hose pass usually clear" e.g. ['/turf-and-pavers/kissimmee/', '/turf-and-pavers/st-cloud/']
-WARN  sentence on 2 pages: "rinsing more often in peak summer than in a mild spring is normal and theres no schedule t" e.g. ['/artificial-grass-installation/kissimmee/', '/artificial-grass-installation/st-cloud/']
-WARN  sentence on 2 pages: "rinsing a lawn instead of watering it a synthetic lawn never gets watered through an ingro" e.g. ['/artificial-grass-installation/kissimmee/', '/artificial-grass-installation/st-cloud/']
-WARN  sentence on 2 pages: "rainyseason storms between june and september handle some of that rinsing on their own but" e.g. ['/pool-turf/kissimmee/', '/pool-turf/st-cloud/']
-WARN  sentence on 2 pages: "oak leaf drop and pollen season both add debris between scheduled brushings so tying the r" e.g. ['/sports-turf/kissimmee/', '/sports-turf/st-cloud/']
-WARN  sentence on 2 pages: "keeping shock and acid containers off the turfs edge avoids undoing the rinse entirely" e.g. ['/pool-turf/kissimmee/', '/pool-turf/st-cloud/']
-WARN  sentence on 2 pages: "growing resort corridors nearby sometimes track construction dust onto a yard that would o" e.g. ['/vacation-rental-turf/kissimmee/', '/vacation-rental-turf/st-cloud/']
-WARN  sentence on 2 pages: "a slight settling difference at that seam is normal and usually minor but catching it earl" e.g. ['/turf-replacement/kissimmee/', '/turf-replacement/st-cloud/']
-WARN  sentence on 2 pages: "a play area checked weekly during peak leafdrop stays safer underfoot than one checked onl" e.g. ['/playground-turf/kissimmee/', '/playground-turf/st-cloud/']
-WARN  sentence on 2 pages: "a gentle frequent touch keeps the surface predictable in a way that one thorough grooming " e.g. ['/putting-greens/kissimmee/', '/putting-greens/st-cloud/']
-WARN  sentence on 2 pages: "a documented schedule powerbrooming infill checks seasonal debris cleanup gives a board so" e.g. ['/commercial-turf/kissimmee/', '/commercial-turf/st-cloud/']
+WARN  sentence on 2 pages: "that short assessment shapes where the enzyme treatment and power brooming get concentrate" e.g. ['/turf-cleaning/kissimmee/', '/turf-cleaning/poinciana/']
+WARN  sentence on 2 pages: "that sequence matters because once rock is compacted in place correcting a drain location " e.g. ['/pet-turf/kissimmee/', '/pet-turf/poinciana/']
+WARN  sentence on 2 pages: "that project gets quoted from a site visit rather than a set range since the lanes length " e.g. ['/sports-turf/poinciana/', '/sports-turf/st-cloud/']
+WARN  sentence on 2 pages: "that approval step sometimes weeks on a boards own meeting schedule sits ahead of every te" e.g. ['/commercial-turf/kissimmee/', '/commercial-turf/poinciana/']
+WARN  sentence on 2 pages: "stripout and grading for a run typically take a similar amount of time as for a lawn of th" e.g. ['/pet-turf/kissimmee/', '/pet-turf/poinciana/']
+WARN  sentence on 2 pages: "strip widths on a driveway ribbon or a checkerboard patio have to track the paver module e" e.g. ['/turf-and-pavers/kissimmee/', '/turf-and-pavers/poinciana/']
+WARN  sentence on 2 pages: "skipping this step means spreading effort evenly across a lawn where the need clearly isnt" e.g. ['/turf-cleaning/kissimmee/', '/turf-cleaning/poinciana/']
+WARN  sentence on 2 pages: "skipping this staging step risks mixing yearsold possibly crusted infill back into a base " e.g. ['/turf-replacement/kissimmee/', '/turf-replacement/poinciana/']
+WARN  sentence on 2 pages: "skipping this planning step and shaping the base by eye during excavation tends to produce" e.g. ['/putting-greens/kissimmee/', '/putting-greens/poinciana/']
