@@ -1,4 +1,4 @@
-pages: 314
+pages: 328
 FAIL: 3
 WARN: 108
 
@@ -27,33 +27,33 @@ WARN  sentence on 6 pages: "a border here often needs a fresh pass of loosening 
 WARN  sentence on 6 pages: "a base thats been overcompacted in the name of stability ends up trapping water at the sur" e.g. ['/playground-turf/davenport/', '/playground-turf/meadow-woods/', '/playground-turf/ocoee/']
 WARN  sentence on 6 pages: "a base built at the shallow end of the states twotofourinch range barely lifts the turf ab" e.g. ['/artificial-grass-installation/davenport/', '/artificial-grass-installation/meadow-woods/', '/artificial-grass-installation/ocoee/']
 WARN  sentence on 5 pages: "topping off thin spots and sweeping stray material back inside the boundary is a small hab" e.g. ['/playground-turf/celebration/', '/playground-turf/championsgate/', '/playground-turf/ocoee/']
+WARN  sentence on 5 pages: "topping off just that section is a smaller job than waiting for the whole border to look t" e.g. ['/pool-turf/dr-phillips/', '/pool-turf/horizon-west/', '/pool-turf/lake-nona/']
+WARN  sentence on 5 pages: "topping off infill as a lawn ages infill goes in at roughly one to two pounds per square f" e.g. ['/artificial-grass-installation/dr-phillips/', '/artificial-grass-installation/horizon-west/', '/artificial-grass-installation/lake-nona/']
+WARN  sentence on 5 pages: "topping it off periodically rather than waiting until the lawn looks visibly bare in spots" e.g. ['/artificial-grass-installation/dr-phillips/', '/artificial-grass-installation/horizon-west/', '/artificial-grass-installation/lake-nona/']
 WARN  sentence on 5 pages: "timing pool time for morning or late afternoon in peak summer or rinsing the crossing poin" e.g. ['/pool-turf/harmony/', '/pool-turf/kissimmee/', '/pool-turf/orlando/']
 WARN  sentence on 5 pages: "timing a rinse well before a round rather than right before stepping onto the green avoids" e.g. ['/putting-greens/harmony/', '/putting-greens/kissimmee/', '/putting-greens/orlando/']
+WARN  sentence on 5 pages: "this walkthrough is where a crew catches a low spot an uneven seam or a containment edge t" e.g. ['/playground-turf/dr-phillips/', '/playground-turf/poinciana/', '/playground-turf/southchase/']
 WARN  sentence on 5 pages: "this small sequencing choice rinse first then groom makes routine maintenance slightly mor" e.g. ['/putting-greens/celebration/', '/putting-greens/championsgate/', '/putting-greens/ocoee/']
 WARN  sentence on 5 pages: "this is one habit that matters more on a dedicated run than almost anywhere else on the pr" e.g. ['/pet-turf/celebration/', '/pet-turf/championsgate/', '/pet-turf/ocoee/']
 WARN  sentence on 5 pages: "this is a fiveminute habit compared with the deeper clean needed once debris has already w" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/championsgate/', '/artificial-grass-installation/ocoee/']
+WARN  sentence on 5 pages: "that transition line gets planned before either area is turfed so the seam between petgrad" e.g. ['/pet-turf/dr-phillips/', '/pet-turf/poinciana/', '/pet-turf/southchase/']
+WARN  sentence on 5 pages: "that distinction matters more with a dog in the yard than the backing materials brand or t" e.g. ['/pet-turf/davenport/', '/pet-turf/kissimmee/', '/pet-turf/lake-nona/']
+WARN  sentence on 5 pages: "skipping this check and assuming a play surface is ready just because the visible steps ar" e.g. ['/playground-turf/dr-phillips/', '/playground-turf/poinciana/', '/playground-turf/southchase/']
+WARN  sentence on 5 pages: "skipping the roll test and assuming a green plays correctly because it looks finished is h" e.g. ['/putting-greens/dr-phillips/', '/putting-greens/poinciana/', '/putting-greens/southchase/']
 WARN  sentence on 5 pages: "scheduling outdoor time before midafternoon in summer or adding at least one shaded corner" e.g. ['/pet-turf/harmony/', '/pet-turf/kissimmee/', '/pet-turf/orlando/']
 WARN  sentence on 5 pages: "rinsing before a grooming pass rather than after also helps the brush move infill more eve" e.g. ['/putting-greens/celebration/', '/putting-greens/championsgate/', '/putting-greens/ocoee/']
+WARN  sentence on 5 pages: "rinsing ahead of an afternoon play window rather than waiting until the surface already fe" e.g. ['/playground-turf/dr-phillips/', '/playground-turf/horizon-west/', '/playground-turf/lake-nona/']
+WARN  sentence on 5 pages: "reseating a cup thats started to work loose is a small fix if caught early compared with t" e.g. ['/putting-greens/dr-phillips/', '/putting-greens/horizon-west/', '/putting-greens/lake-nona/']
 WARN  sentence on 5 pages: "repositioning the affected turf adding a film to the glass or shading that section is what" e.g. ['/turf-repair/harmony/', '/turf-repair/kissimmee/', '/turf-repair/orlando/']
+WARN  sentence on 5 pages: "plain silica works fine further back from the coping where splash rarely reaches" e.g. ['/pool-turf/davenport/', '/pool-turf/kissimmee/', '/pool-turf/lake-nona/']
 WARN  sentence on 5 pages: "picking it up on a routine that doesnt lag more than a day or two especially during the bu" e.g. ['/pet-turf/celebration/', '/pet-turf/championsgate/', '/pet-turf/ocoee/']
+WARN  sentence on 5 pages: "nylon or textured polyethylene for the putting surface" e.g. ['/putting-greens/davenport/', '/putting-greens/kissimmee/', '/putting-greens/lake-nona/']
+WARN  sentence on 5 pages: "nylon holds its shape and stiffness longer under repeated ball contact and foot traffic wh" e.g. ['/putting-greens/davenport/', '/putting-greens/kissimmee/', '/putting-greens/lake-nona/']
+WARN  sentence on 5 pages: "nobody has to run a hose across the whole yard just to reach it" e.g. ['/pool-turf/dr-phillips/', '/pool-turf/poinciana/', '/pool-turf/southchase/']
+WARN  sentence on 5 pages: "neither fiber choice changes the base or drainage requirements underneath the decision com" e.g. ['/putting-greens/davenport/', '/putting-greens/kissimmee/', '/putting-greens/lake-nona/']
+WARN  sentence on 5 pages: "its one of the simplest habits on this list and among the most worth keeping consistent th" e.g. ['/playground-turf/dr-phillips/', '/playground-turf/horizon-west/', '/playground-turf/lake-nona/']
+WARN  sentence on 5 pages: "fully permeable backing paired with the deeper rock base underneath is what actually gets " e.g. ['/pet-turf/davenport/', '/pet-turf/kissimmee/', '/pet-turf/lake-nona/']
 WARN  sentence on 5 pages: "full sun in central florida can carry a synthetic surface to 120 to 150f occasionally high" e.g. ['/playground-turf/harmony/', '/playground-turf/kissimmee/', '/playground-turf/orlando/']
-WARN  sentence on 5 pages: "cooling it down with a hose before playtime or simply scheduling active play earlier in th" e.g. ['/playground-turf/harmony/', '/playground-turf/kissimmee/', '/playground-turf/orlando/']
-WARN  sentence on 5 pages: "clearing leaves before they reach the infill leaves and organic debris left sitting on a l" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/championsgate/', '/artificial-grass-installation/ocoee/']
-WARN  sentence on 5 pages: "checking for infill building up outside the edge or thinning out inside it catches both pr" e.g. ['/playground-turf/celebration/', '/playground-turf/championsgate/', '/playground-turf/ocoee/']
-WARN  sentence on 5 pages: "catching a repair loosening before it fully reopens a seam or edge on the verge of failing" e.g. ['/turf-repair/celebration/', '/turf-repair/championsgate/', '/turf-repair/ocoee/']
-WARN  sentence on 5 pages: "a repeat melt patch means the glare was never fixed patching a melted section of turf with" e.g. ['/turf-repair/harmony/', '/turf-repair/kissimmee/', '/turf-repair/orlando/']
-WARN  sentence on 5 pages: "a quick sweep or rinse toward the drain on a regular schedule keeps the whole underlay sys" e.g. ['/pool-turf/celebration/', '/pool-turf/championsgate/', '/pool-turf/ocoee/']
-WARN  sentence on 5 pages: "a quick hose rinse drops that surface temperature 30 to 50 degrees within minutes which is" e.g. ['/artificial-grass-installation/harmony/', '/artificial-grass-installation/kissimmee/', '/artificial-grass-installation/orlando/']
-WARN  sentence on 5 pages: "a hose rinse drops that temperature 30 to 50 degrees within minutes which matters more her" e.g. ['/pool-turf/harmony/', '/pool-turf/kissimmee/', '/pool-turf/orlando/']
-WARN  sentence on 5 pages: "a hose rinse drops that surface temperature 30 to 50 degrees within minutes which cools th" e.g. ['/putting-greens/harmony/', '/putting-greens/kissimmee/', '/putting-greens/orlando/']
-WARN  sentence on 4 pages: "why does coping get a different anchor than a fence line" e.g. ['/pool-turf/buenaventura-lakes/', '/pool-turf/four-corners/', '/pool-turf/lake-nona/']
-WARN  sentence on 4 pages: "what the putting green price range includes backyard putting green installation runs fourt" e.g. ['/putting-greens/four-corners/', '/putting-greens/ocoee/', '/putting-greens/reunion/']
-WARN  sentence on 4 pages: "what does a small deck border cost worked out" e.g. ['/pool-turf/dr-phillips/', '/pool-turf/hunters-creek/', '/pool-turf/orlando/']
-WARN  sentence on 4 pages: "topping off just that section is a smaller job than waiting for the whole border to look t" e.g. ['/pool-turf/dr-phillips/', '/pool-turf/lake-nona/', '/pool-turf/meadow-woods/']
-WARN  sentence on 4 pages: "topping off infill as a lawn ages infill goes in at roughly one to two pounds per square f" e.g. ['/artificial-grass-installation/dr-phillips/', '/artificial-grass-installation/lake-nona/', '/artificial-grass-installation/meadow-woods/']
-WARN  sentence on 4 pages: "topping it off periodically rather than waiting until the lawn looks visibly bare in spots" e.g. ['/artificial-grass-installation/dr-phillips/', '/artificial-grass-installation/lake-nona/', '/artificial-grass-installation/meadow-woods/']
-WARN  sentence on 4 pages: "too little depth and the shaped layers underneath cant hold their contours once the surfac" e.g. ['/putting-greens/buenaventura-lakes/', '/putting-greens/four-corners/', '/putting-greens/lake-nona/']
-WARN  sentence on 4 pages: "this walkthrough is where a crew catches a low spot an uneven seam or a containment edge t" e.g. ['/playground-turf/dr-phillips/', '/playground-turf/poinciana/', '/playground-turf/southchase/']
 WARN  8-gram overlap 27% incl. shared bank blocks: /turf-repair/ocoee/ ~ /turf-repair/winter-garden/
 WARN  8-gram overlap 23% incl. shared bank blocks: /pool-turf/ocoee/ ~ /pool-turf/winter-garden/
 WARN  8-gram overlap 21% incl. shared bank blocks: /pool-turf/davenport/ ~ /pool-turf/winter-garden/
@@ -81,6 +81,7 @@ WARN  8-gram overlap 18% incl. shared bank blocks: /artificial-grass-installatio
 WARN  8-gram overlap 17% incl. shared bank blocks: /pool-turf/ocoee/ ~ /pool-turf/orlando/
 WARN  8-gram overlap 17% incl. shared bank blocks: /pool-turf/meadow-woods/ ~ /pool-turf/winter-garden/
 WARN  8-gram overlap 17% incl. shared bank blocks: /playground-turf/hunters-creek/ ~ /playground-turf/ocoee/
+WARN  8-gram overlap 17% incl. shared bank blocks: /pool-turf/windermere/ ~ /pool-turf/winter-garden/
 WARN  8-gram overlap 17% incl. shared bank blocks: /pet-turf/ocoee/ ~ /pet-turf/southchase/
 WARN  8-gram overlap 17% incl. shared bank blocks: /turf-repair/orlando/ ~ /turf-repair/winter-garden/
 WARN  8-gram overlap 17% incl. shared bank blocks: /putting-greens/hunters-creek/ ~ /putting-greens/ocoee/
@@ -88,6 +89,7 @@ WARN  8-gram overlap 17% incl. shared bank blocks: /playground-turf/ocoee/ ~ /pl
 WARN  8-gram overlap 17% incl. shared bank blocks: /playground-turf/celebration/ ~ /playground-turf/ocoee/
 WARN  8-gram overlap 17% incl. shared bank blocks: /playground-turf/ocoee/ ~ /playground-turf/southchase/
 WARN  8-gram overlap 17% incl. shared bank blocks: /pet-turf/kissimmee/ ~ /pet-turf/winter-garden/
+WARN  8-gram overlap 17% incl. shared bank blocks: /playground-turf/windermere/ ~ /playground-turf/winter-garden/
 WARN  8-gram overlap 17% incl. shared bank blocks: /putting-greens/kissimmee/ ~ /putting-greens/winter-garden/
 WARN  8-gram overlap 17% incl. shared bank blocks: /pet-turf/ocoee/ ~ /pet-turf/orlando/
 WARN  8-gram overlap 17% incl. shared bank blocks: /artificial-grass-installation/ocoee/ ~ /artificial-grass-installation/reunion/
@@ -110,7 +112,5 @@ WARN  8-gram overlap 16% incl. shared bank blocks: /pool-turf/lake-nona/ ~ /pool
 WARN  8-gram overlap 16% incl. shared bank blocks: /pet-turf/poinciana/ ~ /pet-turf/winter-garden/
 WARN  8-gram overlap 16% incl. shared bank blocks: /pet-turf/championsgate/ ~ /pet-turf/ocoee/
 WARN  8-gram overlap 16% incl. shared bank blocks: /pool-turf/kissimmee/ ~ /pool-turf/winter-garden/
+WARN  8-gram overlap 16% incl. shared bank blocks: /pet-turf/windermere/ ~ /pet-turf/winter-garden/
 WARN  8-gram overlap 16% incl. shared bank blocks: /putting-greens/ocoee/ ~ /putting-greens/southchase/
-WARN  8-gram overlap 16% incl. shared bank blocks: /artificial-grass-installation/ocoee/ ~ /artificial-grass-installation/orlando/
-WARN  8-gram overlap 16% incl. shared bank blocks: /putting-greens/ocoee/ ~ /putting-greens/orlando/
-WARN  8-gram overlap 16% incl. shared bank blocks: /artificial-grass-installation/celebration/ ~ /artificial-grass-installation/ocoee/

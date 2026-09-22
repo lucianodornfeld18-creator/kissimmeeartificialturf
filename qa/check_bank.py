@@ -18,8 +18,8 @@ for name in sys.argv[1:]:
     print(f"== {name}")
     for k in KEYS:
         vs = B.get(k) or []
-        if len(vs) != 5:
-            print(f"FIX {k}: {len(vs)} variants (want 5)"); problems += 1
+        if len(vs) not in (5, 8):
+            print(f"FIX {k}: {len(vs)} variants (want 5 or 8)"); problems += 1
         h2s = [h for h, _ in vs]
         if len(set(h2s)) != len(h2s):
             print(f"FIX {k}: duplicate H2"); problems += 1

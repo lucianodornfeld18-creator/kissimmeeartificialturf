@@ -74,7 +74,7 @@ BLOCKS = {
 }
 ```
 
-- Five variants per block, 80–120 words each, **each variant making a different point or using a different example**, not a reworded copy. H2s differ too.
+- Eight variants per block (the first five exist; variants 6–8 are being added so that with 60 towns no two ever share more than one block), 80–120 words each, **each variant making a different point or using a different example**, not a reworded copy. H2s differ too.
 - Placeholders `{city}` and `{county}` are replaced at build time; use `{city}` once or twice per variant so the sentence reads naturally ("On a typical {city} lot…").
 - Block meanings for the service: **base** = what goes under it and why on Central Florida sand (washed crushed rock or crushed concrete, grade, drainage; state rule); **product** = which turf/infill/backing/pad spec suits this service; **process** = how the job runs and how long; **risks** = what goes wrong when it's done badly, and Florida-specific traps (heat, storms, low-E glass, drip lines, swales, 10-ft setback); **care** = upkeep for this service.
 - Plain HTML strings (no helper calls inside the bank, so no links). Facts must come from `docs/WRITING-GUIDE.md`; no prices other than the guide's ranges; no invented numbers.
