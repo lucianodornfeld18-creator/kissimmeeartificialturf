@@ -1,7 +1,12 @@
 pages: 189
-FAIL: 0
+FAIL: 5
 WARN: 51
 
+FAIL  track-record claim 'most of our': /
+FAIL  track-record claim 'most of our': /commercial-turf/
+FAIL  track-record claim 'most of our': /vacation-rental-turf/
+FAIL  track-record claim 'most of our': /laws/permits/polk-county/
+FAIL  track-record claim 'our jobs': /laws/permits/polk-county/
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 2 < 3: /areas/lake-county/

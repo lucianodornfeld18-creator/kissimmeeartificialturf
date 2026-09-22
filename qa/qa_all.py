@@ -20,6 +20,7 @@ BANNED = ["in today's", "whether you're", "whether you are", "look no further", 
           "a testament to", "nestled", "vibrant", "boasts", "tapestry", "one-stop shop", "we've got you covered", "utilize", "in order to", "let's dive in", "here's the thing", "say goodbye to", "second to none", "unparalleled"]
 INTERNAL = ["lead generation", "lead-gen", "sister brand", "sister site", "partner contractor", "hub_id", "owner input", "owner-inputs", "pending:", "todo", "placeholder", "lorem", "keyword", "search volume",
             "answer engine", "tier 1", "tier 2", "tier 3", "8-gram", "similarity", "benchmark", "word count", "autocomplete", "keyword planner", "pipeline", "rank-and-rent", "seo"]
+TRACK = ["most of our", "many of our", "our customers", "our clients", "we've installed", "we have installed", "we've built", "we have built", "we've done", "our jobs", "our calls", "our crews have", "years of experience", "hundreds of", "dozens of jobs", "dozens of yards", "our track record", "our portfolio", "slice of our"]
 MIN_WORDS = {"home": 3800, "service": 1800, "cityservice": 900, "city": 700, "county": 1200, "price": 2000, "law": 900, "permit": 700, "post": 1200, "compare": 1000, "faq": 1000}
 
 kinds = {}
@@ -85,6 +86,9 @@ def main():
         for b in INTERNAL:
             if re.search(r"(?<![a-z])" + re.escape(b) + r"(?![a-z])", low):
                 fails.append(f"internal term '{b}': {route}")
+        for b in TRACK:
+            if re.search(r"(?<![a-z])" + re.escape(b) + r"(?![a-z])", low):
+                fails.append(f"track-record claim '{b}': {route}")
         if low.count("ensure") > 1:
             warns.append(f"'ensure' x{low.count('ensure')}: {route}")
         if "!" in re.sub(r"<[^>]+>", "", txt):

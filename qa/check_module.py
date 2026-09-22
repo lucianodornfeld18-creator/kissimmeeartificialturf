@@ -13,7 +13,7 @@ sys.path.insert(0, str(ROOT / "site"))
 sys.path.insert(0, str(ROOT / "site" / "content"))
 sys.path.insert(0, str(ROOT / "qa"))
 from templates import render_page  # noqa: E402
-from qa_all import BANNED, INTERNAL, MIN_WORDS, main_text  # noqa: E402
+from qa_all import BANNED, INTERNAL, TRACK, MIN_WORDS, main_text  # noqa: E402
 from _data import REVIEWED  # noqa: E402
 
 problems = 0
@@ -41,7 +41,7 @@ for name in sys.argv[1:]:
         lede_words = len(re.sub("<[^>]+>", " ", p["lede"]).split())
         if p["kind"] not in ("page", "plain", "index") and not 35 <= lede_words <= 80:
             issues.append(f"capsule {lede_words} words (want 40-70)")
-        for b in BANNED + INTERNAL:
+        for b in BANNED + INTERNAL + TRACK:
             if re.search(r"(?<![a-z])" + re.escape(b) + r"(?![a-z])", low):
                 issues.append(f"banned '{b}'")
         if low.count("ensure") > 1:

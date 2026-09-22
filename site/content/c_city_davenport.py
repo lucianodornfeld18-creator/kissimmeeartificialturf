@@ -101,7 +101,7 @@ HUB = page(
             "here: excessively drained, very rapid to rapid permeability, on slopes that usually run 0 to 12 "
             "percent but can reach 40 percent on the more dissected ridge shoulders (" + ext(CANDLER[1],
             "USDA's official Candler series description") + "). That's faster-draining, and on some lots "
-            "steeper, ground than the flat Myakka and Basinger sand most of our Osceola jobs sit on.</p>"
+            "steeper, ground than the flat Myakka and Basinger sand under most Osceola yards.</p>"
             "<p>Water still collects somewhere. Lake Davenport anchors the Four Corners side of town (" +
             ext(LAKE_DAV[1], "the county's water atlas entry") + "), and the resort subdivisions built since the "
             "2010s ring their common areas with stormwater retention ponds. Florida's turf rule keeps synthetic "
@@ -244,7 +244,7 @@ LOCAL["pet"] = {
     "h1": "Dog turf for Davenport's newer, pond-lined subdivisions",
     "lede": capsule(
         "Pet turf in Davenport runs " + price("pet") + " a square foot installed, typically " + price("pet", True) +
-        ", as of September 2026. Most of our pet-turf calls here come from the gated subdivisions built over the "
+        ", as of September 2026. Most pet-turf inquiries from Davenport tend to involve the gated subdivisions built over the "
         "last decade, where a narrow side yard often backs straight onto a stormwater pond."
     ),
     "sections": [
@@ -294,7 +294,7 @@ LOCAL["putting"] = {
     "h1": "Putting greens on Davenport's golf-frontage lots",
     "lede": capsule(
         "Backyard putting greens in Davenport run " + price("putting") + " a square foot installed, typically " +
-        price("putting", True) + ", as of September 2026. A fair share of our calls here come from Providence "
+        price("putting", True) + ", as of September 2026. Much of the interest in Davenport comes from Providence "
         "and other golf-course communities, where the green sits closer to a shared fairway than to the street."
     ),
     "sections": [
@@ -546,7 +546,7 @@ LOCAL["sports"] = {
     "sections": [
         ("Grading a level lane on ridge ground",
          "<p>A batting cage or a sled track needs a genuinely flat, compacted lane, and Davenport's Candler-sand "
-         "lots can carry noticeably more natural slope than the flatter ground most of our sports-turf jobs sit "
+         "lots can carry noticeably more natural slope than the flatter ground a typical Osceola sports surface sits "
          "on elsewhere in the service area. " + a("/blog/artificial-turf-on-a-slope/", "Building on a slope") +
          " isn't a reason to skip a project here; it just means more of the budget goes into cutting and "
          "retaining a level bench before the turf itself ever gets ordered.</p>"),
