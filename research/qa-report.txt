@@ -1,4 +1,4 @@
-pages: 93
+pages: 103
 FAIL: 0
 WARN: 27
 
@@ -9,7 +9,7 @@ WARN  inlinks 1 < 3: /blog/how-to-make-artificial-grass-look-real/
 WARN  inlinks 2 < 3: /blog/pet-turf-vs-regular-artificial-grass/
 WARN  inlinks 2 < 3: /faq/cost/
 WARN  inlinks 2 < 3: /faq/hoa-permits/
-WARN  inlinks 1 < 3: /faq/pets-heat/
+WARN  inlinks 2 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
 WARN  sentence on 2 pages: "why does a shared property need a documented service contract not a habit" e.g. ['/commercial-turf/kissimmee/', '/commercial-turf/st-cloud/']
