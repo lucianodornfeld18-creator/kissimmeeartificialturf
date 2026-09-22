@@ -1,56 +1,54 @@
-pages: 280
+pages: 300
 FAIL: 0
-WARN: 51
+WARN: 49
 
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 2 < 3: /areas/lake-county/
 WARN  inlinks 2 < 3: /areas/seminole-county/
-WARN  inlinks 2 < 3: /blog/best-time-of-year-to-install-artificial-turf-florida/
 WARN  inlinks 1 < 3: /blog/how-to-make-artificial-grass-look-real/
-WARN  inlinks 2 < 3: /blog/pet-turf-vs-regular-artificial-grass/
 WARN  inlinks 2 < 3: /faq/cost/
 WARN  inlinks 2 < 3: /faq/hoa-permits/
 WARN  inlinks 2 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
 WARN  inlinks 2 < 3: /tools/
 WARN  sentence on 5 pages: "working out the full stacks thickness on paper before any soil comes out avoids discoverin" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/hunters-creek/', '/playground-turf/kissimmee/']
+WARN  sentence on 5 pages: "why unwashed fill causes more trouble in a paver joint floridas turf standard requires sub" e.g. ['/turf-and-pavers/championsgate/', '/turf-and-pavers/davenport/', '/turf-and-pavers/dr-phillips/']
 WARN  sentence on 5 pages: "why does a rooftop deck skip soil and rock entirely" e.g. ['/commercial-turf/buenaventura-lakes/', '/commercial-turf/hunters-creek/', '/commercial-turf/kissimmee/']
 WARN  sentence on 5 pages: "why does a bocce courts grade run end to end not side to side" e.g. ['/sports-turf/buenaventura-lakes/', '/sports-turf/hunters-creek/', '/sports-turf/kissimmee/']
 WARN  sentence on 5 pages: "when a professional clean stops making a dent in a persistent smell on a lawn like that th" e.g. ['/turf-cleaning/buenaventura-lakes/', '/turf-cleaning/hunters-creek/', '/turf-cleaning/kissimmee/']
+WARN  sentence on 5 pages: "what washed crushed rock does that unwashed fill cant the states turf rule specifically re" e.g. ['/artificial-grass-installation/championsgate/', '/artificial-grass-installation/davenport/', '/artificial-grass-installation/dr-phillips/']
 WARN  sentence on 5 pages: "what looks like a nail simply pulling loose is often that eroded gap letting the edge flex" e.g. ['/turf-repair/celebration/', '/turf-repair/lake-nona/', '/turf-repair/poinciana/']
+WARN  sentence on 5 pages: "what actually holds up a turf ribbon between pavers" e.g. ['/pool-turf/championsgate/', '/pool-turf/davenport/', '/pool-turf/dr-phillips/']
 WARN  sentence on 5 pages: "washed opengraded crushed rock underneath keeps that added flow moving rather than binding" e.g. ['/pool-turf/celebration/', '/pool-turf/lake-nona/', '/pool-turf/poinciana/']
 WARN  sentence on 5 pages: "washed opengraded crushed rock or crushed concrete still goes down two to four inches deep" e.g. ['/putting-greens/buenaventura-lakes/', '/putting-greens/hunters-creek/', '/putting-greens/kissimmee/']
 WARN  sentence on 5 pages: "washed opengraded crushed rock and careful compaction matter at any scale but checking the" e.g. ['/commercial-turf/celebration/', '/commercial-turf/lake-nona/', '/commercial-turf/poinciana/']
+WARN  sentence on 5 pages: "unwashed material carries fine dust and clay particles that settle into the gaps between t" e.g. ['/artificial-grass-installation/championsgate/', '/artificial-grass-installation/davenport/', '/artificial-grass-installation/dr-phillips/']
+WARN  sentence on 5 pages: "the surrounding base still follows the same washedrock depth and percolatingsand principle" e.g. ['/commercial-turf/championsgate/', '/commercial-turf/davenport/', '/commercial-turf/dr-phillips/']
 WARN  sentence on 5 pages: "the same one to two percent fall still has to move water somewhere so it gets built into t" e.g. ['/sports-turf/buenaventura-lakes/', '/sports-turf/hunters-creek/', '/sports-turf/kissimmee/']
+WARN  sentence on 5 pages: "the one to two percent grade itself doesnt change only the direction its aimed and the rea" e.g. ['/pet-turf/championsgate/', '/pet-turf/davenport/', '/pet-turf/dr-phillips/']
 WARN  sentence on 5 pages: "the membrane below still has to stay watertight so turf goes in as part of a system built " e.g. ['/commercial-turf/buenaventura-lakes/', '/commercial-turf/hunters-creek/', '/commercial-turf/kissimmee/']
+WARN  sentence on 5 pages: "that thin joint still has to drain rather than trap water against the paver edges so the s" e.g. ['/pool-turf/championsgate/', '/pool-turf/davenport/', '/pool-turf/dr-phillips/']
+WARN  sentence on 5 pages: "that slope matters more here than it does under grass since a shock pad sitting in standin" e.g. ['/playground-turf/championsgate/', '/playground-turf/davenport/', '/playground-turf/dr-phillips/']
+WARN  sentence on 5 pages: "that rule matters more in a paverandturf joint than in an open lawn because a narrow strip" e.g. ['/turf-and-pavers/championsgate/', '/turf-and-pavers/davenport/', '/turf-and-pavers/dr-phillips/']
+WARN  sentence on 5 pages: "that makes an indoor lane one of the simplest bases to plan even though the product on top" e.g. ['/sports-turf/championsgate/', '/sports-turf/davenport/', '/sports-turf/dr-phillips/']
 WARN  sentence on 5 pages: "that fall gets rechecked with a level once the first lift of rock is compacted since two t" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/lake-nona/', '/artificial-grass-installation/poinciana/']
+WARN  sentence on 5 pages: "that drain point is also chosen to keep liquid moving away from a patio slab or pool deck " e.g. ['/pet-turf/championsgate/', '/pet-turf/davenport/', '/pet-turf/dr-phillips/']
 WARN  sentence on 5 pages: "that deeper layer combined with a backing built to pass over thirty inches of water an hou" e.g. ['/pet-turf/celebration/', '/pet-turf/lake-nona/', '/pet-turf/poinciana/']
 WARN  sentence on 5 pages: "that crust doesnt announce itself as a problem until the turf above it is pulled up during" e.g. ['/turf-replacement/celebration/', '/turf-replacement/lake-nona/', '/turf-replacement/poinciana/']
 WARN  sentence on 5 pages: "that compacted rock layer benefits from a day or two to settle before turf goes on top and" e.g. ['/vacation-rental-turf/buenaventura-lakes/', '/vacation-rental-turf/hunters-creek/', '/vacation-rental-turf/kissimmee/']
 WARN  sentence on 5 pages: "structural load not soil condition drives every base decision up there" e.g. ['/commercial-turf/buenaventura-lakes/', '/commercial-turf/hunters-creek/', '/commercial-turf/kissimmee/']
 WARN  sentence on 5 pages: "skimping on depth because the footprint is small is a common shortcut and it backfires fas" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/lake-nona/', '/turf-and-pavers/poinciana/']
 WARN  sentence on 5 pages: "shortchanging that depth calculation is what leaves a finished play surface sitting visibl" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/hunters-creek/', '/playground-turf/kissimmee/']
+WARN  sentence on 5 pages: "running a few extra compaction passes on that specific strip before turf goes down keeps t" e.g. ['/vacation-rental-turf/championsgate/', '/vacation-rental-turf/davenport/', '/vacation-rental-turf/dr-phillips/']
 WARN  sentence on 5 pages: "reseating the nails without rebuilding the washedout section underneath fixes the symptom " e.g. ['/turf-repair/celebration/', '/turf-repair/lake-nona/', '/turf-repair/poinciana/']
 WARN  sentence on 5 pages: "removing that layer means the washed rock underneath is doing the filtering job on its own" e.g. ['/pet-turf/buenaventura-lakes/', '/pet-turf/hunters-creek/', '/pet-turf/kissimmee/']
+WARN  sentence on 5 pages: "regrading during a tearout is often the first real correction that slope has had since the" e.g. ['/turf-replacement/championsgate/', '/turf-replacement/davenport/', '/turf-replacement/dr-phillips/']
 WARN  sentence on 5 pages: "planning footing locations against the base layout at the start keeps the compacted rock a" e.g. ['/sports-turf/celebration/', '/sports-turf/lake-nona/', '/sports-turf/poinciana/']
+WARN  sentence on 5 pages: "none of the percolation grading or thirtyinch drainagerate concerns that govern an outdoor" e.g. ['/sports-turf/championsgate/', '/sports-turf/davenport/', '/sports-turf/dr-phillips/']
 WARN  sentence on 5 pages: "no amount of rinsing power brooming or enzyme treatment from above reaches urine trapped a" e.g. ['/turf-cleaning/buenaventura-lakes/', '/turf-cleaning/hunters-creek/', '/turf-cleaning/kissimmee/']
 WARN  sentence on 5 pages: "matching the bases one to two percent grade to an existing structure takes more field meas" e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/lake-nona/', '/vacation-rental-turf/poinciana/']
 WARN  sentence on 5 pages: "loose fill packed in close to a footing after the fact settles unevenly over time and can " e.g. ['/sports-turf/celebration/', '/sports-turf/lake-nona/', '/sports-turf/poinciana/']
 WARN  sentence on 5 pages: "lifting the corner and checking the base itself rather than judging by the wrinkles shape " e.g. ['/turf-repair/buenaventura-lakes/', '/turf-repair/hunters-creek/', '/turf-repair/kissimmee/']
 WARN  sentence on 5 pages: "keeping the layout continuous while letting the base underneath change at the joint is wha" e.g. ['/turf-and-pavers/buenaventura-lakes/', '/turf-and-pavers/hunters-creek/', '/turf-and-pavers/kissimmee/']
 WARN  sentence on 5 pages: "its one of the few places where less material under the turf is the better build not a sho" e.g. ['/pet-turf/buenaventura-lakes/', '/pet-turf/hunters-creek/', '/pet-turf/kissimmee/']
-WARN  sentence on 5 pages: "instead of two to four inches of washed opengraded crushed rock the crew glues a thin drai" e.g. ['/pool-turf/buenaventura-lakes/', '/pool-turf/hunters-creek/', '/pool-turf/kissimmee/']
-WARN  sentence on 5 pages: "how deep the washed rock runs under a narrow strip a turf strip tucked between pavers stil" e.g. ['/turf-and-pavers/celebration/', '/turf-and-pavers/lake-nona/', '/turf-and-pavers/poinciana/']
-WARN  sentence on 5 pages: "how deep does the base go under a residential lawn" e.g. ['/artificial-grass-installation/buenaventura-lakes/', '/artificial-grass-installation/hunters-creek/', '/artificial-grass-installation/kissimmee/']
-WARN  sentence on 5 pages: "getting the transition wrong leaves a low spot right where the two surfaces meet which is " e.g. ['/vacation-rental-turf/celebration/', '/vacation-rental-turf/lake-nona/', '/vacation-rental-turf/poinciana/']
-WARN  sentence on 5 pages: "getting that distinction backward produces a court that drains fine but never plays true" e.g. ['/sports-turf/buenaventura-lakes/', '/sports-turf/hunters-creek/', '/sports-turf/kissimmee/']
-WARN  sentence on 5 pages: "getting both requirements satisfied in the same base is what separates a green built by so" e.g. ['/putting-greens/celebration/', '/putting-greens/lake-nona/', '/putting-greens/poinciana/']
-WARN  sentence on 5 pages: "flat isnt the same as functional which is why we check for a crust not just for slope befo" e.g. ['/turf-replacement/celebration/', '/turf-replacement/lake-nona/', '/turf-replacement/poinciana/']
-WARN  sentence on 5 pages: "fines from unwashed fill binding into a crust dont just block drainage under a pad they al" e.g. ['/playground-turf/celebration/', '/playground-turf/lake-nona/', '/playground-turf/poinciana/']
-WARN  sentence on 5 pages: "fabric like that holds liquid against whatevers underneath it instead of letting it pass t" e.g. ['/pet-turf/buenaventura-lakes/', '/pet-turf/hunters-creek/', '/pet-turf/kissimmee/']
-WARN  sentence on 5 pages: "checking broadly before quoting avoids discovering a second failed area halfway through th" e.g. ['/turf-replacement/buenaventura-lakes/', '/turf-replacement/hunters-creek/', '/turf-replacement/kissimmee/']
-WARN  sentence on 5 pages: "an open border between the same cage and a side fence still gets the standard rock base gr" e.g. ['/pool-turf/buenaventura-lakes/', '/pool-turf/hunters-creek/', '/pool-turf/kissimmee/']
-WARN  sentence on 5 pages: "a yard compacted in a single pass looks finished the same day but the material several inc" e.g. ['/artificial-grass-installation/buenaventura-lakes/', '/artificial-grass-installation/hunters-creek/', '/artificial-grass-installation/kissimmee/']
-WARN  sentence on 5 pages: "a wrinkle from turf that was never stretched drumtight tends to run as one long ridge acro" e.g. ['/turf-repair/buenaventura-lakes/', '/turf-repair/hunters-creek/', '/turf-repair/kissimmee/']
-WARN  sentence on 5 pages: "a wrinkle from a base thats settled underneath tends to sit lower on one side spreads a li" e.g. ['/turf-repair/buenaventura-lakes/', '/turf-repair/hunters-creek/', '/turf-repair/kissimmee/']
