@@ -57,7 +57,7 @@ Per service, make the local sections about *that service in that town* (dogs in 
 
 Prices never differ by town. Use `price("<key>")` and do arithmetic inside the published range.
 
-Check with `python qa/check_module.py c_city_<slug>` (city × service pages need ≥ 900 words including the bank blocks; if the bank for a service isn't written yet the page will be short — then aim for ≥ 520 words of your own material per page and say so in your report).
+**Two checks, both mandatory, run from the project root:** `python qa/check_module.py c_city_<slug>` (format, word counts, banned phrases, repeats inside your file) and then `python qa/cross_check.py c_city_<slug>` (compares your rendered pages with every page already built in `site/dist`; it prints any run of 10+ shared words and fails on a pair over 12% or a shared run of 14+ words). Writers who "copied the mechanics" of an existing city module have produced 20–30% overlap; that is rejected. Write from your own research, in your own sentences, with different section angles. Check with `python qa/check_module.py c_city_<slug>` (city × service pages need ≥ 900 words including the bank blocks; if the bank for a service isn't written yet the page will be short — then aim for ≥ 520 words of your own material per page and say so in your report).
 
 ## 2. Block bank
 

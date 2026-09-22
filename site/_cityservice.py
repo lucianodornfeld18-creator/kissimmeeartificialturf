@@ -71,7 +71,7 @@ def cityservice_pages(city_slug, local):
                 vs = bank[token]
                 h2, html = vs[_variant(city_slug, BLOCKS.index(token), len(vs))]
                 rep = lambda t: t.replace("{city}", c["name"]).replace("{county}", c["county_name"])  # noqa: E731
-                parts.append(sec(rep(h2), rep(html)))
+                parts.append('<section class="bank"><h2>' + rep(h2) + "</h2>\n" + rep(html) + "\n</section>")
         near = [n for n in nearest(city_slug, 8) if exists(n, service)][:2]
         other = [s for s in TIER_SERVICES[c["tier"]] if s != service and s in local]
         idx = SERVICE_ORDER.index(service)

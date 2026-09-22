@@ -1,7 +1,20 @@
 pages: 138
-FAIL: 0
+FAIL: 13
 WARN: 51
 
+FAIL  8-gram overlap 26%: /turf-replacement/celebration/ ~ /turf-replacement/st-cloud/
+FAIL  8-gram overlap 21%: /turf-repair/poinciana/ ~ /turf-repair/st-cloud/
+FAIL  8-gram overlap 21%: /turf-cleaning/celebration/ ~ /turf-cleaning/st-cloud/
+FAIL  8-gram overlap 20%: /turf-replacement/poinciana/ ~ /turf-replacement/st-cloud/
+FAIL  8-gram overlap 19%: /pool-turf/celebration/ ~ /pool-turf/st-cloud/
+FAIL  8-gram overlap 18%: /turf-replacement/celebration/ ~ /turf-replacement/poinciana/
+FAIL  8-gram overlap 17%: /sports-turf/poinciana/ ~ /sports-turf/st-cloud/
+FAIL  8-gram overlap 16%: /turf-repair/celebration/ ~ /turf-repair/st-cloud/
+FAIL  8-gram overlap 16%: /commercial-turf/poinciana/ ~ /commercial-turf/st-cloud/
+FAIL  8-gram overlap 16%: /sports-turf/celebration/ ~ /sports-turf/st-cloud/
+FAIL  8-gram overlap 15%: /sports-turf/celebration/ ~ /sports-turf/poinciana/
+FAIL  8-gram overlap 15%: /turf-repair/celebration/ ~ /turf-repair/poinciana/
+FAIL  8-gram overlap 15%: /pool-turf/poinciana/ ~ /pool-turf/st-cloud/
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 2 < 3: /blog/best-time-of-year-to-install-artificial-turf-florida/
