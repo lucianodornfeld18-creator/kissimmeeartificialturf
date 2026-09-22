@@ -41,7 +41,7 @@ def get_pages():
             + f"<p>The {a('/artificial-turf-cost/', 'turf cost guide')} breaks those numbers down by yard size, shows where the money goes, and compares ten years of turf against ten years of St. Augustine. If you'd rather punch in your own dimensions, use the {a('/artificial-turf-cost/calculator/', 'cost and materials calculator')}.</p>"),
 
         sec("How we build turf for sand, storms and a high water table",
-            "<p>Turf fails from underneath. The blades on top are UV-stabilized polyethylene that will outlast the mortgage on some houses; what gives out is a thin, loosely raked base that settles the first time the water table comes up in August. So most of our day on site is spent on the part you'll never see.</p>"
+            "<p>Turf fails from underneath. The blades on top are UV-stabilized polyethylene that will outlast the mortgage on some houses; what gives out is a thin, loosely raked base that settles the first time the water table comes up in August. So most of a crew's day on site goes into the part you'll never see.</p>"
             + LAYERS_SVG
             + steps([("Strip and haul.", "Sod, thatch and 3 to 4 inches of soil come out. St. Augustine roots hold a lot of organic matter, and organic matter under turf rots and sinks."),
                      ("Set the grade.", "We slope the subgrade 1 to 2 percent away from the house and toward wherever the lot already drains, usually the side-yard swale or the rear easement. Turf stops at the edge of a swale; the state rule keeps it out of swales, ditches and pond banks."),

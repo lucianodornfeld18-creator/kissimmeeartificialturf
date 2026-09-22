@@ -121,7 +121,7 @@ def _str():
         sec("How do property managers find the best turf contractor near them?",
             "<p>The property managers who handle several rental homes tend to ask a different set of questions than a single homeowner would. Can the scope be written once and reused across a portfolio of similar homes? Is scheduling flexible enough to fit inside a booking gap rather than blocking out a week? Are repairs quoted per visit or does an installer expect a standing service arrangement? None of that is a claim about who ranks first in Kissimmee; it's simply what a working relationship with a rental-portfolio manager needs to include before either side signs anything.</p>"),
         sec("Where the short-term rental belt runs",
-            f"<p>Most of our vacation-rental calls come from {city('four-corners')}, {city('championsgate')}, {city('reunion')}, {city('davenport')} and {city('kissimmee')} itself, with a smaller share from longer-term rentals in {city('celebration')} and {city('poinciana')}.</p>"
+            f"<p>Most vacation-rental inquiries in this area come from {city('four-corners')}, {city('championsgate')}, {city('reunion')}, {city('davenport')} and {city('kissimmee')} itself, with a smaller share from longer-term rentals in {city('celebration')} and {city('poinciana')}.</p>"
             + "<!--AUTO:service-cities-->"),
     ])
     faqs = [
@@ -190,7 +190,7 @@ def _commercial():
             "<p>Boards and managers tend to ask a consistent short list before they'll sign: can the bid come from drawings rather than a guess, is the drainage plan spelled out in writing, is the product spec named with a face weight and backing type suited to commercial traffic rather than a homeowner-grade product, and can the crew phase the work so the property doesn't have to close. None of that is us claiming to be the top pick in Central Florida; it's the list any serious bidder should be able to answer without hesitating.</p>"
             + f"<p>{post('how-to-compare-artificial-turf-quotes', 'The same line-by-line comparison')} that works for a house lawn applies here, scaled up.</p>"),
         sec("Where we quote commercial work",
-            f"<p>Managed properties in {city('kissimmee')}, {city('st-cloud')}, {city('celebration')} and {city('poinciana')} account for most of our commercial calls, along with apartment and daycare sites north into {city('hunters-creek')} and {city('lake-nona')}.</p>"
+            f"<p>Managed properties in {city('kissimmee')}, {city('st-cloud')}, {city('celebration')} and {city('poinciana')} generate most of the commercial inquiries around here, along with apartment and daycare sites north into {city('hunters-creek')} and {city('lake-nona')}.</p>"
             + "<!--AUTO:service-cities-->"),
     ])
     faqs = [
