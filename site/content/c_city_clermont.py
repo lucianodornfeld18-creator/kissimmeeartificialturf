@@ -95,6 +95,7 @@ LOCAL = {
         "faqs": [
             faq("Does a sloped Clermont yard need a retaining wall before turf goes in?", "Usually not for a moderate grade; terracing the base or adding anchoring handles most residential slopes. A genuinely steep drop, closer to a hillside than a sloped lawn, is a conversation for a site visit rather than a phone estimate."),
             faq("Will Candler sand let a Clermont yard skip the crushed-rock base?", "No. The state's synthetic turf rule requires a washed, open-graded crushed rock or crushed concrete base regardless of how well the native sand drains underneath it; the base controls the surface shape and anchoring, not just water movement."),
+            faq("Do nearby ridge towns share the same sloped-lot approach?", f"Yes. {city('montverde', 'Montverde')} and the hillier stretches of {city('winter-garden', 'Winter Garden')} sit on the same general ridge system, so the terracing and anchoring approach carries over there with only the soil series changing slightly by address."),
         ],
         "sources": SRC,
     },
@@ -120,6 +121,7 @@ LOCAL = {
         "faqs": [
             faq("Does Clermont's hilly terrain change what infill works best for dogs?", "Not directly. Zeolite and antimicrobial coated sand work the same way on a slope as on a flat lot; what changes is how the base is graded underneath the run, not the infill choice on top of it."),
             faq("Can a dog run sit right up to a Clermont lake or canal?", "Only where a hard shoreline barrier is already standing in for that buffer. Without a seawall or bulkhead in place, the state's 10-foot rule reaches a pet area the same way it reaches the rest of the lawn."),
+            faq("Do dog runs in Montverde face the same ridge conditions?", f"Largely, yes. {city('montverde', 'Montverde')} sits on the same general ridge and shares the fast-draining sand, so the odor-focused infill choice matters more there than any drainage concern too."),
         ],
         "sources": SRC,
     },
@@ -145,6 +147,7 @@ LOCAL = {
         "faqs": [
             faq("Can a Clermont lot's natural slope replace built-in contouring?", "Partly. A gentle existing grade can supply some of a green's break, which can lower the shaping cost, but cup placement and a level pad under each cup still need to be built regardless of the starting slope."),
             faq("Do Kings Ridge or Legends require a specific putting-green design?", "Neither has a published design document we could find naming synthetic greens specifically. An ARC submittal with dimensions, a product sample and a site plan is the standard packet either community's review committee is likely to expect."),
+            faq("Is Clermont the only nearby town with golf-community putting greens?", f"No. {city('four-corners', 'Four Corners')} and the resort corridor toward {city('minneola', 'Minneola')} both carry golf-adjacent subdivisions where a home green is a common request, though Clermont's Kings Ridge and Legends pairing is the densest concentration in our south Lake County coverage."),
         ],
         "sources": SRC,
     },
@@ -170,6 +173,7 @@ LOCAL = {
         "faqs": [
             faq("Does a sloped Clermont lot need a deeper shock pad than a flat one?", "The pad thickness itself is set by the equipment's fall height, not the slope. What the slope adds is deeper excavation on the uphill side to reach a level plane before that pad goes in."),
             faq("Is there a public playground in Clermont worth looking at for design ideas?", "The play area at Champions Splash Park on Lake Minneola is a common reference point locally, though a backyard design isn't held to any public-park standard."),
+            faq("Do families in nearby Groveland or Four Corners ask for the same shock-pad build?", f"Yes. {city('groveland', 'Groveland')} and {city('four-corners', 'Four Corners')} both send us similar requests, and the fall-height-driven pad thickness works the same way regardless of which of the three towns the yard sits in."),
         ],
         "sources": SRC,
     },
@@ -195,6 +199,7 @@ LOCAL = {
         "faqs": [
             faq("Does a sloped Clermont lot change how pool-deck turf drains?", "It can. The deck's own slope, poured when the pool cage was built, doesn't always match the rest of the yard's grade, so checking which way it currently sheds water before installing the drainage underlay is worth doing on a hillside lot."),
             faq("Is pool-area turf cheaper than a full yard conversion in Clermont?", "The total cost is lower simply because the footprint is smaller, though the per-square-foot price sits at the upper half of the residential range given tight access through a screen enclosure."),
+            faq("Do pool cages toward Montverde have the same drainage question?", f"Yes, wherever a lanai sits on graded ground rather than a flat pad, which covers a fair share of {city('montverde', 'Montverde')} too. Checking the deck's actual slope before adding a turf underlay matters on any hillside pool enclosure in south Lake County."),
         ],
         "sources": SRC,
     },
@@ -220,6 +225,7 @@ LOCAL = {
         "faqs": [
             faq("Why do repairs in Clermont happen more at the bottom of a sloped yard?", "Water and gravity both push toward the downhill edge during a storm, so a weak seam or a loosely anchored edge tends to fail there first. The same defect on a flat lot might take longer to show up."),
             faq("Can a settling low spot on ridge sand be fixed without pulling up the whole lawn?", "Usually yes. Pulling back the turf at just the affected spot lets a crew check and recompact the base underneath, then reseam and infill that section without redoing the entire yard."),
+            faq("Do you handle repair calls out toward Groveland and Four Corners too?", f"Yes, {city('groveland', 'Groveland')} and {city('four-corners', 'Four Corners')} both fall inside the radius we cover, and the same downhill-edge and settling checks apply on the ridge terrain either town shares with Clermont."),
         ],
         "sources": SRC,
     },
