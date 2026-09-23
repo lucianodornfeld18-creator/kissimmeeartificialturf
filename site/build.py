@@ -111,6 +111,22 @@ def visible_text(html):
     return htmlmod.unescape(re.sub(r"\s+", " ", t)).strip()
 
 
+def email_off(html):
+    """Wrap mailto links and bare addresses in <!--email_off--> so Cloudflare's obfuscation skips them (scripts untouched)."""
+    from _data import EMAIL
+    keep = []
+
+    def hold(m):
+        keep.append(m.group(0))
+        return f"\x00{len(keep) - 1}\x00"
+
+    html = re.sub(r"<script\b.*?</script>", hold, html, flags=re.S)
+    html = re.sub(r'<a href="mailto:[^"]+"[^>]*>.*?</a>', lambda m: "<!--email_off-->" + m.group(0) + "<!--/email_off-->", html, flags=re.S)
+    html = re.sub(r"<!--email_off-->.*?<!--/email_off-->", hold, html, flags=re.S)
+    html = html.replace(EMAIL, "<!--email_off-->" + EMAIL + "<!--/email_off-->")
+    return re.sub(r"\x00(\d+)\x00", lambda m: keep[int(m.group(1))], html)
+
+
 def section_of(p):
     k = p["kind"]
     return {"service": "services", "city": "areas", "county": "areas", "cityservice": "city-services", "post": "blog", "faq": "faq"}.get(k, "core")
@@ -277,7 +293,7 @@ def main():
     for p in pages:
         out = DIST if p["route"] == "/" else DIST / p["route"].strip("/")
         out.mkdir(parents=True, exist_ok=True)
-        html = soften_links(render_page(p), routes, missing)
+        html = email_off(soften_links(render_page(p), routes, missing))
         (out / "index.html").write_text(html, encoding="utf-8")
         rendered[p["route"]] = html
     if (DIST / "404" / "index.html").exists():
