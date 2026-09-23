@@ -1,4 +1,4 @@
-pages: 546
+pages: 554
 FAIL: 0
 WARN: 46
 
@@ -24,6 +24,10 @@ WARN  sentence on 8 pages: "washed opengraded crushed rock or crushed concrete s
 WARN  sentence on 8 pages: "unwashed material carries fine dust and clay particles that settle into the gaps between t" e.g. ['/artificial-grass-installation/belle-isle/', '/artificial-grass-installation/conway/', '/artificial-grass-installation/edgewood/']
 WARN  sentence on 8 pages: "unwashed fill would let fines settle and bind right where the extra volume arrives first t" e.g. ['/pool-turf/altamonte-springs/', '/pool-turf/avalon-park/', '/pool-turf/dundee/']
 WARN  sentence on 8 pages: "unwashed fill under a run would trap liquid at the surface the same way it traps rainwater" e.g. ['/pet-turf/altamonte-springs/', '/pet-turf/avalon-park/', '/pet-turf/dundee/']
+WARN  sentence on 8 pages: "topping off infill as a lawn ages infill goes in at roughly one to two pounds per square f" e.g. ['/artificial-grass-installation/bartow/', '/artificial-grass-installation/davenport/', '/artificial-grass-installation/gotha/']
+WARN  sentence on 8 pages: "topping it off periodically rather than waiting until the lawn looks visibly bare in spots" e.g. ['/artificial-grass-installation/bartow/', '/artificial-grass-installation/davenport/', '/artificial-grass-installation/gotha/']
+WARN  sentence on 8 pages: "this walkthrough is separate from any paperwork and takes only a few minutes alongside the" e.g. ['/artificial-grass-installation/bartow/', '/artificial-grass-installation/dr-phillips/', '/artificial-grass-installation/horizon-west/']
+WARN  sentence on 8 pages: "this test also surfaces any lingering odor from construction dust or adhesive before the r" e.g. ['/pet-turf/bartow/', '/pet-turf/dr-phillips/', '/pet-turf/horizon-west/']
 WARN  sentence on 8 pages: "the two materials were never going to settle identically and a repair that only reglues th" e.g. ['/turf-repair/apopka/', '/turf-repair/auburndale/', '/turf-repair/casselberry/']
 WARN  sentence on 8 pages: "the two causes call for different fixes a settled area gets built back up and recompacted " e.g. ['/turf-repair/altamonte-springs/', '/turf-repair/avalon-park/', '/turf-repair/dundee/']
 WARN  sentence on 8 pages: "the states rule that subgrade material be washed before installation exists for exactly th" e.g. ['/pool-turf/altamonte-springs/', '/pool-turf/avalon-park/', '/pool-turf/dundee/']
@@ -45,7 +49,3 @@ WARN  sentence on 8 pages: "structural load not soil condition drives every base
 WARN  sentence on 8 pages: "standing water sitting in a low tier softens that part of the base well before the rest of" e.g. ['/putting-greens/avalon-park/', '/putting-greens/bartow/', '/putting-greens/celebration/']
 WARN  sentence on 8 pages: "skipping that split and grading toward just one corner can send more runoff toward a neigh" e.g. ['/artificial-grass-installation/apopka/', '/artificial-grass-installation/auburndale/', '/artificial-grass-installation/casselberry/']
 WARN  sentence on 8 pages: "shortchanging that depth calculation is what leaves a finished play surface sitting visibl" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/celebration/', '/playground-turf/hunters-creek/']
-WARN  sentence on 8 pages: "shaping decisions and drainage planning have to happen together from the start not as a la" e.g. ['/putting-greens/avalon-park/', '/putting-greens/bartow/', '/putting-greens/celebration/']
-WARN  sentence on 8 pages: "routing the borders edge a foot or two around the lid avoids the conflict without changing" e.g. ['/pool-turf/apopka/', '/pool-turf/auburndale/', '/pool-turf/casselberry/']
-WARN  sentence on 8 pages: "reseating the nails without rebuilding the washedout section underneath fixes the symptom " e.g. ['/turf-repair/championsgate/', '/turf-repair/davenport/', '/turf-repair/dr-phillips/']
-WARN  sentence on 8 pages: "removing that layer means the washed rock underneath is doing the filtering job on its own" e.g. ['/pet-turf/buenaventura-lakes/', '/pet-turf/celebration/', '/pet-turf/hunters-creek/']

@@ -291,8 +291,8 @@ def seminole():
                      jrow("Oviedo", "Own Building Division; no synthetic-turf code found", "City hall; see the town page", town="oviedo"),
                      jrow("Winter Springs", "Own Building Division; no synthetic-turf code found", "City hall; see the town page", town="winter-springs"),
                      jrow("Longwood", "Own Building Division; no synthetic-turf code found", "407-260-3486", town="longwood"),
-                     jrow("Lake Mary", "Runs its own permitting; not individually researched", "City hall; call before starting"),
-                     jrow("Sanford", "Runs its own permitting; not individually researched", "City hall; call before starting")],
+                     jrow("Lake Mary", "Own Building Division; no synthetic-turf code found", "407-585-1361", town="lake-mary"),
+                     jrow("Sanford", "Own Building Division; no synthetic-turf code found", "407-688-5150", town="sanford")],
                     "Checked against the county's published code September 2026. If an address isn't inside one of the seven cities above, it's worth confirming with the county rather than assuming which office applies.")
             + f"<p>Because so little of the county sits outside a city, {a(PERMITS_HUB, 'our permit hub')} and the county's own page are more useful here as a baseline for the state rule than as a guide to a specific office; the city that actually has a given parcel is the one to call first.</p>"),
         sec("What Seminole County yards look like",
