@@ -1,13 +1,13 @@
 # Auditoria de 60 pontos — kissimmeeartificialturf.com
 
-Data: 2026-09-23. Site publicado em https://kissimmeeartificialturf.pages.dev (570 páginas; Mount Dora e Kenansville entram no próximo deploy, fechando 60 cidades). Domínio próprio pendente do DNS do dono. Legenda: **PASS** verificado com evidência · **PARCIAL** feito em parte · **FAIL** não feito · **BLOCKED** depende de acesso que não tenho · **OWNER INPUT** depende de decisão ou dado do dono.
+Data: 2026-09-23. Site publicado em https://kissimmeeartificialturf.pages.dev (578 páginas, 60 cidades). Domínio próprio pendente do DNS do dono. Legenda: **PASS** verificado com evidência · **PARCIAL** feito em parte · **FAIL** não feito · **BLOCKED** depende de acesso que não tenho · **OWNER INPUT** depende de decisão ou dado do dono.
 
 ## Pesquisa e estratégia (1–10)
 
 | # | Ponto | Status | Evidência |
 |---|---|---|---|
 | 1 | Keyword Planner exportado com configuração | **BLOCKED** | Sem conta Google Ads autenticada nesta máquina. O universo de keywords veio de pesquisa web, PAA e concorrentes (`docs/WRITING-GUIDE.md`, prompt seção 4.1). Se o dono exportar o CSV, entra em `research/`. |
-| 2 | Mapa keyword → URL única | **PASS** | `research/titles-metas.csv` (570 linhas, 0 títulos ou H1 duplicados); registry de slugs em `site/_posts.py`. |
+| 2 | Mapa keyword → URL única | **PASS** | `research/titles-metas.csv` (578 linhas, 0 títulos ou H1 duplicados); registry de slugs em `site/_posts.py`. |
 | 3 | Concorrentes reauditados | **PASS** | Tabela na seção 4.3 do prompt (2026-09-21): nenhum concorrente local tem FAQ, blog, tabela de preço, lei HB 683 ou permits. |
 | 4 | SERP / AI Overview por cluster | **FAIL** | Não foi feito de forma sistemática por cluster e cidade. Fazer em janela anônima com localização Kissimmee depois da indexação. |
 | 5 | 60 prompts de IA testados com fontes | **FAIL** | Não executado. Só faz sentido depois de o domínio próprio estar indexado; antes disso as IAs não citam o site. |
@@ -35,8 +35,8 @@ Data: 2026-09-23. Site publicado em https://kissimmeeartificialturf.pages.dev (5
 | # | Ponto | Status | Evidência |
 |---|---|---|---|
 | 19 | 12 serviços completos | **PASS** | 12 páginas, 2.192–2.658 palavras, tabela + passos + preço + lei + FAQ em cada uma. |
-| 20 | City hubs com dados locais | **PASS** | 58 hubs (60 com o próximo deploy), 1.238–2.318 palavras, cada um com órgão de alvará, concessionária de água, distrito, solo USDA, lagos e comunidades citados. |
-| 21 | Cidade × serviço com gate de unicidade | **PASS** | 408 páginas (T1 15×12, T2 35×6, T3 8×3), 1.219–1.712 palavras; cada uma com 3 seções locais + cenário + FAQ próprios sobre o banco de blocos. |
+| 20 | City hubs com dados locais | **PASS** | 60 hubs, 1.238–2.318 palavras, cada um com órgão de alvará, concessionária de água, distrito, solo USDA, lagos e comunidades citados. |
+| 21 | Cidade × serviço com gate de unicidade | **PASS** | 420 páginas (T1 15×12, T2 35×6, T3 10×3), 1.219–1.712 palavras; cada uma com 3 seções locais + cenário + FAQ próprios sobre o banco de blocos. |
 | 22 | 8-grams < 15% interno | **PASS** | `qa_all.py --sim`: 0 pares > 15%, medindo texto próprio E texto total (banco incluído). |
 | 23 | 8-grams vs kissimmeeconcrete.com e GCM | **PASS** | `/pavers/artificial-turf/` (kissimmeeconcrete) e `/artificial-turf/` (GCM) vs home, `/turf-and-pavers/`, `/artificial-grass-installation/`, `/pet-turf/`: 0 8-grams compartilhados. |
 | 24 | Hub de preços + 11 tabelas | **PASS** | 5 tabelas no hub de custo + 163 no resto do site (168 no total): por serviço, por tamanho, composição do preço, 10 anos, infill, pile/face weight, temperatura com fontes, calendário de manutenção, garantia, regra por jurisdição, rega. |
@@ -57,13 +57,13 @@ Data: 2026-09-23. Site publicado em https://kissimmeeartificialturf.pages.dev (5
 
 | # | Ponto | Status | Evidência |
 |---|---|---|---|
-| 37 | Title/H1/meta únicos | **PASS** | 570/570 únicos; titles ≤ 65 caracteres; metas 110–165. |
+| 37 | Title/H1/meta únicos | **PASS** | 578/578 únicos; titles ≤ 65 caracteres; metas 110–165. |
 | 38 | Canonical e redirects | **PASS** | Canonical autorreferente em toda página; `_redirects` (index.html, /cost/, /pricing/). |
 | 39 | Sitemap, robots, llms, feed | **PASS** | `sitemap.xml` (índice por seção), `robots.txt`, `llms.txt`, `llms-full.txt`, `feed.xml`, chave IndexNow publicada. |
 | 40 | Zero link quebrado, órfã ou cadeia | **PASS** | QA: 0 links quebrados; `soften_links` transforma link para página inexistente em texto; toda página tem inlink (as legais só pelo footer). |
 | 41 | Inlinks ≥ 3 e ≤ 3 cliques | **PASS** | Só `/terms/` e `/accessibility/` (footer) ficam abaixo de 3 links contextuais. Profundidade: home → hub → cidade → cidade×serviço. |
 | 42 | Breadcrumbs + `BreadcrumbList` | **PASS** | Em toda página interna. |
-| 43 | JSON-LD válido | **PASS** | Parseado nas 570 páginas pelo QA. Não passou pelo Rich Results Test (fazer depois do domínio). |
+| 43 | JSON-LD válido | **PASS** | Parseado nas 578 páginas pelo QA. Não passou pelo Rich Results Test (fazer depois do domínio). |
 | 44 | Lighthouse mobile 100/100/100/100 | **PARCIAL** | Em 6 tipos de página: Performance 96–99, Acessibilidade 100, Boas práticas 100, SEO 66–69 **só por causa do `noindex` proposital no pages.dev**. No domínio próprio, o único item de SEO que falha (`is-crawlable`) some. |
 | 45 | Lighthouse desktop | **PASS** | 98 / 100 / 100 / (69 pelo mesmo motivo); LCP 0,4–0,5 s. |
 | 46 | Core Web Vitals | **PASS** | LCP 1,1–2,0 s mobile, CLS 0, TBT 0–20 ms. |
@@ -85,12 +85,12 @@ Data: 2026-09-23. Site publicado em https://kissimmeeartificialturf.pages.dev (5
 | 57 | Espelho no opera-portal testado e lead de teste apagado | **PASS** | Marca `kissimmee-turf` (id 8); lead honeypot chegou como `spam` e foi apagado por id. |
 | 58 | Pages git-linked, domínio e www com SSL | **BLOCKED** | Projeto criado por API e ligado ao GitHub; domínio e www anexados, status `pending: CNAME record not set`. O dono cria 2 CNAME. |
 | 59 | Search Console + Bing + IndexNow | **BLOCKED** | Dependem do domínio ativo (TXT no DNS). Chave IndexNow já publicada. |
-| 60 | Reauditoria final limpa | **PASS** | `qa_all.py --sim` em 570 páginas: FAIL 0; 0 pares > 15%. |
+| 60 | Reauditoria final limpa | **PASS** | `qa_all.py --sim` em 578 páginas: FAIL 0; 0 pares > 15%. |
 
 ```text
 Domain: kissimmeeartificialturf.com
 Build date:                2026-09-23
-Indexable URLs:            568 (570 páginas menos thank-you e 404): 12 services / 5 counties / 58 city hubs / 408 city×service / 41 posts / 5 FAQ / 7 compare / 9 permits / 3 laws / 1 price + tools, indexes, legal
+Indexable URLs:            576 (578 páginas menos thank-you e 404): 12 services / 5 counties / 60 city hubs / 420 city×service / 41 posts / 5 FAQ / 7 compare / 9 permits / 3 laws / 1 price + tools, indexes, legal
 Questions answered:        87 no FAQ hub + 1.613 em FAQs contextuais = 1.700 entidades Question (mínimo pedido: 70)
 Lighthouse mobile median:  P97 A100 BP100 SEO66-69 (SEO sobe a 100 no domínio próprio; o único item que falha é o noindex do pages.dev)
 60-point result:           43 PASS · 4 PARCIAL (6, 44, 50 + 55 a confirmar) · 2 FAIL (4, 5) · 8 BLOCKED (1, 51-54, 58, 59) · 3 OWNER INPUT (9, 17, chave do 56)

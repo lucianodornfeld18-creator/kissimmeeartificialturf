@@ -243,7 +243,7 @@ def lake():
                      jrow("Montverde", "Town hall takes permit applications and contracts inspections to a private firm; Bella Collina is unincorporated Lake County", "Town hall; see the town page", town="montverde"),
                      jrow("Groveland", "Own Building & Permitting division; no synthetic-turf code found; irrigation days set under SJRWMD", "352-429-2141", town="groveland"),
                      jrow("Mascotte", "Building-official work contracted to a private engineering firm; no synthetic-turf code found", "352-557-8888", town="mascotte"),
-                     jrow("Mount Dora", "Runs its own permitting; not individually researched", "City hall; call before starting")],
+                     jrow("Mount Dora", "Own Building Department; arbor permit and approved canopy-tree list published; no synthetic-turf code found", "352-735-7115", town="mount-dora")],
                     "Checked against the county's published regulations September 2026. Each city runs permitting separately from the county; confirm directly rather than assuming the county's silence carries over.")),
         sec("Distance from Kissimmee to Lake County towns", "<p>Figures are straight-line distance from downtown Kissimmee.</p>"
             + table("Distance from Kissimmee: Lake County towns", DIST_HEAD,

@@ -1,10 +1,11 @@
-pages: 570
+pages: 578
 FAIL: 0
 WARN: 42
 
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 0 < 3: /terms/
+WARN  sentence on 8 pages: "zeolite or coated sand goes in at a similar rate to a standard lawns silica sand but the r" e.g. ['/pet-turf/altamonte-springs/', '/pet-turf/auburndale/', '/pet-turf/gotha/']
 WARN  sentence on 8 pages: "working out the full stacks thickness on paper before any soil comes out avoids discoverin" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/celebration/', '/playground-turf/hunters-creek/']
 WARN  sentence on 8 pages: "without that extra lift a dog yard on low ground can smell and drain poorly even when the " e.g. ['/pet-turf/alafaya/', '/pet-turf/azalea-park/', '/pet-turf/gotha/']
 WARN  sentence on 8 pages: "why the base still has to drain faster than the storm perforated turf backing on its own p" e.g. ['/artificial-grass-installation/altamonte-springs/', '/artificial-grass-installation/avalon-park/', '/artificial-grass-installation/dundee/']
@@ -15,13 +16,20 @@ WARN  sentence on 8 pages: "when a new lawn puddles after a storm the base is al
 WARN  sentence on 8 pages: "what washed crushed rock does that unwashed fill cant the states turf rule specifically re" e.g. ['/artificial-grass-installation/belle-isle/', '/artificial-grass-installation/conway/', '/artificial-grass-installation/edgewood/']
 WARN  sentence on 8 pages: "what the putting green price range includes backyard putting green installation runs fourt" e.g. ['/putting-greens/avalon-park/', '/putting-greens/casselberry/', '/putting-greens/davenport/']
 WARN  sentence on 8 pages: "what looks like a nail simply pulling loose is often that eroded gap letting the edge flex" e.g. ['/turf-repair/championsgate/', '/turf-repair/davenport/', '/turf-repair/dr-phillips/']
+WARN  sentence on 8 pages: "what installed to the manufacturers specifications actually covers floridas turf rule requ" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/four-corners/', '/artificial-grass-installation/groveland/']
 WARN  sentence on 8 pages: "what actually holds up a turf ribbon between pavers" e.g. ['/pool-turf/belle-isle/', '/pool-turf/conway/', '/pool-turf/edgewood/']
 WARN  sentence on 8 pages: "washed opengraded crushed rock underneath keeps that added flow moving rather than binding" e.g. ['/pool-turf/championsgate/', '/pool-turf/davenport/', '/pool-turf/dr-phillips/']
 WARN  sentence on 8 pages: "washed opengraded crushed rock or crushed concrete still goes down two to four inches deep" e.g. ['/putting-greens/buenaventura-lakes/', '/putting-greens/celebration/', '/putting-greens/hunters-creek/']
 WARN  sentence on 8 pages: "warm months call for the most attention both because heat accelerates odor and because a r" e.g. ['/pet-turf/azalea-park/', '/pet-turf/frostproof/', '/pet-turf/kissimmee/']
+WARN  sentence on 8 pages: "waiting until the base is finished before coring also avoids having to patch a cup locatio" e.g. ['/putting-greens/altamonte-springs/', '/putting-greens/auburndale/', '/putting-greens/gotha/']
 WARN  sentence on 8 pages: "unwashed material carries fine dust and clay particles that settle into the gaps between t" e.g. ['/artificial-grass-installation/belle-isle/', '/artificial-grass-installation/conway/', '/artificial-grass-installation/edgewood/']
 WARN  sentence on 8 pages: "unwashed fill would let fines settle and bind right where the extra volume arrives first t" e.g. ['/pool-turf/altamonte-springs/', '/pool-turf/avalon-park/', '/pool-turf/dundee/']
 WARN  sentence on 8 pages: "unwashed fill under a run would trap liquid at the surface the same way it traps rainwater" e.g. ['/pet-turf/altamonte-springs/', '/pet-turf/avalon-park/', '/pet-turf/dundee/']
+WARN  sentence on 8 pages: "two products installed to their own correct specifications can still look different once f" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/four-corners/', '/artificial-grass-installation/groveland/']
+WARN  sentence on 8 pages: "two of those items the shaping labor and cup hardware dont scale simply with square footag" e.g. ['/putting-greens/harmony/', '/putting-greens/mount-dora/', '/putting-greens/oakland/']
+WARN  sentence on 8 pages: "two installers using the same fiber but different infill weights or grooming patterns can " e.g. ['/putting-greens/celebration/', '/putting-greens/four-corners/', '/putting-greens/groveland/']
+WARN  sentence on 8 pages: "treating both seasons the same either overrinsing in the wet months or underchecking drain" e.g. ['/artificial-grass-installation/clermont/', '/artificial-grass-installation/dundee/', '/artificial-grass-installation/four-corners/']
+WARN  sentence on 8 pages: "treating both seasons identically usually means either rinsing more than necessary during " e.g. ['/pet-turf/clermont/', '/pet-turf/dundee/', '/pet-turf/four-corners/']
 WARN  sentence on 8 pages: "topping off infill as a lawn ages infill goes in at roughly one to two pounds per square f" e.g. ['/artificial-grass-installation/bartow/', '/artificial-grass-installation/davenport/', '/artificial-grass-installation/gotha/']
 WARN  sentence on 8 pages: "topping it off periodically rather than waiting until the lawn looks visibly bare in spots" e.g. ['/artificial-grass-installation/bartow/', '/artificial-grass-installation/davenport/', '/artificial-grass-installation/gotha/']
 WARN  sentence on 8 pages: "too little depth and the shaped layers underneath cant hold their contours once the surfac" e.g. ['/putting-greens/celebration/', '/putting-greens/conway/', '/putting-greens/frostproof/']
@@ -29,19 +37,11 @@ WARN  sentence on 8 pages: "this walkthrough is separate from any paperwork and 
 WARN  sentence on 8 pages: "this test also surfaces any lingering odor from construction dust or adhesive before the r" e.g. ['/pet-turf/bartow/', '/pet-turf/dr-phillips/', '/pet-turf/horizon-west/']
 WARN  sentence on 8 pages: "this step happens early enough in the process that a crew isnt reopening finished rock wor" e.g. ['/pet-turf/celebration/', '/pet-turf/conway/', '/pet-turf/frostproof/']
 WARN  sentence on 8 pages: "this step happens during grading before compaction locks the surrounding base in place" e.g. ['/artificial-grass-installation/groveland/', '/artificial-grass-installation/lake-mary/', '/artificial-grass-installation/lake-wales/']
+WARN  sentence on 8 pages: "this small sequencing choice rinse first then groom makes routine maintenance slightly mor" e.g. ['/putting-greens/apopka/', '/putting-greens/avalon-park/', '/putting-greens/buenaventura-lakes/']
+WARN  sentence on 8 pages: "this is one habit that matters more on a dedicated run than almost anywhere else on the pr" e.g. ['/pet-turf/apopka/', '/pet-turf/avalon-park/', '/pet-turf/buenaventura-lakes/']
+WARN  sentence on 8 pages: "this is a fiveminute habit compared with the deeper clean needed once debris has already w" e.g. ['/artificial-grass-installation/apopka/', '/artificial-grass-installation/avalon-park/', '/artificial-grass-installation/buenaventura-lakes/']
 WARN  sentence on 8 pages: "this gets settled during layout before the base is graded since moving a fence line after " e.g. ['/pet-turf/groveland/', '/pet-turf/lake-mary/', '/pet-turf/lake-wales/']
 WARN  sentence on 8 pages: "theres no single fixed schedule that fits every household a single dog on a small run need" e.g. ['/pet-turf/azalea-park/', '/pet-turf/frostproof/', '/pet-turf/kissimmee/']
+WARN  sentence on 8 pages: "the window that can melt a lawn from across the yard lowemissivity glass common on newer r" e.g. ['/artificial-grass-installation/clermont/', '/artificial-grass-installation/kenansville/', '/artificial-grass-installation/lake-mary/']
 WARN  sentence on 8 pages: "the two materials were never going to settle identically and a repair that only reglues th" e.g. ['/turf-repair/apopka/', '/turf-repair/auburndale/', '/turf-repair/casselberry/']
 WARN  sentence on 8 pages: "the two causes call for different fixes a settled area gets built back up and recompacted " e.g. ['/turf-repair/altamonte-springs/', '/turf-repair/avalon-park/', '/turf-repair/dundee/']
-WARN  sentence on 8 pages: "the states rule that subgrade material be washed before installation exists for exactly th" e.g. ['/pool-turf/altamonte-springs/', '/pool-turf/avalon-park/', '/pool-turf/dundee/']
-WARN  sentence on 8 pages: "the states rule against pooling and added runoff covers a play area exactly as it covers a" e.g. ['/playground-turf/altamonte-springs/', '/playground-turf/avalon-park/', '/playground-turf/dundee/']
-WARN  sentence on 8 pages: "the same one to two percent fall still has to move water somewhere so it gets built into t" e.g. ['/sports-turf/buenaventura-lakes/', '/sports-turf/celebration/', '/sports-turf/hunters-creek/']
-WARN  sentence on 8 pages: "the result usually isnt visible right away it shows up as a smell that gets worse through " e.g. ['/pet-turf/avalon-park/', '/pet-turf/bartow/', '/pet-turf/celebration/']
-WARN  sentence on 8 pages: "the one to two percent grade itself doesnt change only the direction its aimed and the rea" e.g. ['/pet-turf/belle-isle/', '/pet-turf/conway/', '/pet-turf/edgewood/']
-WARN  sentence on 8 pages: "the membrane below still has to stay watertight so turf goes in as part of a system built " e.g. ['/commercial-turf/buenaventura-lakes/', '/commercial-turf/celebration/', '/commercial-turf/hunters-creek/']
-WARN  sentence on 8 pages: "the first clue usually arrives with the seasons heaviest rain a corner that was stapled do" e.g. ['/artificial-grass-installation/avalon-park/', '/artificial-grass-installation/bartow/', '/artificial-grass-installation/celebration/']
-WARN  sentence on 8 pages: "the extra couple of inches doesnt change how the base is built only how much separation ex" e.g. ['/artificial-grass-installation/alafaya/', '/artificial-grass-installation/azalea-park/', '/artificial-grass-installation/gotha/']
-WARN  sentence on 8 pages: "the crew builds the base up to the lids edge rather than over it and the finished grade ar" e.g. ['/artificial-grass-installation/groveland/', '/artificial-grass-installation/lake-mary/', '/artificial-grass-installation/lake-wales/']
-WARN  sentence on 8 pages: "thats a version of the states rule against infill leaving a property just moving within th" e.g. ['/putting-greens/alafaya/', '/putting-greens/auburndale/', '/putting-greens/bartow/']
-WARN  sentence on 8 pages: "that thin joint still has to drain rather than trap water against the paver edges so the s" e.g. ['/pool-turf/belle-isle/', '/pool-turf/conway/', '/pool-turf/edgewood/']
-WARN  sentence on 8 pages: "that step happens early in the process usually right after stripout and before the base go" e.g. ['/artificial-grass-installation/celebration/', '/artificial-grass-installation/conway/', '/artificial-grass-installation/frostproof/']
