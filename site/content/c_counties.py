@@ -181,10 +181,10 @@ def polk():
                      jrow("Polk City", "No building department of its own; Polk County's Building Division reviews permits inside the city limits", "Polk County, 863-534-6080", town="polk-city"),
                      jrow("Winter Haven", "Own Building & Permitting Division; no synthetic-turf code found", "863-291-5695", town="winter-haven"),
                      jrow("Auburndale", "Own Construction Services division; no synthetic-turf code found", "863-965-5530", town="auburndale"),
-                     jrow("Lake Wales", "Runs its own permitting; not individually researched", "City hall; call before starting"),
+                     jrow("Lake Wales", "Own Building Division; no synthetic-turf code found", "863-676-5115", town="lake-wales"),
                      jrow("Lakeland", "Own Building Inspection Division; no synthetic-turf ordinance found", "863-834-6012", town="lakeland"),
                      jrow("Bartow", "Own Building Department; no synthetic-turf ordinance found", "863-534-0157", town="bartow"),
-                     jrow("Frostproof", "Runs its own permitting; not individually researched", "City hall; call before starting")],
+                     jrow("Frostproof", "Own Building Department; applications by email, no full portal", "863-635-7854", town="frostproof")],
                     "Checked against the county's published code September 2026. Cities with a “Town page” link were checked individually when their pages were written; cities marked “not individually researched” haven't been; call ahead rather than assume any of them matches the county's silence.")),
         sec("The Lake Wales Ridge under a Polk County yard",
             f"<p>Once the ground rises toward Lake Wales, Winter Haven and the ridge running through the county's middle, the soil changes from flatwoods sand to Candler series: excessively drained, very rapid to rapid permeability, built from thick wind-blown and marine sand deposits with slopes running from flat up to 12 percent in most spots ({ext(CANDLER_OSD[1], 'USDA’s official series description')}). That kind of ground barely holds water at all, which sounds like an advantage until a crew is trying to compact a stable base on sand that shifts before the plate compactor finishes a pass.</p>"
