@@ -1,6 +1,6 @@
 # Pendências do proprietário — kissimmeeartificialturf.com
 
-Interno. Nunca renderizado no site. Atualizado em 2026-09-21.
+Interno. Nunca renderizado no site. Atualizado em 2026-09-23 (site com 570 paginas no ar em pages.dev; auditoria em AUDIT-60-POINT.md).
 
 ## 1. Bloqueia o domínio próprio (1 minuto, só você consegue)
 
@@ -44,6 +44,9 @@ Se quiser que eu faça isso nas próximas vezes: crie um API token com **Zone �
 - **Horário de atendimento.** Não publicado porque não foi informado.
 
 ## 5. Depois que o domínio estiver no ar
+
+- Rodar os 60 prompts de IA (ChatGPT, Perplexity, Gemini, Copilot, AI Mode) e as SERPs por cluster (pontos 4 e 5 da auditoria); so faz sentido depois da indexacao.
+- Rich Results Test em uma pagina de cada tipo (ponto 43).
 
 - Search Console (propriedade de domínio) e Bing Webmaster: exigem um TXT no DNS, que também depende do item 1.
 - Cloudflare → Scrape Shield → desligar "Email Address Obfuscation" e Speed → desligar "Rocket Loader" nesta zona (tiram pontos do Lighthouse e quebram a CSP).
