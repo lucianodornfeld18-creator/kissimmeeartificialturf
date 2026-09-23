@@ -1,8 +1,7 @@
 pages: 570
-FAIL: 1
+FAIL: 0
 WARN: 42
 
-FAIL  unrendered helper call in text: /artificial-turf-cost/
 
 WARN  inlinks 0 < 3: /accessibility/
 WARN  inlinks 0 < 3: /terms/
