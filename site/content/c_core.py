@@ -21,7 +21,7 @@ def get_pages():
                   f"A short-term rental: {svc('str', 'vacation rental turf')}.", f"A clubhouse, apartment dog park, daycare or patio: {svc('commercial', 'commercial turf')}.",
                   f"Bocce, batting or a sled lane: {svc('sports', 'sports and fitness turf')}.", f"Green joints between pavers or a driveway ribbon: {svc('pavers', 'turf and pavers')}.",
                   f"Something wrong with turf you already own: {svc('repair', 'repair')}, {svc('cleaning', 'cleaning')} or {svc('replacement', 'replacement')}."])
-              + f"<p>Prices for all of them are collected in the {a('/artificial-turf-cost/', 'turf cost guide')}, and the {a('/faq/', 'FAQ')} answers the questions that come up on nearly every site visit.</p>"
+              + f"<p>Prices for all of them are collected in the {a('/artificial-turf-cost/', 'turf cost guide')}, and the {a('/faq/', 'FAQ')} answers the questions that come up on nearly every site visit, with separate pages for {a('/faq/pets-heat/', 'dogs and summer heat')} and {a('/faq/maintenance/', 'upkeep and repairs')}.</p>"
               + cta("Not sure? Send photos", "Text a few pictures and rough dimensions and we’ll point you to the right service."))
     P.append(page("/services/", "index", "Artificial Turf Services in Kissimmee, FL: Install to Repair",
                   "All twelve artificial turf services from Kissimmee Artificial Turf: lawns, pet turf, putting greens, playgrounds, pool areas, repairs, cleaning and replacement.",

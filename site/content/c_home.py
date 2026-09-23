@@ -112,7 +112,7 @@ def get_pages():
                    ("Paperwork, if any.", "We prepare the HOA or ARC submittal and check with the permit office where one applies."),
                    ("Install.", "Most residential yards take two to four days depending on size and access. We call 811 before digging, protect the pool screen and pavers, and leave the site swept."),
                    ("Walkthrough and care sheet.", "We go over rinsing, brushing and what to do after a storm, and you know who to call if a seam or edge ever needs attention.")])
-            + f"<p>There's more detail in {post('what-to-expect-on-turf-installation-day', 'what to expect on installation day')}.</p>"),
+            + f"<p>There's more detail in {post('what-to-expect-on-turf-installation-day', 'what to expect on installation day')}. Short answers to the questions that come up at this stage are grouped by topic: {a('/faq/cost/', 'cost')}, {a('/faq/pets-heat/', 'pets and heat')}, {a('/faq/hoa-permits/', 'HOA, law and permits')} and {a('/faq/maintenance/', 'care and repairs')}, and the {a('/tools/', 'planning tools')} do the arithmetic.</p>"),
 
         sec("About Kissimmee Artificial Turf",
             f"<p>{OWNER} owns and runs the company, established in 2024 and based in Kissimmee. We're a small local installer, which means the person who measures your yard is the person accountable for how it looks in three years. We don't run a showroom; we bring samples to you and work across the five counties around Kissimmee. {a('/about/', 'More about how we work')}.</p>"

@@ -1,5 +1,5 @@
 route,kind,inlinks_from_main,outlinks
-/,home,568,116
+/,home,568,120
 /404/,plain,0,46
 /about/,page,559,46
 /accessibility/,page,0,46
@@ -195,11 +195,11 @@ route,kind,inlinks_from_main,outlinks
 /compare/zeolite-vs-silica-vs-antimicrobial-infill/,compare,10,49
 /contact/,page,18,47
 /faq/,faq,11,61
-/faq/cost/,faq,2,53
-/faq/hoa-permits/,faq,2,50
-/faq/maintenance/,faq,4,49
-/faq/pets-heat/,faq,2,50
-/laws/,law,18,59
+/faq/cost/,faq,3,53
+/faq/hoa-permits/,faq,4,50
+/faq/maintenance/,faq,6,49
+/faq/pets-heat/,faq,4,50
+/laws/,law,18,60
 /laws/florida-hb-683/,law,121,51
 /laws/hoa-rules/,law,125,51
 /laws/permits/,permit,34,56
@@ -432,7 +432,7 @@ route,kind,inlinks_from_main,outlinks
 /putting-greens/winter-haven/,cityservice,8,53
 /putting-greens/winter-park/,cityservice,5,55
 /putting-greens/winter-springs/,cityservice,8,53
-/services/,index,16,46
+/services/,index,16,48
 /sports-turf/,service,20,68
 /sports-turf/buenaventura-lakes/,cityservice,8,52
 /sports-turf/celebration/,cityservice,5,52
@@ -451,7 +451,7 @@ route,kind,inlinks_from_main,outlinks
 /sports-turf/st-cloud/,cityservice,5,52
 /terms/,page,0,46
 /thank-you/,plain,0,46
-/tools/,index,2,49
+/tools/,index,3,49
 /tools/hoa-packet-checklist/,tool,24,48
 /tools/turf-vs-sod/,tool,7,47
 /turf-and-pavers/,service,23,66

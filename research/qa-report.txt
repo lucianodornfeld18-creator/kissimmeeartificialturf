@@ -1,14 +1,11 @@
 pages: 570
-FAIL: 0
-WARN: 46
+FAIL: 1
+WARN: 42
 
+FAIL  unrendered helper call in text: /artificial-turf-cost/
 
 WARN  inlinks 0 < 3: /accessibility/
-WARN  inlinks 2 < 3: /faq/cost/
-WARN  inlinks 2 < 3: /faq/hoa-permits/
-WARN  inlinks 2 < 3: /faq/pets-heat/
 WARN  inlinks 0 < 3: /terms/
-WARN  inlinks 2 < 3: /tools/
 WARN  sentence on 8 pages: "working out the full stacks thickness on paper before any soil comes out avoids discoverin" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/celebration/', '/playground-turf/hunters-creek/']
 WARN  sentence on 8 pages: "without that extra lift a dog yard on low ground can smell and drain poorly even when the " e.g. ['/pet-turf/alafaya/', '/pet-turf/azalea-park/', '/pet-turf/gotha/']
 WARN  sentence on 8 pages: "why the base still has to drain faster than the storm perforated turf backing on its own p" e.g. ['/artificial-grass-installation/altamonte-springs/', '/artificial-grass-installation/avalon-park/', '/artificial-grass-installation/dundee/']

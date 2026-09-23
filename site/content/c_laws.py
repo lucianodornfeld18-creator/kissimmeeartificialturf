@@ -27,7 +27,7 @@ def get_pages():
                 "<strong>In the side-yard swale:</strong> no. Swales, ditches and stormwater ponds are excluded.",
                 "<strong>Sprinklers:</strong> an in-ground irrigation system can't be used to water synthetic turf. Heads under the turf are capped.",
                 "<strong>Commercial property, apartments, lots over an acre:</strong> the state preemption doesn't apply. Local code governs."])
-            + f"<p>Those points come from the {src('marathon-pr', 'summary a Florida city published when the rule took effect')} and from the statute itself. The pages in this section go through each one with the citations.</p>"),
+            + f"<p>Those points come from the {src('marathon-pr', 'summary a Florida city published when the rule took effect')} and from the statute itself. The pages in this section go through each one with the citations, and the {a('/faq/hoa-permits/', 'HOA and permit FAQ')} keeps the short answers in one place.</p>"),
         sec("Permit pages for the places we work",
             "<p>Whether you need a permit for a residential turf job depends on which office has your parcel. A Kissimmee mailing address can be inside the City of Kissimmee, in unincorporated Osceola County, or across the line in Orange or Polk. Each page below says what that jurisdiction publishes, who to call and how to check which one you're in.</p>"
             + ul([a(f"/laws/permits/{k}/", v) for k, v in PERMIT_PAGES.items()])),
