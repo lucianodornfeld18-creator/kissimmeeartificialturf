@@ -31,7 +31,7 @@ def get_pages():
             + f"<p>Not sure which one fits? Most calls start as a plain lawn replacement and turn into something more specific once we see the yard: a {svc('pet', 'dog run down the side of the house')}, a {svc('putting', 'putting green in the back corner')}, or {svc('pool', 'a turf border around the pool deck')}. The {a('/services/', 'services overview')} compares them side by side.</p>"),
 
         sec("Turf work in photos",
-            "<p>Nine project photos and no stock images: a lakefront yard with a pool and a practice green, a three-cup putting green behind a vinyl fence, turf ribbons between porcelain pavers, a pool-home backyard and two rooftop amenity decks. Customers' addresses and neighborhoods stay private, so the captions describe only what's in the frame.</p>"
+            "<p>Nine photos of our own installations, no stock images: a lakefront yard with a pool and a practice green, a three-cup putting green behind a vinyl fence, turf ribbons between porcelain pavers, a pool-home backyard and two rooftop amenity decks. Customers' addresses and neighborhoods stay private, so the captions describe only what's in the frame.</p>"
             + photo_strip(["lakefront-estate", "putting-green-three-cups", "turf-between-pavers", "backyard-lawn-pool-home", "rooftop-pool-deck", "lakefront-backyard-palms"])
             + f"<p>{a('/gallery/', 'See all nine photos with a note on each build')}.</p>"),
 

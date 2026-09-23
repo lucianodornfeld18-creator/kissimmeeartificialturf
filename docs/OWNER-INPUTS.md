@@ -34,10 +34,8 @@ Se quiser que eu faça isso nas próximas vezes: crie um API token com **Zone �
 ## 4. Conteúdo que só você pode fornecer
 
 - **Fotos: 9 recebidas em 2026-09-23 e já no ar** (hero da home, faixa de miniaturas, `/gallery/`, 8 páginas de serviço, About e 3 posts). Originais ficam em `images/incoming/` (fora do git); as versões otimizadas em `site/static/img/photos/` (WebP em 3–4 larguras, miniaturas 4:3, JPEG 1200×630 para WhatsApp/Facebook, nomes com marca + assunto, sem metadados). Nenhuma legenda cita cidade ou bairro porque isso não foi informado. Para confirmar:
-  - São todas obras da própria empresa? Se alguma não for, me diga qual e eu tiro.
-  - A foto sob a magnólia mostra turf dentro da copa da árvore, e as duas de beira de lago mostram turf perto da água. A regra estadual em vigor desde 19/05/2026 pede laudo de arborista para turf sob copa e 10 pés de recuo de lago sem seawall. Obra anterior à regra, ou fora de lote unifamiliar, está fora do alcance dela, mas convém saber responder se um cliente perguntar.
-  - Na foto do quintal grande aparece uma pessoa ao fundo, de costas e irreconhecível. Se preferir, eu troco a foto.
-  - As duas fotos de cobertura (prédio alto, hotel ao fundo) são obra comercial; confirmar que o cliente permite divulgar.
+  - **Confirmado em 2026-09-23:** as 9 são obras da própria empresa; manter tudo (a foto com a pessoa ao fundo e as duas de cobertura ficam). O site agora diz "our own installations" na home e na galeria.
+  - Só para saber responder a cliente: a foto sob a magnólia mostra turf dentro da copa da árvore, e as duas de beira de lago mostram turf perto da água. A regra estadual em vigor desde 19/05/2026 pede laudo de arborista para turf sob copa e 10 pés de recuo de lago sem seawall; obra anterior à regra, ou fora de lote unifamiliar, está fora do alcance dela.
   - Fotos novas: copiar para `images/incoming/`, registrar em `site/_photos.py` (nome SEO, alt, ponto focal, serviços) e rodar `python brand/make_photos.py`; depois usar `photo("id", "legenda")` nas páginas.
 - **Logo original em alta.** O selo foi redesenhado em vetor a partir da imagem enviada no chat (`brand/make_logo.py`). O arquivo `Kissimmee_Artificial_Turf_Logo_Option_11.png` que estava em Downloads é um print cortado (o topo do selo fica fora da imagem), então não serve como original; se existir o arquivo do designer (PNG grande, SVG ou AI), mandar para eu substituir.
 - **Preços reais** (por sq ft e mínimo de obra). Hoje todas as tabelas dizem "Central Florida market range" com fonte e data.
