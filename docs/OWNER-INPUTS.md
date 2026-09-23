@@ -4,7 +4,7 @@ Interno. Nunca renderizado no site. Atualizado em 2026-09-23 (domínio próprio 
 
 ## 1. Domínio próprio: FEITO em 2026-09-23
 
-Você criou os dois CNAME no painel e o domínio ficou ativo com certificado em minutos. `www.kissimmeeartificialturf.com` e `kissimmeeartificialturf.pages.dev` redirecionam (301) para `https://kissimmeeartificialturf.com`. Lighthouse no domínio final (mobile): home 96/100/100/100, página cidade×serviço 98/100/100/100.
+Você criou os dois CNAME no painel e o domínio ficou ativo com certificado em minutos. `www.kissimmeeartificialturf.com` também abre o site (o canonical de todas as páginas aponta para o domínio sem www) e `kissimmeeartificialturf.pages.dev` continua com `noindex`. O `_redirects` do Pages não faz redirecionamento por domínio (limitação documentada pela Cloudflare); se quiser o www respondendo 301, é 1 minuto no painel: Cloudflare → `kissimmeeartificialturf.com` → Rules → Redirect Rules → Create rule → modelo "Redirect from WWW to root" → Deploy. IndexNow: enviado em 2026-09-23 com as 577 URLs do sitemap (Bing, Yandex, Naver e Seznam; o Google não usa IndexNow). E-mail: a "Email Address Obfuscation" da zona está ligada, mas o build envolve os endereços em `<!--email_off-->`, então robôs e IAs leem o e-mail real (verificado no ar). Lighthouse no domínio final (mobile): home 96/100/100/100, página cidade×serviço 98/100/100/100.
 
 Continua valendo: meu token do wrangler não altera DNS nem configurações da zona. Se um dia quiser que eu faça isso, crie um API token com **Zone → DNS → Edit** (e, se for o caso, Zone Settings → Edit) e rode `set CF_API_TOKEN=...` antes de me chamar. Não guarde o token em arquivo.
 
@@ -44,6 +44,6 @@ Continua valendo: meu token do wrangler não altera DNS nem configurações da z
 
 - **Google Search Console** (só você, com a conta Google): https://search.google.com/search-console → Adicionar propriedade → tipo **Domínio** → `kissimmeeartificialturf.com` → o Google mostra um registro **TXT** → Cloudflare → DNS → Add record (Type TXT, Name `@`, Content colado) → Verificar. Depois: Sitemaps → enviar `https://kissimmeeartificialturf.com/sitemap.xml`. Se quiser que eu acompanhe, adicione lucianodornfeld18@gmail.com como usuário da propriedade.
 - **Bing Webmaster Tools**: https://www.bing.com/webmasters → Importar do Google Search Console (1 clique depois do item acima).
-- Cloudflare → Scrape Shield → desligar "Email Address Obfuscation" e Speed → desligar "Rocket Loader" nesta zona (tiram pontos do Lighthouse e quebram a CSP).
+- Cloudflare → Scrape Shield / Speed: verificado em 2026-09-23 no domínio final. Rocket Loader está desligado; a ofuscação de e-mail está ligada, mas o build já protege os endereços, então nada a fazer.
 - Cloudflare → Security → Bots → conferir que "Block AI bots" está desligado (o `robots.txt` libera os bots de busca e de IA; o WAF não pode contradizer).
 - Cloudflare Web Analytics: ativar para o domínio (o beacon é injetado pelo Cloudflare; a CSP já permite).

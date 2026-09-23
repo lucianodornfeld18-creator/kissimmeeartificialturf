@@ -252,7 +252,7 @@ https://:branch.:project.pages.dev/*
 /llms*.txt
   Cache-Control: public, max-age=3600
 """, encoding="utf-8")
-    (DIST / "_redirects").write_text(f"https://www.{DOMAIN}/* {BASE_URL}/:splat 301\nhttps://kissimmeeartificialturf.pages.dev/* {BASE_URL}/:splat 301\n" + "/index.html / 301\n/home / 301\n/services/artificial-grass-installation/ /artificial-grass-installation/ 301\n/cost/ /artificial-turf-cost/ 301\n/pricing/ /artificial-turf-cost/ 301\n", encoding="utf-8")
+    (DIST / "_redirects").write_text("/index.html / 301\n/home / 301\n/services/artificial-grass-installation/ /artificial-grass-installation/ 301\n/cost/ /artificial-turf-cost/ 301\n/pricing/ /artificial-turf-cost/ 301\n", encoding="utf-8")
 
 
 def write_static():
