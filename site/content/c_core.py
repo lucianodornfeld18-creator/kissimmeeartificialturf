@@ -2,7 +2,9 @@
 """Index pages, tools, about/contact and legal pages."""
 from _data import SERVICES, SERVICE_ORDER, PUBLIC_NAME, OWNER, PHONE_DISPLAY, PHONE_E164, EMAIL, BASE_URL, COUNTIES, COUNTY_ORDER, PRICE_DATE
 from _posts import COMPARES, TOOLS
-from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, county, post, src, price, price_note, tel
+from _photos import ORDER as PHOTO_ORDER
+from templates import image_node
+from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, county, post, src, price, price_note, tel, photo, photo_strip
 
 
 def get_pages():
@@ -13,7 +15,9 @@ def get_pages():
     body = sec("Twelve services, one trade",
                "<p>Everything we do is synthetic turf: putting it in, fixing it, cleaning it and replacing it when it's worn out. We don't mow, pour concrete or build pools. Staying narrow is how a small crew stays good at the details that decide whether a lawn lasts, which are base work, seams and drainage.</p>"
                + table("Artificial turf services and 2026 market price ranges", ["Service", "What it covers", "Installed range"], rows, price_note())) \
-        + sec("Which one do you need?",
+        + sec("What the finished work looks like",
+              photo_strip(["putting-green-hedge", "backyard-lawn-pool-home", "turf-between-pavers", "rooftop-amenity-deck"])
+              + f"<p>Four of the nine project photos; the {a('/gallery/', 'photo page')} has the rest, each with a note on what to look at in the build.</p>")         + sec("Which one do you need?",
               ul([f"Grass that won't grow, or a lawn you're tired of paying for: {svc('residential', 'residential artificial grass installation')}.",
                   f"Dogs: {svc('pet', 'a pet turf system')}, which is built differently from a regular lawn.",
                   f"Golf: {svc('putting', 'a backyard putting green')}.", f"Kids and swing sets: {svc('playground', 'playground turf over a shock pad')}.",
@@ -96,6 +100,7 @@ def get_pages():
     body = sec("A small, local turf company",
                f"<p id=\"luis-austin\"><strong>{OWNER}</strong> owns and runs {PUBLIC_NAME}, established in 2024 and based in Kissimmee, Florida. We install, repair and clean synthetic turf, and that's the whole list. There's no showroom and no call center. When you call or text {tel()}, you reach the company, and the person who measures your yard stays responsible for the job.</p>"
                "<p>We're a service-area business: we come to you, anywhere within about 40 miles of Kissimmee. Samples, spec sheets and a measuring wheel fit in the truck.</p>") \
+        + photo("lakefront-backyard-palms", "A fenced lakefront backyard: turf runs to the aluminum fence, and both palms sit inside ring edging so nothing touches the trunks.") \
         + sec("How we work",
               ul(["<strong>We quote in writing, with specs.</strong> Square footage, base depth and material, the turf's pile height and face weight, infill type and weight, seam and edge method.",
                   "<strong>We build for Florida.</strong> Washed crushed rock over graded sand, natural infill, seams glued and taped, edges anchored, which is what the state's 2026 turf standard requires.",
@@ -107,8 +112,38 @@ def get_pages():
     P.append(page("/about/", "page", "About Kissimmee Artificial Turf | Locally Owned by Luis Austin",
                   "Kissimmee Artificial Turf is a locally owned synthetic turf installer in Kissimmee, FL, established in 2024 by owner Luis Austin. How we work.",
                   "About Kissimmee Artificial Turf", capsule(f"{PUBLIC_NAME} is a locally owned synthetic turf company in Kissimmee, Florida, established in 2024 and run by owner {OWNER}. We install, repair and clean artificial grass within about 40 miles of Kissimmee, quote in writing with full specifications, and build to Florida's 2026 state turf standard."),
-                  body, crumb="About", author=True,
+                  body, crumb="About", author=True, image="lakefront-backyard-palms",
                   schema=[{"@type": "Person", "@id": BASE_URL + "/about/#luis-austin", "name": OWNER, "jobTitle": "Owner", "worksFor": {"@id": BASE_URL + "/#business"}, "url": BASE_URL + "/about/"}]))
+
+    # ---------------------------------------------------------------- /gallery/
+    CAP = {
+        "lakefront-estate": ("Turf from the aluminum fence to the pool deck, with path lights set into the turf and a practice green at the far end.", "putting", "putting greens"),
+        "backyard-lawn-pool-home": ("A pool-home backyard with the crew's tools still on the patio; the palm keeps its gravel ring so the trunk stays open.", "residential", "residential lawns"),
+        "putting-green-three-cups": ("Three cups, a shaped putting surface and a taller fringe collar, fitted between a vinyl privacy fence and a concrete curb.", "putting", "putting greens"),
+        "putting-green-hedge": ("A kidney-shaped green beside the pool deck, with the fringe turf running under the hedge and around the palm.", "putting", "putting greens"),
+        "turf-between-pavers": ("Turf ribbons a few inches wide between porcelain pavers laid on the diagonal, trimmed so the pile sits just above the paver face.", "pavers", "turf and pavers"),
+        "lakefront-backyard-palms": ("Turf up to the fence line on a lakefront lot; the palms are boxed out with black ring edging so the turf never meets the trunks.", "pet", "fenced yards and pet turf"),
+        "rooftop-pool-deck": ("A rooftop pool deck at a high-rise: turf lawn beside the pavers, with drain grates set flush so storm water still leaves the deck.", "commercial", "commercial turf"),
+        "rooftop-amenity-deck": ("Rooftop amenity deck with turf against large-format porcelain pavers and planter walls; leaf litter like this is what a power broom clears.", "cleaning", "turf cleaning"),
+        "turf-under-tree-lakefront": ("A small turf seating area around a raised stone planter under a magnolia, with the natural lawn kept in front of it.", "residential", "residential lawns"),
+    }
+    figs = "".join(photo(pid, f"{CAP[pid][0]} {svc(CAP[pid][1], 'More on ' + CAP[pid][2])}.", sizes="(max-width:700px) calc(100vw - 40px), 548px") for pid in PHOTO_ORDER)
+    body = sec("What to look at in a turf photo",
+               "<p>Every finished turf job looks green on the day it's done. The details that predict how it will look after a rainy season are at the edges: whether the turf stops cleanly at a fence, a curb or a paver course, whether trunks and root flares are boxed out with edging or a planter instead of buried, whether drains still sit flush, and whether a putting surface has a fringe collar so the short pile doesn't end in a bare seam.</p>"
+               + "<p>The nine photos below are all project photos, not stock. They show a lakefront yard with a pool and practice green, two backyard putting greens, turf between porcelain pavers, a pool-home backyard, a seating area under a tree and two rooftop amenity decks at a high-rise. We don't publish customers' addresses or neighborhoods, and each caption describes only what's visible in the frame.</p>") \
+        + f'<div class="gal">{figs}</div>' \
+        + sec("Want to see a sample in your own yard?",
+              f"<p>We bring turf samples and spec sheets to the site visit, measure the areas you have in mind and send a written quote. Photos of your yard, texted to {tel()}, get you a ballpark first. The {a('/services/', 'services page')} explains what each build involves, and the {a('/artificial-turf-cost/', 'cost guide')} has the price tables.</p>"
+              + cta("Get a measured quote", "Send the basics and we set a time to come measure."))
+    P.append(page("/gallery/", "page", "Artificial Turf Project Photos | Kissimmee Artificial Turf",
+                  "Nine project photos from Kissimmee Artificial Turf: a lakefront yard with pool and putting green, backyard greens, turf between pavers and rooftop decks, with build notes.",
+                  "Artificial turf project photos",
+                  capsule("Nine photos of artificial turf projects from Kissimmee Artificial Turf, with a note on each build: a lakefront yard with a pool and putting green, two backyard greens, turf ribbons between porcelain pavers, a pool-home lawn, a seating area under a tree and two rooftop amenity decks. No stock images, and no customer addresses."),
+                  body, crumb="Photos", form=True, wide=True, image="lakefront-estate", wp_type=["WebPage", "ImageGallery"],
+                  faqs=[faq("Why don't the captions say where each yard is?", "We don't publish customers' addresses or neighborhoods. The captions describe what's visible in each photo: the edge details, the drains, the fringe on a green, the ring around a palm."),
+                        faq("Can I send photos of my own yard?", f"Yes, and it speeds up the quote. Text pictures of the area, the gate you'd bring materials through and any spot that holds water to {PHONE_DISPLAY}, and we reply with a ballpark from the published ranges before the site visit.")],
+                  schema=[image_node(pid) for pid in PHOTO_ORDER if pid != "lakefront-estate"],
+                  related=[("/services/", "All twelve turf services"), ("/putting-greens/", "Backyard putting greens"), ("/turf-and-pavers/", "Turf between pavers"), ("/commercial-turf/", "Rooftop and commercial turf"), ("/contact/", "Ask for a quote")]))
 
     # ---------------------------------------------------------------- /contact/
     body = sec("Call, text or write",

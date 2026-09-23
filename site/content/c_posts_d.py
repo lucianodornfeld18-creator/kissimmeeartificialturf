@@ -3,7 +3,7 @@
 Eleven posts: is turf worth it, pros and cons by topic, pet turf vs. regular turf, turf on a slope,
 making turf look real, oak leaves and debris, balconies/rooftops/condos, homeowners insurance,
 why new-construction sod dies in Osceola County, 55+ communities, and installation day."""
-from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, post, src, ext, price
+from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, post, src, ext, price, photo
 
 CRUMBS = [("Blog", "/blog/")]
 PUB = "2026-09-21"
@@ -334,6 +334,7 @@ def p_condos():
     body = "".join([
         sec("Does artificial turf work on a balcony, rooftop or condo patio?",
             f"<p>Yes, with a different build than a ground-level yard: a lightweight drainage mat instead of a compacted rock base, glue-down or mechanical edges instead of nailed ones, and a structural and drainage check before anything gets ordered. {svc('commercial', 'Rooftop and elevated installations')} are quoted from a site visit rather than a per-square-foot number the way a ground yard can be, because the building itself, not the lot, sets most of the limits. A ground-floor patio with direct soil access underneath is closer to a standard {svc('pool', 'pool-deck installation')} than a true rooftop project, and it's worth telling an installer which situation actually describes your unit before assuming the higher-complexity build applies.</p>"),
+        photo("rooftop-pool-deck", "Turf on a high-rise pool deck, with drain grates kept flush: the roof drains, not a rock base, carry the water away."),
         sec("Weight: what a balcony or rooftop actually has to carry",
             f"<p>Installed turf with infill and a drainage mat runs roughly 2 to 3 lb per square foot, most of that from the infill and mat rather than the turf blades themselves, which weigh closer to 1 to 1.5 lb per square foot on their own ({xt(MAGNOLIA_ROOFTOP, 'Magnolia Turf, rooftop turf guide')}). Most modern rooftop decks and structural balconies handle that load without issue, but an older building, a cantilevered balcony, or a rooftop never designed for foot traffic beyond maintenance access is worth confirming with whoever holds the building's structural drawings before committing to a full installation, especially over a larger area where the load adds up.</p>"),
         sec("Drainage mats: doing the base's job without the base",
@@ -368,7 +369,7 @@ def p_condos():
                 "Turf on a balcony or rooftop needs a drainage mat, glue-down edges and a weight check, not a compacted base. Florida's turf rule doesn't cover condos.",
                 "Artificial turf for balconies, rooftops and condos",
                 capsule("Artificial turf works on a balcony, rooftop or condo patio in the Kissimmee area with a lightweight drainage mat, glue-down or mechanically fastened edges and a building weight check, typically adding 2 to 3 pounds per square foot, as of September 2026. Florida's 2026 turf rule covers single-family lots only; a condo's balcony and common elements are governed by Chapter 718 and the association's own documents instead."),
-                body, faqs=faqs, crumbs=CRUMBS, crumb="Balconies & condos", published=PUB,
+                body, faqs=faqs, crumbs=CRUMBS, crumb="Balconies & condos", image="rooftop-pool-deck", published=PUB,
                 sources=["dep-rule", "fs125572", MAGNOLIA_ROOFTOP, FS718],
                 related=[("/commercial-turf/", "Commercial turf"),
                          ("/blog/install-artificial-turf-over-concrete-pavers-or-grass/", "Turf over concrete, pavers or grass"),

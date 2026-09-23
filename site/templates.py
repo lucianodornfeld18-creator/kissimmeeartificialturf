@@ -9,6 +9,7 @@ import re
 from _data import (BASE_URL, DOMAIN, PUBLIC_NAME, PHONE_E164, PHONE_DISPLAY, EMAIL, OWNER, OWNER_ROLE, REVIEWED, LAUNCH_DATE, SERVICES, SERVICE_ORDER,
                    CITIES, CITY_ORDER, COUNTIES, COUNTY_ORDER, SOURCES, WEB3FORMS_KEY, BUSINESS)
 from _helpers import esc
+from _photos import info as _pinfo, url as _purl, ORDER as PHOTO_ORDER
 
 ROOT = pathlib.Path(__file__).parent
 _js = (ROOT / "static" / "site.js").read_bytes()
@@ -66,8 +67,12 @@ footer.site{background:var(--ink);color:#D9D3C4;margin-top:56px;padding:40px 0 2
 .fg{display:grid;gap:28px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}footer.site ul{list-style:none;padding:0;margin:0}footer.site li{margin:.1em 0}footer.site li a{display:inline-block;padding:5px 0}
 .legal{border-top:1px solid #33463E;margin-top:28px;padding-top:16px;font-size:.87rem;color:#B9B3A4}
 .badge{text-align:center}.badge img{width:min(360px,70vw);aspect-ratio:1/1}.layers{display:block;max-width:460px;margin:1.2em auto}.layers text{font:600 11px var(--body);fill:var(--ink)}
-@media (max-width:860px){.top span:first-child{display:none}.top .wrap{justify-content:center}.brand{font-size:1.08rem;gap:8px;min-width:0}.brand svg{width:40px;height:40px}.brand small{font-size:.62rem}header.site .wrap{gap:10px}.hero.home{grid-template-columns:1fr;padding-top:30px}#navb{display:block}nav.main{flex-basis:100%;display:none}nav.main.open{display:block}nav.main ul{flex-direction:column;padding-bottom:12px}form.lead{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+figure.ph{margin:1.5em 0}figure.ph img{display:block;width:100%;height:auto;border-radius:var(--r);background:var(--sand)}figure.ph figcaption{font-size:.9rem;color:var(--mute);margin:.55em 0 0}
+.pgrid{display:grid;gap:12px;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));list-style:none;padding:0;margin:1.2em 0}.pgrid li{margin:0}.pgrid a{display:block;border-radius:var(--r);overflow:hidden;line-height:0}.pgrid img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;background:var(--sand);transition:transform .3s}.pgrid a:hover img{transform:scale(1.03)}
+.hero-ph{position:relative;line-height:0}.hero-ph>img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;border-radius:18px;background:var(--sand)}.hero-ph .bd{position:absolute;right:16px;bottom:16px;width:96px;height:96px;border-radius:50%;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.28)}
+.gal{columns:2 320px;column-gap:24px}.gal figure.ph{break-inside:avoid;margin:0 0 24px}
+@media (max-width:860px){.top span:first-child{display:none}.top .wrap{justify-content:center}.brand{font-size:1.08rem;gap:8px;min-width:0}.brand svg{width:40px;height:40px}.brand small{font-size:.62rem}header.site .wrap{gap:10px}.hero.home{grid-template-columns:1fr;padding-top:30px}#navb{display:block}nav.main{flex-basis:100%;display:none}nav.main.open{display:block}nav.main ul{flex-direction:column;padding-bottom:12px}form.lead{grid-template-columns:1fr}.hero-ph .bd{width:72px;height:72px;right:12px;bottom:12px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pgrid img{transition:none}}
 @media print{header.site,footer.site,.top,.cta,form.lead{display:none}}
 """
 CSS = re.sub(r"\n+", "", CSS.strip())
@@ -76,12 +81,60 @@ LOGO = re.sub(r"<svg ", '<svg width="46" height="46" aria-hidden="true" ', (ROOT
 
 LAYERS_SVG = '<svg class="layers" viewBox="0 0 420 330" role="img" aria-labelledby="lyT lyD"><title id="lyT">Cross-section of an artificial turf system on Central Florida sandy soil</title><desc id="lyD">From top to bottom: turf blades with infill, perforated backing, a washed crushed-rock base two to four inches deep, a weed barrier, and native fine sand graded to drain.</desc><rect width="420" height="330" rx="18" fill="#F1E7D2"/><g stroke="#1E5A47" stroke-width="3" stroke-linecap="round">' + "".join(f'<path d="M{x} 96l{(-5 if i % 2 else 5)} -{34 + (i * 7) % 16}"/>' for i, x in enumerate(range(34, 392, 11))) + '</g><rect x="24" y="92" width="372" height="16" fill="#C9B384"/><rect x="24" y="108" width="372" height="9" fill="#123A2E"/><rect x="24" y="117" width="372" height="92" fill="#B9B2A3"/><g fill="#8E8778">' + "".join(f'<circle cx="{40 + (i * 37) % 350}" cy="{128 + (i * 23) % 72}" r="{3 + i % 3}"/>' for i in range(34)) + '</g><rect x="24" y="209" width="372" height="5" fill="#3B3B3B"/><rect x="24" y="214" width="372" height="92" rx="0" fill="#E6D3A3"/><g fill="#CDB77F">' + "".join(f'<circle cx="{34 + (i * 29) % 360}" cy="{224 + (i * 17) % 74}" r="1.6"/>' for i in range(60)) + '</g><g><rect x="250" y="40" width="150" height="22" rx="11" fill="#FFFDF8"/><text x="262" y="55">Blades + infill</text><rect x="250" y="122" width="150" height="22" rx="11" fill="#FFFDF8"/><text x="262" y="137">Washed crushed rock</text><rect x="250" y="224" width="150" height="22" rx="11" fill="#FFFDF8"/><text x="262" y="239">Native fine sand</text></g></svg>'
 
-NAV = [("/services/", "Services"), ("/artificial-turf-cost/", "Cost"), ("/areas/", "Areas"), ("/laws/", "Laws & HOA"), ("/blog/", "Blog"), ("/faq/", "FAQ"), ("/about/", "About"), ("/contact/", "Contact")]
+NAV = [("/services/", "Services"), ("/artificial-turf-cost/", "Cost"), ("/areas/", "Areas"), ("/laws/", "Laws & HOA"), ("/blog/", "Blog"), ("/faq/", "FAQ"), ("/gallery/", "Photos"), ("/about/", "About"), ("/contact/", "Contact")]
 
 
 def _date_h(iso):
     d = datetime.date.fromisoformat(iso)
     return d.strftime("%B %d, %Y").replace(" 0", " ")
+
+
+# ---------------------------------------------------------------- photos
+HERO_SIZES = "(max-width:860px) calc(100vw - 40px), 444px"
+BADGE_HTML = ('<div class="badge"><img src="/static/img/logo-badge.webp" srcset="/static/img/logo-badge-320.webp 320w, /static/img/logo-badge-480.webp 480w, /static/img/logo-badge.webp 640w" '
+              'sizes="(max-width:860px) 240px, 360px" width="640" height="640" alt="Kissimmee Artificial Turf logo: grass blades inside a green ring, established 2024" fetchpriority="high" decoding="async"></div>')
+
+
+def _page_photo(p):
+    return p.get("image") or p.get("hero_photo")
+
+
+def _og_abs(p):
+    pid = _page_photo(p)
+    return BASE_URL + (_purl(pid, kind="og") if pid else "/static/img/og.jpg")
+
+
+def _og_alt(p):
+    pid = _page_photo(p) or PHOTO_ORDER[0]
+    return _pinfo(pid)["alt"] + " (Kissimmee Artificial Turf)"
+
+
+def image_node(pid):
+    d = _pinfo(pid)
+    return {"@type": "ImageObject", "@id": f"{BASE_URL}/gallery/#{pid}", "contentUrl": BASE_URL + _purl(pid), "url": BASE_URL + _purl(pid),
+            "name": d["name"], "description": d["alt"], "width": d["w"], "height": d["h"], "encodingFormat": "image/webp",
+            "thumbnailUrl": BASE_URL + _purl(pid, 480, thumb=True), "creator": {"@id": BASE_URL + "/#business"}, "creditText": PUBLIC_NAME,
+            "copyrightNotice": f"© {datetime.date.today().year} {PUBLIC_NAME}"}
+
+
+def _hero_srcset(pid):
+    return ", ".join(f"{_purl(pid, w, thumb=True)} {w}w" for w in _pinfo(pid)["thumbs"])
+
+
+def _hero_art(p):
+    pid = p.get("hero_photo")
+    if not pid:
+        return BADGE_HTML
+    return (f'<div class="hero-ph"><img src="{_purl(pid, 672, thumb=True)}" srcset="{_hero_srcset(pid)}" sizes="{HERO_SIZES}" width="672" height="504" '
+            f'alt="{esc(_pinfo(pid)["alt"])}" fetchpriority="high" decoding="async">'
+            f'<img class="bd" src="/static/img/logo-badge-192.webp" width="192" height="192" alt="" loading="lazy" decoding="async"></div>')
+
+
+def _preload(p):
+    pid = p.get("hero_photo")
+    if not pid:
+        return ""
+    return f'\n<link rel="preload" as="image" imagesrcset="{_hero_srcset(pid)}" imagesizes="{HERO_SIZES}" fetchpriority="high">'
 
 
 def business_node(full=False):
@@ -92,7 +145,7 @@ def business_node(full=False):
     if full:
         n["description"] = BUSINESS["blurb"]
         n["logo"] = BASE_URL + "/static/img/logo-512.png"
-        n["image"] = BASE_URL + "/static/img/og.png"
+        n["image"] = [BASE_URL + "/static/img/og.jpg"] + [BASE_URL + _purl(pid, kind="og") for pid in PHOTO_ORDER[1:5]]
         n["areaServed"] = [_city_node(s) for s in CITY_ORDER if CITIES[s]["tier"] == 1] + [{"@type": "AdministrativeArea", "name": COUNTIES[c]["name"] + ", Florida"} for c in COUNTY_ORDER]
         n["knowsAbout"] = ["Artificial turf", "Synthetic grass installation", "Pet turf", "Putting greens", "Playground surfacing", "Turf infill", "Florida HB 683 synthetic turf rules"]
         n["hasOfferCatalog"] = {"@type": "OfferCatalog", "name": "Artificial turf services", "itemListElement": [
@@ -115,6 +168,11 @@ def jsonld(p):
         g.append({"@type": "WebSite", "@id": BASE_URL + "/#website", "url": BASE_URL + "/", "name": PUBLIC_NAME, "publisher": {"@id": BASE_URL + "/#business"}, "inLanguage": "en-US"})
     wp = {"@type": "WebPage", "@id": url + "#webpage", "url": url, "name": p["title"], "description": p["meta"], "inLanguage": "en-US",
           "isPartOf": {"@id": BASE_URL + "/#website"}, "about": {"@id": BASE_URL + "/#business"}, "dateModified": p.get("_lastmod", REVIEWED), "datePublished": p.get("published", LAUNCH_DATE)}
+    if p.get("wp_type"):
+        wp["@type"] = p["wp_type"]
+    pid = _page_photo(p)
+    if pid:
+        wp["primaryImageOfPage"] = image_node(pid)
     g.append(wp)
     crumbs = [("Home", "/")] + list(p.get("crumbs") or [])
     if p["route"] != "/":
@@ -128,12 +186,14 @@ def jsonld(p):
             node["areaServed"] = _city_node(p["city"])
         else:
             node["areaServed"] = [_city_node(c) for c in CITY_ORDER if CITIES[c]["tier"] == 1]
+        if pid:
+            node["image"] = {"@id": f"{BASE_URL}/gallery/#{pid}"}
         g.append(node)
     if p["kind"] == "post":
         g.append({"@type": "BlogPosting", "@id": url + "#article", "headline": p["h1"], "description": p["meta"], "url": url, "mainEntityOfPage": {"@id": url + "#webpage"},
                   "datePublished": p.get("published", LAUNCH_DATE), "dateModified": p.get("_lastmod", REVIEWED), "inLanguage": "en-US",
                   "author": {"@type": "Person", "@id": BASE_URL + "/about/#luis-austin", "name": OWNER, "jobTitle": OWNER_ROLE, "url": BASE_URL + "/about/"},
-                  "publisher": {"@id": BASE_URL + "/#business"}, "image": BASE_URL + "/static/img/og.png"})
+                  "publisher": {"@id": BASE_URL + "/#business"}, "image": _og_abs(p)})
     if p.get("faqs") and not p.get("faq_schema_off"):
         g.append({"@type": "FAQPage", "@id": url + "#faq", "mainEntity": [
             {"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"\s+", " ", re.sub("<[^>]+>", "", ans)).strip()}} for q, ans in p["faqs"]]})
@@ -179,7 +239,7 @@ def _footer():
 <div><h2>{esc(PUBLIC_NAME)}</h2><p>Artificial grass installation, repair and cleaning. Based in Kissimmee, Florida, working across Osceola, Orange, Polk, Lake and Seminole counties.</p><p><a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a><br><a href="mailto:{EMAIL}">{EMAIL}</a></p></div>
 <div><h2>Services</h2><ul>{sv}</ul></div>
 <div><h2>Close to Kissimmee</h2><ul>{t1}</ul></div>
-<div><h2>Counties</h2><ul>{co}<li><a href="/areas/">All service areas</a></li></ul><h2 style="margin-top:1.4em">Resources</h2><ul><li><a href="/artificial-turf-cost/">Turf cost guide</a></li><li><a href="/laws/">Florida turf laws &amp; HOAs</a></li><li><a href="/compare/">Comparisons</a></li><li><a href="/tools/">Calculators</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li></ul></div>
+<div><h2>Counties</h2><ul>{co}<li><a href="/areas/">All service areas</a></li></ul><h2 style="margin-top:1.4em">Resources</h2><ul><li><a href="/artificial-turf-cost/">Turf cost guide</a></li><li><a href="/laws/">Florida turf laws &amp; HOAs</a></li><li><a href="/compare/">Comparisons</a></li><li><a href="/tools/">Calculators</a></li><li><a href="/faq/">FAQ</a></li><li><a href="/blog/">Blog</a></li><li><a href="/gallery/">Project photos</a></li></ul></div>
 </div><p class="legal">© {datetime.date.today().year} {esc(PUBLIC_NAME)} · Kissimmee, FL · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/accessibility/">Accessibility</a> · <a href="/sitemap.xml">Sitemap</a></p></div></footer>"""
 
 
@@ -207,7 +267,7 @@ def render_page(p):
     if p.get("form", p["kind"] in ("home", "service", "cityservice", "city", "price")):
         form_html = f'<section id="get-quote" class="auto"><h2>{esc(p.get("form_title") or "Tell us about the yard")}</h2><p>Send the basics and we call back to set a time to measure. Prefer to talk? Call or text <a href="tel:{PHONE_E164}">{PHONE_DISPLAY}</a>.</p>{lead_form(p)}</section>'
     if p["kind"] == "home":
-        hero = f'<div class="wrap"><div class="hero home"><div><p class="eyebrow">{esc(p.get("eyebrow", ""))}</p><h1>{p["h1"]}</h1>{p["lede"]}<div class="hero-cta"><a class="btn" href="#get-quote">Get a measured quote</a><a class="btn alt" href="tel:{PHONE_E164}">Call {PHONE_DISPLAY}</a></div></div><div class="badge"><img src="/static/img/logo-badge.webp" srcset="/static/img/logo-badge-320.webp 320w, /static/img/logo-badge-480.webp 480w, /static/img/logo-badge.webp 640w" sizes="(max-width:860px) 240px, 360px" width="640" height="640" alt="Kissimmee Artificial Turf logo: grass blades inside a green ring, established 2024" fetchpriority="high" decoding="async"></div></div></div>'
+        hero = f'<div class="wrap"><div class="hero home"><div><p class="eyebrow">{esc(p.get("eyebrow", ""))}</p><h1>{p["h1"]}</h1>{p["lede"]}<div class="hero-cta"><a class="btn" href="#get-quote">Get a measured quote</a><a class="btn alt" href="tel:{PHONE_E164}">Call {PHONE_DISPLAY}</a></div></div>{_hero_art(p)}</div></div>'
         narrow = ""
     else:
         eb = f'<p class="eyebrow">{esc(p["eyebrow"])}</p>' if p.get("eyebrow") else ""
@@ -219,8 +279,8 @@ def render_page(p):
     return f"""<!doctype html>
 <html lang="en-US"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(p["title"])}</title><meta name="description" content="{esc(p["meta"])}"><meta name="robots" content="{robots}"><link rel="canonical" href="{url}">
-<link rel="preload" href="/static/fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
-<meta property="og:type" content="{og_type}"><meta property="og:site_name" content="{esc(PUBLIC_NAME)}"><meta property="og:title" content="{esc(p["title"])}"><meta property="og:description" content="{esc(p["meta"])}"><meta property="og:url" content="{url}"><meta property="og:image" content="{BASE_URL}/static/img/og.png"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="/static/fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>{_preload(p)}
+<meta property="og:type" content="{og_type}"><meta property="og:site_name" content="{esc(PUBLIC_NAME)}"><meta property="og:title" content="{esc(p["title"])}"><meta property="og:description" content="{esc(p["meta"])}"><meta property="og:url" content="{url}"><meta property="og:image" content="{_og_abs(p)}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(_og_alt(p))}"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.ico" sizes="32x32"><link rel="icon" href="/static/img/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><meta name="theme-color" content="#0B4A18">
 <link rel="alternate" type="application/rss+xml" title="{esc(PUBLIC_NAME)} blog" href="/feed.xml">
 <style>{CSS}</style><noscript><style>nav.main{{display:block}}#navb{{display:none}}</style></noscript>

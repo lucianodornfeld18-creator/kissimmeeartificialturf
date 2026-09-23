@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Service pages: turf & pavers, turf repair, turf cleaning, turf replacement."""
 from _data import PRICE_DATE
-from _helpers import page, capsule, sec, table, faq, steps, cta, a, svc, city, post, src, ext, price
+from _helpers import page, capsule, sec, table, faq, steps, cta, a, svc, city, post, src, ext, price, photo
 
 TURFRESH_REPAIR = "https://turfresh.com/blog/artificial-turf-repair-vs-replace/"
 INSTALLARTIFICIAL_LA_REPAIR = "https://www.installartificial.com/how/repair-artificial-grass-in-los-angeles-cost-and-methods"
@@ -18,6 +18,7 @@ def pavers_page():
         sec("Where turf between pavers works, and where it doesn't",
             "<p>A paver and turf installation succeeds or fails at the joint between the two materials, not inside either one alone. Turf between pavers earns its keep in specific spots: driveway ribbon turf down the center where tires never track, stepping stone turf filling the gaps between treads on a path through the yard, grid pavers with artificial grass over a parking pad, or a checkerboard patio alternating paver squares with turf squares off the lanai. It reads as intentional, not as a lawn that failed.</p>"
             + f"<p>It also solves a problem Kissimmee homeowners run into with real grass in these spots: a strip a few inches wide between pavers dries out fast in full sun, and Toho Water Authority's two-day watering schedule rarely keeps it alive. A wide-open area next to the hardscape is a different job. A 600 sq ft side yard is cheaper and simpler as one piece of {svc('residential', 'lawn turf')} than as ten narrow ribbons, so we reserve the paver-and-turf approach for the spots the hardscape pattern actually creates. Driveway wheel paths are a poor fit for the same reason turf ribbons work everywhere else: turf laid where tires roll gets crushed and stained with oil, so the green strip belongs in the center or along the border, never in the tracks.</p>"),
+        photo("turf-between-pavers", "Turf ribbons between porcelain pavers set on the diagonal. The strips are cut to the joint and trimmed so the pile sits a touch above the paver face."),
         sec("Four ways we lay turf and pavers together",
             "<p>The layout decides almost everything else about a job: strip width, how the edge gets held, and where the water goes. These four patterns cover most of what comes up in Osceola and south Orange County yards.</p>"
             + table("Turf-and-paver layouts and their build notes",
@@ -27,6 +28,7 @@ def pavers_page():
                      ["Grid pavers with artificial grass", "2–4 in cell openings", "No separate edge; the paver cell holds the turf plug in place", "Built for infiltration, so the base under the cells stays open rather than compacted solid"],
                      ["Checkerboard patio", "Full paver-size squares, 12–24 in", "Bender board or a mortared edge around each turf square", "Each square carries its own slight crown so water doesn't pool in the pile"]],
                     "Widths are typical for residential jobs; a site visit sets the exact number against the paver pattern you have or are choosing.")),
+        photo("rooftop-amenity-deck", "A wide turf field meeting large-format pavers on a rooftop deck: one straight seam, no edging strip, the paver course itself holds the turf edge."),
         sec("One layout, two base materials",
             f"<p>Pavers and turf don't actually want the same base material, which surprises people expecting one uniform layer under everything. Pavers sit on a dense-graded aggregate, sized to lock together tight enough to carry a tire's point load without shifting. Turf's base has to do close to the opposite: {src('dep-rule', 'the state synthetic turf standard')} requires a washed, open-graded crushed rock or crushed concrete subgrade under turf, sized and washed so fines don't bind it into a crust that stops water from passing through. Run one material under the other and either the turf floods or the paver bearing surface goes soft.</p>"
             + "<p>What stays continuous is the layout, not the aggregate: one finished grade set for the whole area before either material goes down, one drainage plan, and an edge restraint that ties the two base types together at the joint instead of leaving a gap.</p>"
@@ -68,7 +70,7 @@ def pavers_page():
                 "Turf between pavers in Kissimmee: one shared layout, joint width, edge restraint and drainage for ribbons, stepping stones and checkerboard patios.",
                 "Turf between pavers in Kissimmee, Florida",
                 capsule(f"Turf between pavers ties a driveway, walkway or patio together with a green line instead of loose rock or bare joint sand. In Kissimmee the turf itself still runs the usual {price('residential')} a square foot, but a narrow strip prices near the top of that range because the edge work, not the area, takes the crew's time. Most jobs finish in a day."),
-                body, faqs=faqs, service="pavers", crumbs=[("Services", "/services/")], crumb="Turf & pavers",
+                body, faqs=faqs, service="pavers", image="turf-between-pavers", crumbs=[("Services", "/services/")], crumb="Turf & pavers",
                 sources=["fs7203045", "dep-rule", "marathon-pr", "sgw-faq", "horsemans-heat", "attampa-cost"],
                 related=[("/artificial-grass-installation/", "Residential turf installation"), ("/pool-turf/", "Turf around pools and lanais"),
                          ("/compare/turf-vs-pavers-vs-rock-side-yard/", "Turf vs. pavers vs. rock, compared"),
@@ -156,6 +158,7 @@ def cleaning_page():
             f"<p>Artificial turf needs a hose rinse every week or two, power brooming a few times a year to lift matted pile, and a deeper sanitizing clean twice a year timed around Central Florida's live oak leaf drop and rainy season. Storms and heavy pollen weeks call for an extra pass in between. None of it involves an in-ground sprinkler; {src('dep-rule', 'the state synthetic turf rule')} doesn't allow one to water turf at all.</p>"
             + table("Artificial turf maintenance calendar for Central Florida", ["Frequency", "Task", "Why it matters here"], cal_rows,
                     f"Live oak timing from {ext(IFAS_LIVEOAK, 'UF/IFAS live oak information')}; lovebug seasons from {ext(IFAS_LOVEBUGS, 'UF/IFAS Extension on lovebugs')}.")),
+        photo("rooftop-amenity-deck", "Leaf litter on a rooftop turf deck after a windy day. A blower or a power broom clears this before it breaks down into the infill."),
         sec("How often should pet turf be cleaned?",
             f"<p>Dog turf needs a hose rinse most days at the spot a dog actually uses, and at least once a week across the whole run, because Central Florida heat turns bacteria in urine into odor within hours. Beyond that, plan on a professional deep clean with an enzyme or antimicrobial treatment every three to four months, sooner with more than one dog or a yard that stays shaded and damp.</p>"
             + f"<p>{svc('pet', 'Pet turf systems')} built with a fully permeable backing and zeolite or an antimicrobial-coated sand hold up longer between professional visits than regular lawn turf pressed into service as a dog run. {post('how-to-get-dog-urine-smell-out-of-artificial-turf', 'This guide')} covers what to try if odor has already set in.</p>"),
@@ -206,7 +209,7 @@ def cleaning_page():
                 "Artificial turf cleaning service in Kissimmee: a Central Florida maintenance calendar, pet-odor removal and 2026 market-range pricing for power brooming.",
                 "Artificial turf cleaning service in Kissimmee, Florida",
                 capsule("An artificial turf cleaning service rinses, power brooms and deodorizes turf so it drains, smells and looks the way it did on installation day. In Kissimmee, a basic visit runs roughly $80 to $150 and a deep clean with pet-odor treatment runs $150 to $400, based on published 2026 market ranges. Central Florida's oak leaf drop, pollen and lovebug seasons all shape the schedule."),
-                body, faqs=faqs, service="cleaning", crumbs=[("Services", "/services/")], crumb="Turf cleaning",
+                body, faqs=faqs, service="cleaning", image="rooftop-amenity-deck", crumbs=[("Services", "/services/")], crumb="Turf cleaning",
                 sources=["dep-rule", "marathon-pr", "sgw-faq",
                          ("Sparkly Turf — artificial grass cleaning cost, 2026", SPARKLYTURF_CLEAN),
                          ("UF/IFAS Sarasota County Extension — lovebugs, the bug we love to hate", IFAS_LOVEBUGS),

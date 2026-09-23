@@ -1,9 +1,11 @@
-pages: 578
+pages: 579
 FAIL: 0
-WARN: 42
+WARN: 44
 
 
+WARN  meta 171 chars: /gallery/
 WARN  inlinks 0 < 3: /accessibility/
+WARN  inlinks 2 < 3: /gallery/
 WARN  inlinks 0 < 3: /terms/
 WARN  sentence on 8 pages: "zeolite or coated sand goes in at a similar rate to a standard lawns silica sand but the r" e.g. ['/pet-turf/altamonte-springs/', '/pet-turf/auburndale/', '/pet-turf/gotha/']
 WARN  sentence on 8 pages: "working out the full stacks thickness on paper before any soil comes out avoids discoverin" e.g. ['/playground-turf/buenaventura-lakes/', '/playground-turf/celebration/', '/playground-turf/hunters-creek/']

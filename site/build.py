@@ -116,7 +116,15 @@ def section_of(p):
     return {"service": "services", "city": "areas", "county": "areas", "cityservice": "city-services", "post": "blog", "faq": "faq"}.get(k, "core")
 
 
-def write_sitemaps(pages):
+def page_images(html):
+    """Largest published variant of every project photo used on the page, for the image sitemap extension."""
+    best = {}
+    for stem, w in re.findall(r'(/static/img/photos/[a-z0-9-]+?)-(\d+)\.webp', html):
+        best[stem] = max(best.get(stem, 0), int(w))
+    return "".join(f"<image:image><image:loc>{BASE_URL}{stem}-{w}.webp</image:loc></image:image>" for stem, w in sorted(best.items()))
+
+
+def write_sitemaps(pages, rendered):
     buckets = {s: [] for s in SECTIONS}
     for p in pages:
         if p.get("noindex") or p["route"] in ("/404/",):
@@ -126,8 +134,8 @@ def write_sitemaps(pages):
     for s, ps in buckets.items():
         if not ps:
             continue
-        urls = "\n".join(f"  <url><loc>{BASE_URL}{p['route']}</loc><lastmod>{p['_lastmod']}</lastmod></url>" for p in ps)
-        (DIST / f"sitemap-{s}.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemaps/0.9">\n{urls}\n</urlset>\n'.replace("schemas/sitemaps/0.9", "schemas/sitemap/0.9"), encoding="utf-8")
+        urls = "\n".join(f"  <url><loc>{BASE_URL}{p['route']}</loc><lastmod>{p['_lastmod']}</lastmod>{page_images(rendered.get(p['route'], ''))}</url>" for p in ps)
+        (DIST / f"sitemap-{s}.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n{urls}\n</urlset>\n', encoding="utf-8")
         idx.append(f"  <sitemap><loc>{BASE_URL}/sitemap-{s}.xml</loc><lastmod>{max(p['_lastmod'] for p in ps)}</lastmod></sitemap>")
     (DIST / "sitemap.xml").write_text('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + "\n".join(idx) + "\n</sitemapindex>\n", encoding="utf-8")
 
@@ -276,7 +284,7 @@ def main():
         shutil.copy(DIST / "404" / "index.html", DIST / "404.html")
     write_static()
     write_robots()
-    write_sitemaps(pages)
+    write_sitemaps(pages, rendered)
     write_llms(pages, rendered)
     write_feed(pages)
     key = indexnow_key()

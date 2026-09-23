@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Service pages: residential lawns, pet turf, putting greens, playground turf."""
 from _data import PRICE_DATE, PHONE_DISPLAY
-from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, cs, post, src, ext, price, price_note, tel
+from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, city, cs, post, src, ext, price, price_note, tel, photo
 
 CPSC = ("CPSC — Public Playground Safety Handbook (Publication 325, 2025)", "https://www.cpsc.gov/s3fs-public/325_PublicPlaygroundSafetyHandbook2025_7-30-25_1.pdf")
 ASTM_F1292 = ("ASTM F1292-22 — Standard Specification for Impact Attenuation of Surfacing Materials Within the Use Zone of Playground Equipment", "https://store.astm.org/f1292-22.html")
@@ -17,6 +17,7 @@ def residential():
             f"<p>Artificial grass installation in Kissimmee, FL means pulling out the living lawn and building a synthetic one in its place: sod and soil removed, a compacted base shaped to drain, then turf rolled, seamed and pinned down. Installed cost runs {price('residential')} a square foot as of {PRICE_DATE}, and a typical 800 to 1,200 sq ft yard takes a two- to four-person crew two to four days from strip-out to the first walk on the new grass.</p>"
             + f"<p>Around here that's a different job than the same artificial turf installation means in Arizona. Our base has to shed a Central Florida downpour, not just sit dry for ten months a year, and the fine sand under most Osceola County lots holds water close to the surface for weeks after a wet summer. Calls that start as a search for fake grass for backyard use often end up covering the front and side yards too once the quote's in hand. {post('base-under-artificial-turf-florida-sandy-soil', 'What goes under turf on this sand')} covers the build in more depth than this page does.</p>"),
 
+        photo("backyard-lawn-pool-home", "A pool-home backyard after the sod came out and turf went in, tools still on the patio. The palm keeps a gravel ring instead of turf against the trunk."),
         sec("Who this fits, and who should think twice",
             "<p>Artificial turf installation suits yards where sod already struggles: heavy shade from a two-story house or a stand of live oaks, a side yard too narrow for a mower, a rental property nobody's around to water, or a homeowner tired of a chinch-bug fight every June. Replace grass with turf and the watering schedule, the mowing bill and the brown August patches all go away at once.</p>"
             + "<p>It fits less well for a large, flat, full-sun lot where St. Augustine already thrives and the owner enjoys yard work; sod there is the cheaper year-one choice. It also isn't the answer for a yard that floods after every storm: standing water is a grading problem first, and turf over a wet spot just hides the puddle instead of fixing it.</p>"),
@@ -30,6 +31,7 @@ def residential():
                     "Face weight is the weight of fiber per square yard, not the whole roll; higher usually means denser blades and slower matting. Infill for a plain lawn is typically silica sand at roughly 1–2 lb per sq ft.")
             + f"<p>Blade color and shape matter as much as the numbers. {post('artificial-turf-pile-height-and-face-weight', 'Pile height and face weight, explained plainly')} and {post('best-artificial-grass-for-florida', 'what holds up in Florida sun')} go further than a spec table can, and the {a('/compare/nylon-vs-polyethylene-vs-polypropylene-turf/', 'fiber comparison')} covers why almost every residential lawn here is polyethylene, not nylon or polypropylene.</p>"),
 
+        photo("lakefront-estate", "On a larger lot the turf carries from the fence to the pool deck in one plane; path lights and the practice green are set into it rather than around it."),
         sec("How we build a lawn on Kissimmee sand",
             "<p>The turf on top is the easy part. What decides whether a front yard or backyard stays flat through a rainy season is the work nobody sees again once the grass is down.</p>"
             + steps([("Strip and haul.", "Existing sod, thatch and 3 to 4 inches of soil come out, because organic matter left under turf rots and settles unevenly within a year or two."),
@@ -90,7 +92,7 @@ def residential():
                 f"Artificial grass installation in Kissimmee, FL costs {price('residential')} per sq ft installed as of {PRICE_DATE}. Base specs, cost drivers and Florida rules inside.",
                 "Artificial Grass Installation Built for Kissimmee's Sandy Soil",
                 capsule(f"Artificial grass installation in Kissimmee, FL runs about {price('residential')} per square foot installed as of {PRICE_DATE}, with most yards landing between {price('residential', True)}. A typical 800 to 1,200 sq ft lawn takes two to four days once the old sod is stripped, a compacted base is built, and turf is seamed, edged and infilled."),
-                body, faqs=faqs, service="residential", crumbs=[("Services", "/services/")], crumb="Grass Installation",
+                body, faqs=faqs, service="residential", image="backyard-lawn-pool-home", crumbs=[("Services", "/services/")], crumb="Grass Installation",
                 sources=["attampa-cost", "lbs-fl-cost", "magnolia-heat", "horsemans-heat", "sgw-faq", "stn-life", "hb683", "dep-rule", "marathon-pr", "fs7203045", "usda-wss"],
                 related=[("/artificial-turf-cost/", "Full turf cost guide with tables"), ("/blog/artificial-turf-front-yard-florida/", "Can you put turf in a Florida front yard?"),
                          ("/blog/artificial-grass-for-shady-side-yards/", "Options for shady side yards"), ("/compare/artificial-turf-vs-st-augustine-zoysia-bahia/", "Turf vs. St. Augustine, Zoysia and Bahia"),
@@ -109,6 +111,7 @@ def pet():
             + "<p>The difference isn't the turf blade at all; polyethylene fiber is the same material either way. It's the three layers underneath: whether water and liquid pass straight through the backing, whether a weed barrier is sitting there holding it back, and whether the infill is inert sand or something formulated to bind ammonia. Dogs also do better on a shorter, denser pile that resists matting along a fence-line patrol path, and a flush-out zone near a hose bib gives a place to rinse daily without soaking the whole run.</p>"
             + f"<p>{post('pet-turf-vs-regular-artificial-grass', 'Pet turf vs. regular artificial grass, in detail')} walks through the backing and infill differences product by product.</p>"),
 
+        photo("lakefront-backyard-palms", "A fully fenced backyard is the easy case for dogs: turf to the fence line, palms boxed out with ring edging, nothing for a digger to get under."),
         sec("Turf and infill built for a dog yard",
             table("Pet turf components and what they change", ["Component", "Common options", "What it does for a dog yard"],
                   [["Pile height", "0.75–1.25 in for runs; 1.25–1.5 in for shared yards", "Shorter fiber resists matting along a fence-patrol path"],
@@ -173,7 +176,7 @@ def pet():
                 f"Pet turf installation in Kissimmee, FL costs {price('pet')} per sq ft as of {PRICE_DATE}. What makes turf good for dogs, infill choices, cost drivers and care.",
                 "Pet Turf Installation for Florida Dog Yards",
                 capsule(f"Pet turf installation in Kissimmee, FL typically costs {price('pet')} per square foot installed as of {PRICE_DATE}, with most dog yards landing between {price('pet', True)}. A permeable backing, no weed barrier, and zeolite or antimicrobial infill are what keep a 300 to 1,000 sq ft dog area from smelling by the second summer."),
-                body, faqs=faqs, service="pet", crumbs=[("Services", "/services/")], crumb="Pet Turf",
+                body, faqs=faqs, service="pet", image="lakefront-backyard-palms", crumbs=[("Services", "/services/")], crumb="Pet Turf",
                 sources=["magnolia-pet-cost", "installartificial-pet", "sgw-faq", "magnolia-heat", "stn-life", "watersavers-pfas", "mtsinai-turf", "hb683", "dep-rule", "marathon-pr", "fs7203045"],
                 related=[("/blog/pet-turf-vs-regular-artificial-grass/", "Pet turf vs. regular artificial grass"), ("/blog/how-to-get-dog-urine-smell-out-of-artificial-turf/", "Getting urine odor out of turf"),
                          ("/compare/zeolite-vs-silica-vs-antimicrobial-infill/", "Zeolite vs. silica vs. antimicrobial infill"), ("/artificial-turf-cost/", "Full turf cost guide"),
@@ -187,10 +190,12 @@ def putting():
             f"<p>Backyard putting green installation in Kissimmee, FL means shaping a small piece of the yard into a contoured, true-rolling surface: a crowned or breaking sub-base under a short synthetic putting surface, edged with a taller fringe turf and set with one or more cups. It runs {price('putting')} a square foot as of {PRICE_DATE}, more than a lawn, because the base is sculpted by hand and the surface product is chosen for ball roll rather than looks.</p>"
             + f"<p>Most residential greens in Osceola and Orange County run 300 to 800 sq ft, tucked into a back corner or wrapped around an existing pool deck. A simple flat pad with one cup is a weekend-scale project; a multi-tier green with breaks and a chipping green area takes longer to shape and costs more per foot. Whether a homeowner calls it an artificial putting green, a synthetic putting green or just a home putting green, all three describe the same build. {svc('residential', 'A surrounding lawn')} usually gets built at the same time so the two surfaces meet cleanly.</p>"),
 
+        photo("putting-green-three-cups", "A three-cup green between a vinyl fence and a concrete curb: short putting surface in the middle, taller fringe turf around it."),
         sec("Is a backyard green right for your yard?",
             "<p>A putting green fits a yard with at least a few hundred square feet of reasonably level, sun-reachable space and an owner who'll actually use it; the ones that get the most use tend to sit somewhere visible from a lanai or kitchen window rather than tucked out of sight. It works in shade better than a natural green would, since the surface doesn't need sunlight to survive, though full shade all day can leave the turf feeling permanently damp underfoot after rain.</p>"
             + "<p>It fits less well on a lot with no flat run at all, since even a small green needs a stable, gently sloped pad to hold its shape, and on a lot where the only open space sits inside a live oak's root zone, where excavation for the shaped base has to stay shallow. A chipping pad instead of a full green is often the better answer on a tight or heavily treed lot.</p>"),
 
+        photo("putting-green-hedge", "A kidney-shaped green next to a pool deck; the fringe runs under the hedge and around the palm so the putting surface has a clean edge on every side."),
         sec("Putting green turf: nylon vs. polypropylene, and what stimp speed?",
             f"<p>Nylon is the more durable, longer-lasting fiber for a putting surface, typically holding up 10 to 15 years under regular play, while polypropylene is softer, cheaper and more prone to matting over 3 to 5 years of heavy use ({ext(NYLON_POLY_SRC[1], 'a side-by-side comparison of both fibers')}). Ball roll speed, measured on a stimpmeter, comes mostly from the surface's texture and grooming rather than which plastic it's made from: backyard greens typically stimp 10 to 12, with 7.5 considered slow and 14 considered fast for a home installation, against roughly 12 for tour-level professional greens ({ext(STIMP_SRC[1], 'stimp speed reference ranges')}).</p>"
             + table("Putting green surface options", ["Fiber", "Feel and durability", "Typical stimp", "Best for"],
@@ -255,7 +260,7 @@ def putting():
                 f"Backyard putting green installation in Kissimmee, FL runs {price('putting')} per sq ft as of {PRICE_DATE}. Nylon vs. polypropylene, stimp speed, base build and cost drivers.",
                 "Backyard Putting Green Installation for Central Florida Yards",
                 capsule(f"Backyard putting green installation in Kissimmee, FL runs {price('putting')} per square foot as of {PRICE_DATE}, with most greens landing between {price('putting', True)} once contouring, fringe turf and cups are included. A 400 to 600 sq ft green on a shaped, compacted base usually takes three to five days from strip-out to the first putt."),
-                body, faqs=faqs, service="putting", crumbs=[("Services", "/services/")], crumb="Putting Greens",
+                body, faqs=faqs, service="putting", image="putting-green-three-cups", crumbs=[("Services", "/services/")], crumb="Putting Greens",
                 sources=["angi-putting", "homeguide-putting", "stn-life", "magnolia-heat", "hb683", "dep-rule", "marathon-pr", "fs7203045", STIMP_SRC, NYLON_POLY_SRC],
                 related=[("/blog/backyard-putting-green-cost-florida/", "What drives putting green pricing in Florida"), ("/blog/artificial-turf-glossary/", "Turf terms: face weight, infill, stimp"),
                          ("/compare/nylon-vs-polyethylene-vs-polypropylene-turf/", "Nylon vs. polyethylene vs. polypropylene"), ("/artificial-turf-cost/", "Full turf cost guide"),

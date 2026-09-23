@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """Home page."""
 from _data import SERVICES, SERVICE_ORDER, PRICE_DATE, OWNER, PHONE_DISPLAY
-from _helpers import page, capsule, sec, table, faq, ul, steps, cta, a, svc, city, county, post, src, price, price_note, tel
+from _helpers import page, capsule, sec, table, faq, ul, steps, cta, a, svc, city, county, post, src, price, price_note, tel, photo, photo_strip
 from templates import LAYERS_SVG
 
 CARD = {
@@ -29,6 +29,11 @@ def get_pages():
             f"<p>Kissimmee Artificial Turf is a local synthetic turf company. {OWNER} started it in 2024 to do one thing well: put down artificial grass that still looks flat and drains fast after a Central Florida summer. That takes a different build than the one written for Arizona or California, because our ground is fine sand over a high water table and our rain arrives two inches at a time. Here is everything we do, with a full page behind each service.</p>"
             + cards
             + f"<p>Not sure which one fits? Most calls start as a plain lawn replacement and turn into something more specific once we see the yard: a {svc('pet', 'dog run down the side of the house')}, a {svc('putting', 'putting green in the back corner')}, or {svc('pool', 'a turf border around the pool deck')}. The {a('/services/', 'services overview')} compares them side by side.</p>"),
+
+        sec("Turf work in photos",
+            "<p>Nine project photos and no stock images: a lakefront yard with a pool and a practice green, a three-cup putting green behind a vinyl fence, turf ribbons between porcelain pavers, a pool-home backyard and two rooftop amenity decks. Customers' addresses and neighborhoods stay private, so the captions describe only what's in the frame.</p>"
+            + photo_strip(["lakefront-estate", "putting-green-three-cups", "turf-between-pavers", "backyard-lawn-pool-home", "rooftop-pool-deck", "lakefront-backyard-palms"])
+            + f"<p>{a('/gallery/', 'See all nine photos with a note on each build')}.</p>"),
 
         sec("What does artificial turf cost in Kissimmee?",
             f"<p>As of {PRICE_DATE}, installed artificial turf in Kissimmee and Osceola County runs about <strong>{price('residential')} per square foot</strong>, and most residential yards finish between {price('residential', True)}. That covers sod removal, the compacted base, turf, seams, edging, infill and cleanup. A 600 sq ft pool-home backyard typically lands between $6,600 and $9,600; 1,000 sq ft between $10,000 and $16,000.</p>"
@@ -135,6 +140,6 @@ def get_pages():
                  "Artificial turf installation in Kissimmee, FL: lawns, pet turf, putting greens and playgrounds. $8–$18 per sq ft installed in 2026. Call (689) 202-3710.",
                  "Artificial turf installation in Kissimmee, Florida",
                  capsule(f"Kissimmee Artificial Turf installs, repairs and cleans artificial grass in Kissimmee, Osceola County and towns within about 40 miles. Installed turf runs {price('residential')} per square foot as of {PRICE_DATE}, built on a washed crushed-rock base that drains through Florida's summer storms. Locally owned by {OWNER} since 2024."),
-                 body, faqs=faqs, eyebrow="Locally owned · Kissimmee, FL · Est. 2024", wide=False, faq_title="Questions we hear every week",
+                 body, faqs=faqs, eyebrow="Locally owned · Kissimmee, FL · Est. 2024", wide=False, hero_photo="lakefront-estate", faq_title="Questions we hear every week",
                  sources=["attampa-cost", "lbs-fl-cost", "magnolia-heat", "sgw-faq", "bearcat-10yr", "hb683", "dep-rule", "marathon-pr", "fs7203045", "toho-days", "osceola-water-2026"],
                  related=[("/artificial-turf-cost/", "Turf cost guide: tables by yard size and project"), ("/laws/", "Florida turf law, HOAs and permits"), ("/faq/", "Every question, answered briefly"), ("/blog/", "All articles")])]

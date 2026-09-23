@@ -3,6 +3,7 @@
 import html as _html
 import re
 
+from _photos import info as _pinfo, url as _purl
 from _data import (BASE_URL, PUBLIC_NAME, PHONE_E164, PHONE_DISPLAY, EMAIL, OWNER, OWNER_ROLE, REVIEWED, SERVICES, SERVICE_ORDER,
                    CITIES, CITY_ORDER, COUNTIES, SOURCES, PRICES, PRICE_DATE, PRICE_LABEL, WEB3FORMS_KEY, price_range, city_service_route, nearest, TIER_SERVICES)
 
@@ -110,3 +111,31 @@ def page(route, kind, title, meta, h1, lede, body, faqs=None, sources=None, rela
          "faqs": faqs or [], "sources": sources or [], "related": related or [], "crumbs": crumbs or []}
     p.update(kw)
     return p
+
+
+# ---------------------------------------------------------------- photos (site/_photos.py registry)
+PH_SIZES = "(max-width:830px) calc(100vw - 40px), 750px"
+
+
+def photo(pid, caption=None, sizes=None, eager=False, cls=""):
+    """Responsive <figure> for one registered photo: full-size WebP srcset, lazy unless eager, caption optional."""
+    d = _pinfo(pid)
+    srcset = ", ".join(f"{_purl(pid, w)} {w}w" for w in d["widths"])
+    mid = d["widths"][min(1, len(d["widths"]) - 1)]
+    load = 'fetchpriority="high"' if eager else 'loading="lazy"'
+    cap = f"<figcaption>{caption}</figcaption>" if caption else ""
+    c = f" {cls}" if cls else ""
+    return (f'<figure class="ph{c}"><img src="{_purl(pid, mid)}" srcset="{srcset}" sizes="{sizes or PH_SIZES}" width="{d["w"]}" height="{d["h"]}" '
+            f'alt="{esc(d["alt"])}" {load} decoding="async">{cap}</figure>')
+
+
+def photo_strip(pids, href="/gallery/", sizes=None):
+    """Grid of 4:3 thumbnails, each linking to the gallery."""
+    sizes = sizes or "(max-width:600px) calc(50vw - 26px), (max-width:1160px) calc(33vw - 30px), 350px"
+    lis = []
+    for pid in pids:
+        d = _pinfo(pid)
+        srcset = ", ".join(f"{_purl(pid, w, thumb=True)} {w}w" for w in d["thumbs"])
+        lis.append(f'<li><a href="{href}"><img src="{_purl(pid, 480, thumb=True)}" srcset="{srcset}" sizes="{sizes}" width="480" height="360" '
+                   f'alt="{esc(d["alt"])}" loading="lazy" decoding="async"></a></li>')
+    return '<ul class="pgrid">' + "".join(lis) + "</ul>"

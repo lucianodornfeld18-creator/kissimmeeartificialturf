@@ -27,7 +27,7 @@ Data: 2026-09-23. Site publicado em https://kissimmeeartificialturf.pages.dev (5
 | 14 | Schema sem rua/geo/rating/horário inventados | **PASS** | `HomeAndConstructionBusiness` só com `addressLocality/Region/Country`, telefone, `founder`, `foundingDate: 2024` (da logo). Sem `AggregateRating`, `Review`, `GeoCoordinates`, `openingHours`. |
 | 15 | Dono/autor real | **PASS** | Luis Austin em `/about/`, na assinatura de toda página comercial e em `BlogPosting.author`. |
 | 16 | Zero termo de captação ou nota interna no `dist/` | **PASS** | Lista `INTERNAL` no QA (lead generation, sister, hub_id, keyword, tier, pipeline…): 0 ocorrências. |
-| 17 | Fotos exclusivas ou ilustração própria | **OWNER INPUT** | Sem fotos de obra. Hero = logo em vetor; diagrama SVG de camadas. Fotos da rede de concreto NÃO foram usadas. `/gallery/` não existe. |
+| 17 | Fotos exclusivas ou ilustração própria | **PASS** | 9 fotos reais do dono (2026-09-23): hero da home, faixa de miniaturas, `/gallery/` (ImageGallery + 9 ImageObject), 8 páginas de serviço, About e 3 posts. WebP em 3–4 larguras + miniaturas 4:3 (q58–62, sem metadados), nomes marca+assunto, alt descritivo, OG/JPEG por página, `<image:image>` no sitemap. Diagrama SVG de camadas continua. Nenhuma legenda cita cidade (não informada). |
 | 18 | OWNER-INPUTS completo e fora do build | **PASS** | `docs/OWNER-INPUTS.md`; grep de "pending" e "OWNER-INPUTS" no dist = 0. |
 
 ## Arquitetura e conteúdo (19–36)
@@ -93,7 +93,7 @@ Build date:                2026-09-23
 Indexable URLs:            576 (578 páginas menos thank-you e 404): 12 services / 5 counties / 60 city hubs / 420 city×service / 41 posts / 5 FAQ / 7 compare / 9 permits / 3 laws / 1 price + tools, indexes, legal
 Questions answered:        87 no FAQ hub + 1.613 em FAQs contextuais = 1.700 entidades Question (mínimo pedido: 70)
 Lighthouse mobile median:  P97 A100 BP100 SEO66-69 (SEO sobe a 100 no domínio próprio; o único item que falha é o noindex do pages.dev)
-60-point result:           43 PASS · 4 PARCIAL (6, 44, 50 + 55 a confirmar) · 2 FAIL (4, 5) · 8 BLOCKED (1, 51-54, 58, 59) · 3 OWNER INPUT (9, 17, chave do 56)
+60-point result:           44 PASS · 4 PARCIAL (6, 44, 50 + 55 a confirmar) · 2 FAIL (4, 5) · 8 BLOCKED (1, 51-54, 58, 59) · 2 OWNER INPUT (9, 17, chave do 56)
 Blocked items:             DNS (2 CNAME), credenciais Twilio, Keyword Planner
 Owner inputs still required: ver docs/OWNER-INPUTS.md
 Cannibalization decisions pending: nenhuma; kissimmeeconcrete.com/pavers/artificial-turf/ e GCM /artificial-turf/ mantidos, 0 8-grams em comum

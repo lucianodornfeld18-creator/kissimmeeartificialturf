@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url><loc>https://kissimmeeartificialturf.com/compare/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/compare/artificial-turf-vs-st-augustine-zoysia-bahia/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/compare/zeolite-vs-silica-vs-antimicrobial-infill/</loc><lastmod>2026-09-21</lastmod></url>
@@ -13,12 +13,13 @@
   <url><loc>https://kissimmeeartificialturf.com/tools/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/tools/turf-vs-sod/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/tools/hoa-packet-checklist/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://kissimmeeartificialturf.com/about/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://kissimmeeartificialturf.com/about/</loc><lastmod>2026-09-21</lastmod><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-lakefront-backyard-palms-aluminum-fence-1600.webp</image:loc></image:image></url>
+  <url><loc>https://kissimmeeartificialturf.com/gallery/</loc><lastmod>2026-09-21</lastmod><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-backyard-lawn-pool-home-1440.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-backyard-putting-green-three-cups-1440.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-between-porcelain-pavers-diagonal-1200.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-lakefront-backyard-palms-aluminum-fence-1600.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-lakefront-yard-pool-putting-green-1600.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-putting-green-hedge-pool-deck-1600.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-rooftop-amenity-deck-porcelain-pavers-1200.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-rooftop-pool-deck-high-rise-900.webp</image:loc></image:image><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-seating-area-under-tree-lakefront-900.webp</image:loc></image:image></url>
   <url><loc>https://kissimmeeartificialturf.com/contact/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/privacy/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/terms/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/accessibility/</loc><lastmod>2026-09-21</lastmod></url>
-  <url><loc>https://kissimmeeartificialturf.com/</loc><lastmod>2026-09-21</lastmod></url>
+  <url><loc>https://kissimmeeartificialturf.com/</loc><lastmod>2026-09-21</lastmod><image:image><image:loc>https://kissimmeeartificialturf.com/static/img/photos/kissimmee-artificial-turf-lakefront-yard-pool-putting-green-1600.webp</image:loc></image:image></url>
   <url><loc>https://kissimmeeartificialturf.com/laws/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/laws/florida-hb-683/</loc><lastmod>2026-09-21</lastmod></url>
   <url><loc>https://kissimmeeartificialturf.com/laws/hoa-rules/</loc><lastmod>2026-09-21</lastmod></url>

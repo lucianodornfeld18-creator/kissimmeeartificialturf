@@ -2,7 +2,7 @@
 """Blog cluster: heat, pets, rain and base. Registered to c_posts_b in _posts.py.
 Ten posts: how hot turf gets, coolest turf/infill, melting, dog urine odor, drainage in heavy rain,
 hurricane/flood, base for sandy soil, lifespan, turf over concrete/pavers/grass, Toho watering vs. turf."""
-from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, post, src, ext
+from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, post, src, ext, photo
 
 # ---------------------------------------------------------------- sources not already in _data.SOURCES
 BYU = ("Brigham Young University News, the science behind the grass at LaVell Edwards Stadium",
@@ -430,6 +430,7 @@ def p_over():
                    ["Existing putting-green base still draining well", "Yes", "New turf can often be seamed onto a sound existing base"]],
                   "Underlay and edging methods are ours; every yard still gets a site visit before we commit to reusing an existing surface or base.")
             + f"<p>Yes over {svc('pool', 'a concrete pool deck')} or {svc('pavers', 'a paver patio')} with the right underlay, and yes over an existing lawn once it's stripped down to bare, graded soil. What doesn't work, ever, is gluing or stapling turf directly on top of living grass, which traps moisture underneath and rots the backing within a season.</p>"),
+        photo("turf-between-pavers", "Turf strips fitted between porcelain pavers: the pavers carry the traffic, the turf sits on its own washed aggregate in the joint."),
         sec("Why can't turf just go over living grass?",
             "<p>Grass under turf keeps growing for a while in the dark before it finally dies, and as it decomposes it releases moisture and gases that have nowhere to go once turf seals the surface above it. The result is an uneven, spongy feel within months, an odor as the organic matter breaks down, and settling as the old root mat collapses unevenly beneath the new surface. None of that shows up on day one, which is exactly why it's a common shortcut on lower-end jobs. It always shows up eventually.</p>"),
         sec("What does turf over concrete or pavers need that a lawn install doesn't?",
@@ -454,7 +455,7 @@ def p_over():
                 "Turf can go over concrete or pavers with a drainage underlay, and over an old lawn once it's stripped to bare soil, but never glued directly onto living grass.",
                 "Can artificial turf be installed over concrete, pavers or existing grass?",
                 capsule("Yes over concrete and pavers with a drainage underlay and glued-down edges, yes over existing lawn grass once the sod and root mat are stripped to bare graded soil, and no, never glued or stapled directly on top of living grass, which traps moisture and rots the backing within a season, as of September 2026 for Kissimmee-area installs."),
-                body, faqs=faqs, crumbs=CRUMBS, crumb="Turf over pavers or grass", published=PUB,
+                body, faqs=faqs, crumbs=CRUMBS, crumb="Turf over pavers or grass", image="turf-between-pavers", published=PUB,
                 sources=["sgw-faq", "magnolia-drain"],
                 related=[("/pool-turf/", "Pool & lanai turf"),
                          ("/turf-and-pavers/", "Turf & pavers"),

@@ -4,7 +4,7 @@ Ten posts: why turf costs what it does, comparing quotes, turf vs. sod, home val
 DIY vs. pro, choosing a contractor in Kissimmee, vetting one online, warranty coverage,
 and the best season to install. Does not paraphrase c_pricing.py; goes deeper into
 line items, spec-sheet terms and a sample quote."""
-from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, post, src, ext, price
+from _helpers import page, capsule, sec, table, faq, ul, steps, note, cta, a, svc, post, src, ext, price, photo
 
 # ---------------------------------------------------------------- sources not yet in _data.SOURCES
 NAR_OUTDOOR = ("National Association of Realtors — 2023 Remodeling Impact Report: Outdoor Features", "https://www.nar.realtor/research-and-statistics/research-reports/remodeling-impact-report-outdoor-features")
@@ -208,6 +208,7 @@ def _batch_two():
                      ["400 sq ft", "$5,600-$7,200", "$7,200-$10,000", "$10,000-$12,000"],
                      ["800 sq ft", "$11,200-$14,400", "$14,400-$20,000", "$20,000-$24,000"]],
                     "Turf and base only, before contouring, fringe, cups or a chipping pad. Central Florida market range, September 2026.")),
+        photo("putting-green-three-cups", "A three-cup backyard green with a fringe collar, the add-ons the second table below prices."),
         sec("What contouring, fringe, cups and a chipping pad add",
             f"<p>The size table above is a flat, single-tier surface. Most backyard greens add at least one feature, and each one is priced separately from the per-square-foot turf number ({ext(PUTTING_ADDON1[1], 'Go Green Synthetic Turf, 2026 cost guide')}; {ext(PUTTING_ADDON2[1], 'Putting Green Designer cost guide')}).</p>"
             + table("Common putting green add-ons and what they cost", ["Add-on", "Typical cost", "What it changes"],
@@ -253,7 +254,7 @@ def _batch_two():
                        capsule("A backyard putting green in Central Florida costs $14 to $30 per square foot installed as of September 2026, with most jobs landing at $18-$25. A 400 sq ft green typically runs $7,200-$10,000 before add-ons; cups, contouring, fringe and a chipping pad each price separately on top of that."),
                        body, faqs=faqs, sources=["angi-putting", "homeguide-putting", "dep-rule", PUTTING_ADDON1, PUTTING_ADDON2],
                        related=[("/putting-greens/", "Backyard putting green installation"), ("/blog/artificial-turf-glossary/", "Turf terms: face weight, stimp and more"), ("/blog/artificial-turf-for-55-plus-communities/", "Putting greens in 55+ communities"), ("/artificial-turf-cost/", "Full turf cost guide")],
-                       crumbs=[("Blog", "/blog/")], crumb="Putting green cost by size", published="2026-09-21"))
+                       crumbs=[("Blog", "/blog/")], crumb="Putting green cost by size", image="putting-green-three-cups", published="2026-09-21"))
 
     # ============================================================== 5. home value
     body = "".join([
