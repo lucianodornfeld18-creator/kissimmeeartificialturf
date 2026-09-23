@@ -1,22 +1,12 @@
 # Pendências do proprietário — kissimmeeartificialturf.com
 
-Interno. Nunca renderizado no site. Atualizado em 2026-09-23 (579 páginas no ar em pages.dev, com as 9 fotos; auditoria em AUDIT-60-POINT.md).
+Interno. Nunca renderizado no site. Atualizado em 2026-09-23 (domínio próprio NO AR em https://kissimmeeartificialturf.com; 579 páginas com as 9 fotos; auditoria em AUDIT-60-POINT.md).
 
-## 1. Bloqueia o domínio próprio (1 minuto, só você consegue)
+## 1. Domínio próprio: FEITO em 2026-09-23
 
-O token do wrangler nesta máquina não tem permissão de DNS (erro 10000). O projeto Pages, o deploy e o anexo do domínio já estão feitos; falta só o DNS:
+Você criou os dois CNAME no painel e o domínio ficou ativo com certificado em minutos. `www.kissimmeeartificialturf.com` e `kissimmeeartificialturf.pages.dev` redirecionam (301) para `https://kissimmeeartificialturf.com`. Lighthouse no domínio final (mobile): home 96/100/100/100, página cidade×serviço 98/100/100/100.
 
-Cloudflare → `kissimmeeartificialturf.com` → **DNS → Records → Add record**, duas vezes:
-
-| Type | Name | Target | Proxy |
-|---|---|---|---|
-| CNAME | `@` | `kissimmeeartificialturf.pages.dev` | Proxied (laranja) |
-| CNAME | `www` | `kissimmeeartificialturf.pages.dev` | Proxied (laranja) |
-
-Alternativa: Workers & Pages → `kissimmeeartificialturf` → Custom domains → clicar no domínio pendente → "Activate domain" (o painel cria o registro sozinho).
-Depois disso o certificado sai em alguns minutos. Até lá o site responde em https://kissimmeeartificialturf.pages.dev (com `noindex`, de propósito).
-
-Se quiser que eu faça isso nas próximas vezes: crie um API token com **Zone → DNS → Edit** para esta zona e rode `set CF_API_TOKEN=...` antes de me chamar. Não guarde o token em arquivo.
+Continua valendo: meu token do wrangler não altera DNS nem configurações da zona. Se um dia quiser que eu faça isso, crie um API token com **Zone → DNS → Edit** (e, se for o caso, Zone Settings → Edit) e rode `set CF_API_TOKEN=...` antes de me chamar. Não guarde o token em arquivo.
 
 ## 2. Bloqueia o telefone (Twilio)
 
@@ -48,11 +38,12 @@ Se quiser que eu faça isso nas próximas vezes: crie um API token com **Zone �
 
 ## 5. Depois que o domínio estiver no ar
 
-- Rodar os 60 prompts de IA (ChatGPT, Perplexity, Gemini, Copilot, AI Mode) e as SERPs por cluster (pontos 4 e 5 da auditoria); so faz sentido depois da indexacao.
+- Rodar os 60 prompts de IA (ChatGPT, Perplexity, Gemini, Copilot, AI Mode) e as SERPs por cluster (pontos 4 e 5 da auditoria); só faz sentido umas semanas depois da indexação.
 - Rich Results Test em uma pagina de cada tipo (ponto 43), incluindo `/gallery/` (ImageGallery + ImageObject).
 - Search Console → Imagens: o sitemap já leva `<image:image>` para as 9 fotos; conferir se o Google indexou as imagens depois de algumas semanas.
 
-- Search Console (propriedade de domínio) e Bing Webmaster: exigem um TXT no DNS, que também depende do item 1.
+- **Google Search Console** (só você, com a conta Google): https://search.google.com/search-console → Adicionar propriedade → tipo **Domínio** → `kissimmeeartificialturf.com` → o Google mostra um registro **TXT** → Cloudflare → DNS → Add record (Type TXT, Name `@`, Content colado) → Verificar. Depois: Sitemaps → enviar `https://kissimmeeartificialturf.com/sitemap.xml`. Se quiser que eu acompanhe, adicione lucianodornfeld18@gmail.com como usuário da propriedade.
+- **Bing Webmaster Tools**: https://www.bing.com/webmasters → Importar do Google Search Console (1 clique depois do item acima).
 - Cloudflare → Scrape Shield → desligar "Email Address Obfuscation" e Speed → desligar "Rocket Loader" nesta zona (tiram pontos do Lighthouse e quebram a CSP).
 - Cloudflare → Security → Bots → conferir que "Block AI bots" está desligado (o `robots.txt` libera os bots de busca e de IA; o WAF não pode contradizer).
 - Cloudflare Web Analytics: ativar para o domínio (o beacon é injetado pelo Cloudflare; a CSP já permite).
